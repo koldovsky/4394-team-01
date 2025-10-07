@@ -1,0 +1,74 @@
+<!-- Mariia Malooka -->
+
+<dialog class="modal" open>
+  <div class="modal__header">
+    <svg class="header__icon"></svg>
+    <h1 class="header__title">Reservation form</h1>
+    <p class="header__subtitle">
+      Ready to embark on your glamping adventure? Secure your spot under the
+      stars by completing the reservation form below
+    </p>
+  </div>
+  <div class="modal__form">
+    <form class="form">
+      <input
+        name="name"
+        class="form__input form__input--name"
+        type="text"
+        placeholder="Your Name*"
+        required
+      />
+      <input
+        name="phone"
+        class="form__input form__input--phone"
+        type="number"
+        placeholder="Phone Number*"
+        required
+      />
+      <input
+        name="email"
+        class="form__input form__input--email"
+        type="email"
+        placeholder="Email*"
+        required
+      />
+      <input
+        name="date-in"
+        class="form__input form__input--date-in"
+        type="date"
+        placeholder="Check-In Date*"
+      />
+      <input
+        name="date-out"
+        class="form__input form__input--date-out"
+        type="date"
+        placeholder="Check-Out Date*"
+      />
+      <input
+        name="adults"
+        class="form__input form__input--adults"
+        type="number"
+        placeholder="Number of Adults"
+        required
+      />
+      <input
+        name="children"
+        class="form__input form__input--children"
+        type="number"
+        placeholder="Number of Children"
+      />
+      <label class="form__label form__label--agree">
+        <input
+          name="agree"
+          type="checkbox"
+          class="form__input form-input--checkbox"
+          required
+        />
+        <p class="form__label form__label--text">
+          I acknowledge and agree to the bookingpolicies and glamping rules.
+        </p>
+      </label>
+      <button class="form__button" type="submit">SEND A REQUEST</button>
+    </form>
+  </div>
+</dialog>
