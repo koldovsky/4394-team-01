@@ -26,18 +26,31 @@
       
     </header>
     <main class="main">
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.experience-nature.partial.html"
+      ></div>
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="section-about-camping.oleksii"
+        data-hx-get="index.about-camping.partial.html"
       ></nav>
-
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="discount-section.html"
+      ></nav>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="habbits.time.html"
+      ></nav>
       <div
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="about_camp-infrastructure.html"
       ></div>
-
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -49,6 +62,12 @@
         data-hx-get="about-us.experience.partial.html"
       ></div>
     </main>
-    <footer class="footer"></footer>
+    <footer>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></nav>
+    </footer>
   </body>
 </html>
