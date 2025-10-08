@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Glamping Hidden Heaven</title>
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
@@ -11,7 +11,6 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
     <header class="header">
       <nav
@@ -21,6 +20,36 @@
       ></nav>
     </header>
     <main class="main"></main>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header-hero.partial.html"
+      ></div>
+    </header>
+    <main class="main">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="section-about-camping.oleksii"
+      ></nav>
+
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about_camp-infrastructure.html"
+      ></div>
+
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="habitations-main.partial.html"
+      ></section>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about-us.experience.partial.html"
+      ></div>
+    </main>
     <footer>
       <nav
         data-hx-trigger="load"
