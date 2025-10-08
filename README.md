@@ -46,3 +46,4 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
   - Kandyba Mykhailo
   - Moskalyuk Bogdan
   - Marjan Batkivskiy
+  - Hustii Ivanna
