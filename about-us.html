@@ -10,7 +10,7 @@
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/about-us.css" />
   </head>
   <body>
     <header class="header">
@@ -24,32 +24,33 @@
         data-hx-swap="outerHTML"
         data-hx-get="about-us.header-hero.partial.html"
       ></div>
-      
     </header>
-        
+
     <main class="main">
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="about.us-information-ratings.partial.html"
+        data-hx-get="about-us.information-ratings.partial.html"
       ></section>
-      <section class="experience"
+      <section
+        class="experience"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="about-us.experience.partial.html"
-        ></section>
-        
-      <section class="activity__gallery"
+      ></section>
+
+      <section
+        class="activity__gallery"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="about-us.activitygallery.partial.html"
-        ></section>
-      <section class="activity__gallery"
+      ></section>
+      <section
+        class="activity__gallery"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="about-us.slider.partial.html"
-        ></section>
-        
+      ></section>
     </main>
 
     <footer class="footer"></footer>
