@@ -30,7 +30,23 @@
     ></nav>
     </header>
    
-    <main class="main"></main>
+    <main class="main">
+      <section class="experience"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about-us.experience.partial.html"
+        ></section>
+      <section class="activity__gallery"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about-us.activitygallery.partial.html"
+        ></section>
+      <section class="activity__gallery"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about-us.slider.partial.html"
+        ></section>
+    </main>
 
     <footer class="footer"></footer>
   </body>
