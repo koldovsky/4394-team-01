@@ -1,0 +1,37 @@
+/* Kononenko Vladyslav */
+.habitations {
+    margin-top: 35px;
+    /* border: 2px solid black; */
+    background-color: #f9faf7;
+}
+.habitations__intro-inner{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;  
+}
+.habitations__intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.habitations__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+.habitations__list{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: row;
+    
+}
+.habitations__description {
+    font-size: 17px;
+}
