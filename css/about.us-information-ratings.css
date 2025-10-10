@@ -1,0 +1,40 @@
+.about-us{
+    padding: 0 5px;
+.about-us__title{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: right;
+    color: #2d2d2d;
+}
+}
+.about-us__icon-main{
+    color: #ea9449;
+}
+
+.about-us__subtitle{
+    color: #686868;
+}
+.about-us__description{
+    color: #808080;
+}
+.about-us__feature-icon{
+    fill: #7c782f;
+}
+.about-us__feature{
+    color: #686868;
+}
+.about-us__text{
+    color: #808080;
+}
+.about-us__nav{
+    background-color: #7c782f;
+    .about-us__button{
+        color: #ffffff;
+    }
+}
+.about-us__stat-value{
+    color: #ea9449;
+}
+.about-us__stat-label{
+    color: #808080;
+}

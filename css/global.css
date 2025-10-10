@@ -1,5 +1,6 @@
 /* Diana Bruskova ------------- (start + @import url) */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 *::after,
@@ -11,6 +12,14 @@
 
 :root {
   scroll-behavior: smooth;
+  /* Marjan Batkivskiy прохання не видаляти */
+  font-family: "Inter", sans-serif;
+  --title-text-color: #2d2d2d;
+  --primary-text-color: #808080;
+  --text-color: #686868;
+  --alt-text-color: #FFFFFF;
+  --accent-color: #7c782f;
+  --alt-font: Work sans;
 }
 
 img {
@@ -23,4 +32,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
 }
