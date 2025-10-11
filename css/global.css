@@ -39,3 +39,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+.link {
+  text-decoration: none;
+}
