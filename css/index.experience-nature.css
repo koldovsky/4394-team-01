@@ -32,7 +32,22 @@
                 padding-top: 25px;
                 color: var(--primary-text-color);
             }
+
+            .experience__description-button {
+                background-color: var(--accent-color);
+                margin-top: 65px;
+
+                .experience__description-button--text {
+                    display: inline-block;
+                    color: var(--alt-text-color);
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                    padding: 15px 25px;
+                }
+            }
         }
+
+
 
     }
 
