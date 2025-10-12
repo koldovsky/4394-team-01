@@ -30,13 +30,40 @@
 
             .experience__description-text {
                 padding-top: 25px;
+                padding-bottom: 40px;
                 color: var(--primary-text-color);
+            }
+
+            .experience__description-button {
+                display: inline-block;
+                background-color: var(--accent-color);
+                margin-bottom: 25px;
+                border: 1px solid var(--accent-color);
+                cursor: pointer;
+                padding: 15px 35px;
+
+                .experience__description-button--text {
+                    color: var(--alt-text-color);
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                }
             }
         }
 
+
+
     }
 
-    
+    .experience__baner {
+        background-image: url(./../img/experience-nature/experience-bacground.jpg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+        width: 100%;
+
+        .experience__baner--text {
+            margin: 75px 50px;
+        }
+    }        
 }
 
 .experience__description {
