@@ -1,5 +1,6 @@
 /* Diana Bruskova ------------- (start + @import url) */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 *::after,
@@ -11,6 +12,19 @@
 
 :root {
   scroll-behavior: smooth;
+  /* Marjan Batkivskiy прохання не видаляти */
+  font-family: 'Inter', sans-serif;
+  --title-text-color: #2d2d2d;
+  --primary-text-color: #808080;
+  --text-color: #686868;
+  --alt-text-color: #ffffff;
+  --description-text-color: #9092b3;
+  --accent-color: #7c782f;
+  --alt-font: Work sans;
+  --scroll-up-color: #ea9449;
+  --link-hover-call-us-background-color: #ffffff;
+  --link-background-color: #7c782f;
+  --link-hover-background-color: #686868;
 }
 
 img {
@@ -18,9 +32,25 @@ img {
   max-width: 100%;
 }
 
+.header__container {
+  background-image: url('../img/header/index-header-background.png');
+  height: 100%;
+  width: 100%;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--alt-text-color);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link {
+  text-decoration: none;
 }
