@@ -89,8 +89,7 @@
       @media (min-width: 1024px) {
         justify-self: start;
       }
-      .social__media-link svg {
-        fill: var(--alt-text-color);
+      .social__media-link {
         transition: fill 0.3s, transform 0.3s;
         @media (min-width: 1024px) {
           font-size: 0.5rem;
@@ -98,6 +97,9 @@
         &:hover {
           fill: var(--accent-color);
           transform: scale(1.1);
+        }
+        .social__media-img {
+          color: var(--alt-text-color);
         }
       }
     }

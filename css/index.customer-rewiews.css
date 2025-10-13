@@ -1,0 +1,21 @@
+/* Marjan Batkivskiy */
+.customer {
+    .customer__baner--video{
+        min-width: 320px;
+    }
+
+    .customer-testimonials {
+        .customer__button--left {
+
+        }
+        .customer-rewiews__list {
+            .customer-rewiews__item {
+                .customer-rewiews__stars {
+                    /* width: 9px;
+                    height: 9px; */
+                    fill: var(--accent-color);
+                }
+            }
+        }
+    }
+}

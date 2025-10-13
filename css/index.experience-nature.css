@@ -22,6 +22,7 @@
             padding: 0px 50px;
 
             .experience__description-title {
+                font-size: 1.4rem;
                 padding-top: 75px;
                 font-family: "Work Sans", sans-serif;
                 font-style: normal;
@@ -49,40 +50,26 @@
                 }
             }
         }
-
-
-
     }
 
     .experience__baner {
         background-image: url(./../img/experience-nature/experience-bacground.jpg);
         background-size: cover; 
         background-repeat: no-repeat;
-        width: 100%;
-
+        background-position: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px 0px;
+      
         .experience__baner--text {
-            margin: 75px 50px;
+            font-family: var(--alt-font);
+            font-size: 2.8rem;
+            color: var(--alt-text-color);
+            font-weight: 700;
+            padding-top: 70px;
+            padding-bottom: 70px;
         }
     }        
-}
-
-.experience__description {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between; */
-    /* gap: 30px; */
-}
-
-
-
-.experience__description-img--container {
-    /* padding: 0px 15px; */
-}
-
-
-
-.experience__description-title {
-    font-size: 1.4rem;
-    color: var(--primary-title-color);
 }
