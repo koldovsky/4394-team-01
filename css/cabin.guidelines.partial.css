@@ -7,11 +7,19 @@
   --container-max: 1140px;
   --spacing-x: 20px;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3777f13e05707b89d894b3be86f60e74375877b5
 .cabin__content {
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 var(--spacing-x) 60px var(--spacing-x);
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3777f13e05707b89d894b3be86f60e74375877b5
 .cabin__guidelines {
   padding-top: 40px;
   padding-bottom: 12px;
@@ -20,11 +28,19 @@
   line-height: 1.15;
   margin: 0;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3777f13e05707b89d894b3be86f60e74375877b5
 line {
   stroke: var(--color-line);
   stroke-width: 1;
   opacity: 0.35;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3777f13e05707b89d894b3be86f60e74375877b5
 .cabin__list {
   list-style: none;
   padding: 24px 0 0 0;
@@ -33,12 +49,20 @@ line {
   color: var(--color-text);
   display: block;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3777f13e05707b89d894b3be86f60e74375877b5
 .cabin__list-item {
   counter-increment: gl;
   break-inside: avoid;
   margin-bottom: 28px;
   padding-right: 0;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3777f13e05707b89d894b3be86f60e74375877b5
 .cabin__subtitle {
   position: relative;
   margin: 0 0 6px 0;
@@ -48,6 +72,10 @@ line {
   color: var(--color-accent);
   padding-left: 2.25rem;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3777f13e05707b89d894b3be86f60e74375877b5
 .cabin__subtitle::before {
   content: counter(gl, decimal-leading-zero) '. ';
   position: absolute;
@@ -56,6 +84,10 @@ line {
   font-weight: 800;
   color: var(--color-accent);
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3777f13e05707b89d894b3be86f60e74375877b5
 .cabin__text {
   margin: 0;
   font-size: 18px;
@@ -63,12 +95,20 @@ line {
   padding-left: 2.25rem;
   display: block;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3777f13e05707b89d894b3be86f60e74375877b5
 @media (min-width: 992px) {
   .cabin__list {
     columns: 2;
     column-gap: 4rem;
   }
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3777f13e05707b89d894b3be86f60e74375877b5
 .cabin__image {
   text-align: center;
   margin-top: 40px;

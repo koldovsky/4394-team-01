@@ -1,60 +1,97 @@
+
 .about-us {
-  padding: 0 5px;
-  font-size: 2.5rem;
   text-transform: uppercase;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding: 2rem 1rem;
-  @media (min-width: 600px) {
-    flex-direction: row;
+  margin: 90px 0 0 0;
+
+  .about-us__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .about-us__image-wrapper {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .about-us__title {
+    font-size: 2.125rem;
+    color: var(--title-text-color);
     justify-content: space-around;
   }
-}
-.about-us__image {
-  padding: 0 30xp;
-}
 
-.about-us__image-wraper {
-  width: 100%;
-  max-width: 360px;
-  margin: 0 auto;
-}
-.about-us__title {
-  color: #2d2d2d;
-  justify-content: space-around;
-}
-.about-us__icon-main {
-  color: #ea9449;
-}
-.about-us__subtitle {
-  color: #686868;
-}
-.about-us__description {
-  color: #808080;
-}
-.about-us__feature-icon {
-  fill: #7c782f;
-}
-.about-us__feature {
-  color: #686868;
-}
-.about-us__text {
-  color: #808080;
-}
-.about-us__nav {
-  background-color: #7c782f;
-  .about-us__button {
-    color: #ffffff;
+  .about-us__icon-main {
+    color: var(--scroll-up-color);
   }
-}
-.about-us__stat-value {
-  color: #ea9449;
-}
-.about-us__stat-label {
-  color: #808080;
+
+  .about-us__subtitle {
+    font-size: 1.1875rem;
+    color: var(--text-color);
+    margin-bottom: 16px;
+  }
+
+  .about-us__description {
+    font-size: 1.0625rem;
+    color: var(--primary-text-color);
+    margin-bottom: 16px;
+  }
+
+  .about-us__feature-icon {
+    fill: var(--accent-color);
+  }
+
+  .about-us__feature {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    margin-bottom: 16px;
+  }
+
+  .about-us__text {
+    font-size: 1.0625rem;
+    color: var(--primary-text-color);
+    margin-bottom: 16px;
+  }
+
+  .about-us__nav {
+    font-size: 0.825rem;
+    background-color: var(--link-background-color);
+  }
+
+  .about-us__button {
+    /* Додайте стилі для кнопки тут */
+  }
+
+  .about-us__stat-value {
+    font-size: 3.875rem;
+    color: var(--scroll-up-color);
+  }
+
+  .about-us__stat-label {
+    font-size: 0.75rem;
+    color: var(--primary-text-color);
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 105 0px;
+
+    .about-us__content {
+      flex: 1 1 0;
+      text-align: left;
+      align-items: flex-start;
+    }
+
+    .about-us__title {
+      font-size: 46px;
+    }
+  }
 }
