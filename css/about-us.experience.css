@@ -1,4 +1,9 @@
 .experience {
-  background-color: #f9f9f7;
+  background-color: var(--section-accent-color);
   padding: 90px 0;
+  position: absolute;
 }
+.experience__icon {
+  color: var(--icon-tree-color);
+}
+
