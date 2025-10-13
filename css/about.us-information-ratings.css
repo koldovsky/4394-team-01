@@ -1,5 +1,5 @@
 .about-us {
-  padding: 0 5px;  
+  padding: 0 5px;
   font-size: 2.5rem;
   text-transform: uppercase;
   text-align: center;
@@ -11,29 +11,26 @@
   gap: 2rem;
   padding: 2rem 1rem;
   @media (min-width: 600px) {
-        flex-direction: row ;
-        justify-content: space-around;
-        }
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
-.about-us__image{
-    padding: 0 30xp;
+.about-us__image {
+  padding: 0 30xp;
 }
 
-
-.about-us__image-wraper{
+.about-us__image-wraper {
   width: 100%;
   max-width: 360px;
   margin: 0 auto;
 }
-  .about-us__title {
+.about-us__title {
   color: #2d2d2d;
   justify-content: space-around;
 }
-
 .about-us__icon-main {
   color: #ea9449;
 }
-
 .about-us__subtitle {
   color: #686868;
 }

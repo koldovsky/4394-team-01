@@ -1,5 +1,4 @@
 /* Kostiantyn Kobel */
-/* Header Content */
 .index__header_hero-content {
   .header__hero-content {
     display: flex;
@@ -98,7 +97,6 @@
       margin-top: 1.5rem;
     }
   }
-  /* Footer Content */
   .header__hero-footer {
     .header__hero_price-lists {
       display: flex;

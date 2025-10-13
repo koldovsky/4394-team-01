@@ -25,7 +25,6 @@
         data-hx-get="cabin.header-hero.partial.html"
       ></div>
     </header>
-
     <main class="main">
       <div
         data-hx-trigger="load"
@@ -38,7 +37,12 @@
         data-hx-get="cabin.extra-pricing.partial.html"
       ></div>
     </main>
-
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></nav>
+    </footer>
   </body>
 </html>

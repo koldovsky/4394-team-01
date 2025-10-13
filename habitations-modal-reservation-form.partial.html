@@ -1,0 +1,84 @@
+<!-- Mariia Malooka -->
+<section class="habitations__modal_reservation">
+  <dialog class="modal-container" open>
+    <div class="modal">
+      <button class="modal__close-btn">
+        <svg class="modal__close-btn-icon"></svg>
+      </button>
+      <div class="modal__header">
+        <svg class="modal__header-icon"></svg>
+        <h2 class="modal__header-title">Reservation form</h2>
+        <p class="modal__header-subtitle">
+          Ready to embark on your glamping adventure? Secure your spot under the
+          stars by completing the reservation form below
+        </p>
+      </div>
+      <div class="modal__reservation">
+        <form class="modal__reservation-form">
+          <input
+            name="name"
+            class="modal__reservation-input modal__reservation-input--name"
+            type="text"
+            placeholder="Your Name*"
+            required
+          />
+          <input
+            name="phone"
+            class="modal__reservation-input modal__reservation-input--phone"
+            type="number"
+            placeholder="Phone Number*"
+            required
+          />
+          <input
+            name="email"
+            class="modal__reservation-input modal__reservation-input--email"
+            type="email"
+            placeholder="Email*"
+            required
+          />
+          <input
+            name="date-in"
+            class="modal__reservation-input modal__reservation-input--date-in"
+            type="date"
+            placeholder="Check-In Date*"
+          />
+          <input
+            name="date-out"
+            class="modal__reservation-input modal__reservation-input--date-out"
+            type="date"
+            placeholder="Check-Out Date*"
+          />
+          <input
+            name="adults"
+            class="modal__reservation-input modal__reservation-input--adults"
+            type="number"
+            placeholder="Number of Adults"
+            required
+          />
+          <input
+            name="children"
+            class="modal__reservation-input modal__reservation-input--children"
+            type="number"
+            placeholder="Number of Children"
+          />
+          <label
+            class="modal__reservation-label modal__reservation-label--agree"
+          >
+            <input
+              name="agree"
+              type="checkbox"
+              class="modal__reservation-input modal__reservation-input--checkbox"
+              required
+            />
+            <p class="modal__reservation-label-text">
+              I acknowledge and agree to the bookingpolicies and glamping rules.
+            </p>
+          </label>
+          <button class="modal__reservation-button" type="submit">
+            SEND A REQUEST
+          </button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+</section>
