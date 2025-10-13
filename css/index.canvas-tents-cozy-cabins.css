@@ -90,10 +90,11 @@
         }
 
         .habitations__features {
-          text-align: center;
-          display: flex;
-          flex-direction: row;
-          align-items: left;
+          /* text-align: center;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: left;
+                    width: 100%; */
 
           @media (min-width: 480px) {
             flex-direction: column;
