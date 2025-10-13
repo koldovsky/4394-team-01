@@ -1,63 +1,93 @@
 .about-us {
-  padding: 0 5px;  
-  font-size: 2.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding: 2rem 1rem;
-  @media (min-width: 600px) {
-        flex-direction: row ;
-        justify-content: space-around;
-        }
-}
-.about-us__image{
-    padding: 0 30xp;
+  padding: 0 20px;
 }
 
+@media (min-width: 768px) {
+  .about-us {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 30px;
+  }
+  .about-us__image-wrapper {
+    max-width: 400px;
+    flex: 0 0 400px;
+  }
+  .about-us__content {
+    flex: 1 1 0;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
 
-.about-us__image-wraper{
+.about-us__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.about-us__image-wrapper {
   width: 100%;
   max-width: 360px;
   margin: 0 auto;
 }
-  .about-us__title {
-  color: #2d2d2d;
+.about-us__title {
+  font-size: 34px;
+  color: var(--title-text-color);
   justify-content: space-around;
 }
-
+@media (min-width: 768px) {
+  .about-us__title {
+    font-size: 46px;
+  }
+}
 .about-us__icon-main {
-  color: #ea9449;
+  color: var(--scroll-up-color);
 }
 
 .about-us__subtitle {
-  color: #686868;
+  font-size: 19px;
+  color: var(--text-color);
 }
 .about-us__description {
-  color: #808080;
+  font-size: 17px;
+  color: var(--primary-text-color);
 }
 .about-us__feature-icon {
-  fill: #7c782f;
+  fill: var(--accent-color);
 }
 .about-us__feature {
-  color: #686868;
+  font-size: 14px;
+  color: var(--text-color);
 }
 .about-us__text {
-  color: #808080;
+  font-size: 17px;
+  color: var(--primary-text-color);
 }
 .about-us__nav {
-  background-color: #7c782f;
+  font-size: 13.2px;
+  background-color: var(--link-background-color);
   .about-us__button {
-    color: #ffffff;
   }
 }
 .about-us__stat-value {
-  color: #ea9449;
+  font-size: 62px;
+  color: var(--scroll-up-color);
 }
 .about-us__stat-label {
-  color: #808080;
+  font-size: 12px;
+  color: var(--primary-text-color);
 }
+.about-us__subtitle,
+.about-us__description,
+.about-us__feature,
+.about-us__text {
+  margin-bottom: 16px;

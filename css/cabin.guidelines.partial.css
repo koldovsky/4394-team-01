@@ -1,20 +1,20 @@
 /*Made by Ostap Halushchak*/
 
-:root{
-  --color-text: #6b7280;          
-  --color-accent: #EA9449;       
-  --color-line: #9ca3af;          
+:root {
+  --color-text: #6b7280;
+  --color-accent: #ea9449;
+  --color-line: #9ca3af;
   --container-max: 1140px;
   --spacing-x: 20px;
 }
 
-.cabin__content{
+.cabin__content {
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 var(--spacing-x) 60px var(--spacing-x);
 }
 
-.cabin__guidelines{
+.cabin__guidelines {
   padding-top: 40px;
   padding-bottom: 12px;
   font-size: clamp(28px, 4vw, 44px);
@@ -23,40 +23,40 @@
   margin: 0;
 }
 
-line{
+line {
   stroke: var(--color-line);
   stroke-width: 1;
-  opacity: .35;
+  opacity: 0.35;
 }
 
-.cabin__list{
+.cabin__list {
   list-style: none;
   padding: 24px 0 0 0;
   margin: 0;
   counter-reset: gl;
   color: var(--color-text);
-  display: block;                 
+  display: block;
 }
 
-.cabin__list-item{
+.cabin__list-item {
   counter-increment: gl;
   break-inside: avoid;
   margin-bottom: 28px;
   padding-right: 0;
 }
 
-.cabin__subtitle{
+.cabin__subtitle {
   position: relative;
   margin: 0 0 6px 0;
   font-size: 1.125rem;
   line-height: 1.3;
   font-weight: 800;
   color: var(--color-accent);
-  padding-left: 2.25rem;       
+  padding-left: 2.25rem;
 }
 
-.cabin__subtitle::before{
-  content: counter(gl, decimal-leading-zero) ". ";
+.cabin__subtitle::before {
+  content: counter(gl, decimal-leading-zero) '. ';
   position: absolute;
   left: 0;
   top: 0;
@@ -64,22 +64,22 @@ line{
   color: var(--color-accent);
 }
 
-.cabin__text{
+.cabin__text {
   margin: 0;
   font-size: 18px;
   line-height: 1.7;
-  padding-left: 2.25rem;          
+  padding-left: 2.25rem;
   display: block;
 }
 
-@media (min-width: 992px){
-  .cabin__list{
+@media (min-width: 992px) {
+  .cabin__list {
     columns: 2;
     column-gap: 4rem;
   }
 }
 
-.cabin__image{
+.cabin__image {
   text-align: center;
   margin-top: 40px;
   margin: 0 auto 60px auto;

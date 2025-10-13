@@ -1,8 +1,8 @@
 /*Made by Ostap Halushchak*/
 
 :root {
-  --color-text: #6b7280;      
-  --color-line: #9ca3af;  
+  --color-text: #6b7280;
+  --color-line: #9ca3af;
   --color-olive: #7a7f3a;
 }
 
@@ -17,17 +17,17 @@
 
 .extras__title,
 .cabin-extras__title {
-  font-size: 36px; 
+  font-size: 36px;
   line-height: 1.1;
   font-weight: 800;
   margin-bottom: 32px;
   position: relative;
 }
 
-line{
+line {
   stroke: var(--color-line);
   stroke-width: 1;
-  opacity: .35;
+  opacity: 0.35;
 }
 
 .extra-pricing__item-header {
@@ -80,7 +80,7 @@ line{
 .seasonal-pricing__item-price {
   color: var(--color-olive);
   font-weight: 700;
-  letter-spacing: 1px; 
+  letter-spacing: 1px;
   white-space: nowrap;
   font-size: 13px;
 }
@@ -100,6 +100,6 @@ line{
 
   .extras__title,
   .cabin-extras__title {
-    font-size: 45px; 
+    font-size: 45px;
   }
 }
