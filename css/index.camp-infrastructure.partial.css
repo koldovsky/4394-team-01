@@ -1,0 +1,31 @@
+/* Nazar lesiv */
+.main-title {
+  color: #2d2d2d;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 46px;
+}
+.infrastructure-title {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 24px;
+}
+.infrastructure-icon {
+  width: 50px;
+}
+.infrastructure-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  color: grey;
+}
+.contact-text {
+  font-family: 'Inter', sans-serif;
+  color: #808080;
+}
+.contact-heading {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 24px;
+}
+.contact-email-text {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  color: #ea9449;
+}

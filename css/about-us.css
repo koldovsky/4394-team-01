@@ -1,14 +1,5 @@
 @import 'global.css';
 @import 'global.header-nav.css';
 @import 'about-us.header-hero.css';
+@import 'about-us.header-background.css';
 @import url('about.us-information-ratings.css');
-.about-us__header_background-container {
-  background-image: url('../img/header/about-us-header-background.jpg');
-  height: 100%;
-  width: 100%;
-  @media (min-width: 320px) {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
