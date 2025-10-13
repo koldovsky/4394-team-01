@@ -14,8 +14,12 @@
     }
 
     .experience__description--container {
-      background-image: url('./../img/experience-nature/Experiense_bacground_lining.jpg');
-      background: rgba(249, 249, 247, 0.96);
+
+      background-image: url('./../img/experience-nature/experiense_background_lining.jpg'),
+        linear-gradient(rgba(250, 249, 245, 0.93), rgba(250, 249, 245, 0.93));
+      background-blend-mode: lighten;
+      background-repeat: repeat;
+      background-size: cover;
       margin-top: 50px;
       padding: 0px 50px;
 
@@ -51,7 +55,7 @@
   }
 
   .experience__baner {
-    background-image: url(./../img/experience-nature/experience-bacground.jpg);
+    background-image: url(./../img/experience-nature/experience-bakcground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
