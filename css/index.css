@@ -1,21 +1,26 @@
 /* Marjan Batkivskiy */
-@import "global.css";
-@import "global.header-nav.css";
-@import "index.header-hero.css";
-@import "index.experience-nature.css";
-@import "index.customer-rewiews.css";
-@import "index.about-camping.css";
-@import "discount-section.css";
-@import "habbits.time.css";
-@import "about_camp-infrastructure.css";
-@import "habitations-main.css";
-@import "about-us.experience.css";
-@import "global.footer.css";
-@import "about.css";
-@import "cabin.css";
-@import "cabin.extra-pricing.partial.css";
-@import "cabin.guidelines.partial.css";
-@import "contacts.css";
-@import "habitations-main.partial.css";
-@import "modal-form.css";
-@import "about.us-information-ratings.css";
+@import 'global.css';
+@import 'global.header-nav.css';
+@import 'index.header-hero.css';
+@import 'index.experience-nature.css';
+@import 'index.customer-rewiews.css';
+@import 'index.about-camping.css';
+@import 'discount-section.css';
+@import 'habbits.time.css';
+@import 'about_camp-infrastructure.css';
+@import 'habitations-main.css';
+@import 'about-us.experience.css';
+@import 'global.footer.css';
+@import 'about.css';
+@import 'cabin.css';
+@import 'cabin.extra-pricing.partial.css';
+@import 'cabin.guidelines.partial.css';
+@import 'contacts.css';
+@import 'habitations-main.partial.css';
+@import 'modal-form.css';
+@import 'about.us-information-ratings.css';
+.index__header_background-container {
+  background-image: url('../img/header/index-header-background.png');
+  height: 100%;
+  width: 100%;
+}
