@@ -18,6 +18,7 @@
   --primary-text-color: #808080;
   --text-color: #686868;
   --alt-text-color: #ffffff;
+  --about-us-description-text-color: #ffffffc9;
   --description-text-color: #9092b3;
   --accent-color: #7c782f;
   --alt-font: Work sans;
@@ -32,18 +33,19 @@ img {
   max-width: 100%;
 }
 
-.header__container {
-  background-image: url('../img/header/index-header-background.png');
-  height: 100%;
-  width: 100%;
-}
-
 body {
   margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: var(--alt-text-color);
+  header {
+    padding: 1.5rem 0;
+  }
+  .header__hero-title {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--alt-text-color);
+  }
 }
 
 .container {
