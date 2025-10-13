@@ -5,7 +5,6 @@
   --color-line: #9ca3af;
   --color-olive: #7a7f3a;
 }
-
 .extras {
   width: 100%;
   max-width: 1200px;
@@ -14,7 +13,6 @@
   display: grid;
   gap: 48px;
 }
-
 .extras__title,
 .cabin-extras__title {
   font-size: 36px;
@@ -23,20 +21,21 @@
   margin-bottom: 32px;
   position: relative;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3777f13e05707b89d894b3be86f60e74375877b5
 line {
   stroke: var(--color-line);
   stroke-width: 1;
   opacity: 0.35;
 }
-
 .extra-pricing__item-header {
   display: flex;
   align-items: baseline;
   gap: 16px;
   margin-top: 32px;
 }
-
 .extra-pricing__item-name {
   font-size: 13px;
   text-transform: uppercase;
@@ -46,27 +45,23 @@ line {
   font-weight: 700;
   position: relative;
 }
-
 .extra-pricing__item-price {
   color: var(--color-olive);
   font-weight: 700;
   font-size: 13px;
 }
-
 .extra-pricing__item-description {
   margin-top: 12px;
   margin-bottom: 32px;
   font-size: 18px;
   color: var(--color-text);
 }
-
 .seasonal-pricing__item {
   display: flex;
   align-items: baseline;
   gap: 16px;
   margin-top: 32px;
 }
-
 .seasonal-pricing__item-name {
   font-size: 13px;
   text-transform: uppercase;
@@ -76,7 +71,6 @@ line {
   white-space: nowrap;
   position: relative;
 }
-
 .seasonal-pricing__item-price {
   color: var(--color-olive);
   font-weight: 700;
@@ -84,14 +78,12 @@ line {
   white-space: nowrap;
   font-size: 13px;
 }
-
 .seasonal-pricing__item-description {
   color: var(--color-text);
   margin-top: 12px;
   margin-bottom: 32px;
   font-size: 18px;
 }
-
 @media (min-width: 992px) {
   .extras {
     grid-template-columns: 1fr 1fr;
