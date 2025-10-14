@@ -1,9 +1,22 @@
 .experience {
   background-color: var(--section-accent-color);
-  padding: 90px 0;
-  position: absolute;
+  padding: 90px 30px;
 }
 .experience__icon {
-  color: var(--icon-tree-color);
+  color: var(--scroll-up-color);
 }
-
+.experience__transparent-word {
+  font-size: 36px;
+  color: var(--title-text-color);
+}
+.experience__title {
+  color: var(--title-text-color);
+  font-size: 34px;
+}
+.experience__list-heading {
+  font-size: 22px;
+}
+.experience__list-text {
+  font-size: 17px;
+  color: var(--primary-text-color);
+}
