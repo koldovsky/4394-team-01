@@ -1,9 +1,5 @@
 /* Kostiantyn Kobel */
 .global__header-hero {
-  padding: 2rem 0;
-  @media (min-width: 1024px) {
-    padding: 2rem 0 9rem;
-  }
   .header__hero-container {
     display: flex;
     flex-direction: column;
@@ -32,7 +28,7 @@
     }
     .header__hero-description {
       font-size: 1.1rem;
-      color: var(--about-us-description-text-color);
+      color: var(--global-description-text-color);
       padding: 0.8rem 1.5rem;
       line-height: 1.5;
       @media (min-width: 768px) {
