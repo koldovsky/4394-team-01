@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About-Us</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -25,7 +25,6 @@
         data-hx-get="about-us.header-hero.partial.html"
       ></div>
     </header>
-
     <main class="main">
       <section
         data-hx-trigger="load"
@@ -38,7 +37,6 @@
         data-hx-swap="outerHTML"
         data-hx-get="about-us.experience.partial.html"
       ></section>
-
       <section
         class="activity__gallery"
         data-hx-trigger="load"
@@ -58,7 +56,12 @@
         data-hx-get="about-us.event-venue.partial.html"
       ></section>
     </main>
-
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></nav>
+    </footer>
   </body>
 </html>

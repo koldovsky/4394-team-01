@@ -1,30 +1,55 @@
 /* Marjan Batkivskiy */
 .customer {
-    .customer__baner--video{
-        min-width: 320px;
+  .customer__baner--video {
+    min-width: 320px;
+  }
+
+  .customer-testimonials {
+    background-image: url('./../img/experience-nature/experiense_background_lining.jpg'),
+      linear-gradient(rgba(250, 249, 245, 0.93), rgba(250, 249, 245, 0.93));
+    background-blend-mode: lighten;
+    background-repeat: repeat;
+
+    .customer-rewiews__list {
+      list-style: none;
+
+      .customer-rewiews__item {
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-top: 40px;
+        padding-bottom: 70px;
+
+        .customer-rewiews__item--active {
+          opacity: 1;
+          transform: scale(1);
+        }
+
+        .customer-rewiews__stars {
+          fill: var(--accent-color);
+        }
+
+        .customer-rewiews__text {
+          color: var(--primary-text-color);
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+
+        .customer-rewiews__person {
+          color: var(--title-text-color);
+          font-weight: 700;
+        }
+      }
     }
 
-    .customer-testimonials {
-        background-image: url(
-            "./../img/experience-nature/Experiense_bacground_lining.jpg" 
-            );
-        background: rgba(249, 249, 247, 0.96);
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        .customer__button--left {
-
-        }
-        .customer-rewiews__list {
-            .customer-rewiews__item {
-                text-align: center;
-                .customer-rewiews__stars {
-                    /* width: 9px;
-                    height: 9px; */
-                    fill: var(--accent-color);
-                    
-                }
-            }
-        }
-    }
+    /* .customer__button {
+           
+          }
+          .customer__button--left {
+            
+          }
+          .customer__button--right {
+            
+          } */
+  }
 }

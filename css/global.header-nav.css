@@ -1,5 +1,5 @@
+/* Kostiantyn Kobel */
 .global__header {
-  /* === NAV === */
   .global__header-nav {
     display: grid;
     grid-template-columns: 1fr;
@@ -22,7 +22,6 @@
       grid-template-areas: 'logo menu description social';
       padding: 1.5rem 0;
     }
-    /* === LOGO === */
     .header__logo-link {
       display: inline-flex;
       align-items: center;
@@ -35,7 +34,6 @@
         width: 2.8rem;
       }
     }
-    /* === MENU === */
     .header__menu {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(100px, auto));
@@ -62,7 +60,6 @@
         }
       }
     }
-    /* === DESCRIPTION === */
     .header__description {
       font-size: 0.9rem;
       color: var(--description-text-color);
@@ -76,7 +73,6 @@
         font-size: 1rem;
       }
     }
-    /* === SOCIAL MEDIA === */
     .social__media {
       display: grid;
       grid-auto-flow: column;
@@ -90,7 +86,9 @@
         justify-self: start;
       }
       .social__media-link {
-        transition: fill 0.3s, transform 0.3s;
+        transition:
+          fill 0.3s,
+          transform 0.3s;
         @media (min-width: 1024px) {
           font-size: 0.5rem;
         }
