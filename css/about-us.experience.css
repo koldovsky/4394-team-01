@@ -1,5 +1,4 @@
-
- .experience {
+.experience {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -7,17 +6,16 @@
   display: flex;
 }
 .experience::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../img/about-us/experience-background.png");
+  background-image: url('../img/about-us/experience-background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 0;
 }
-
 .experience__container-wrapper {
   position: relative;
   z-index: 1;
@@ -82,7 +80,7 @@
 }
 .experience__list-img {
   display: flex;
-  background-color: #00aaff;
+  background-color: var(--link-hover-call-us-background-color);
   width: 70px;
   height: 70px;
   border-radius: 50%;
