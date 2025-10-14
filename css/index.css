@@ -6,7 +6,7 @@
 @import 'index.experience-nature.css';
 @import 'index.customer-rewiews.css';
 @import 'index.about-camping.css';
-@import 'index.camp-infrastructure.css';
+@import 'index.camp-infrastructure.partial.css';
 @import 'index.our-price-list.partial.css';
 @import 'discount-section.css';
 @import 'habbits.time.css';

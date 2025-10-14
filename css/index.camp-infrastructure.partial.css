@@ -2,7 +2,7 @@
 .main-title {
     color: #2d2d2d;
     font-family: "Work Sans", sans-serif;
-    font-size: 46px;
+    font-size: 34px;
 }
 .infrastructure-title{
     font-family: "Work Sans", sans-serif;
@@ -19,10 +19,11 @@
 .contact-text{
     font-family: "Inter", sans-serif;
     color: #808080;
+    font-size: 12px;
 }
 .contact-heading{
     font-family: "Work Sans", sans-serif;
-    font-size: 24px;
+    font-size: 22px;
 }
 .contact-email-text {
   font-family: 'Work Sans', sans-serif;
