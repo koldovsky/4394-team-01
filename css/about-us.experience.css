@@ -6,22 +6,22 @@
   color: var(--scroll-up-color);
 }
 .experience__transparent-word {
-  font-size: 36px;
+  font-size: 2.25rem;
   color: var(--title-text-color);
 }
 .experience__title {
-  font-size: 34px;
+  font-size: 2.125rem;
   color: var(--title-text-color);
 }
 .experience__subtitle {
-  font-size: 19px;
+  font-size: 1.1875rem;
   color: var(--link-hover-background-color);
 }
 .experience__list-heading {
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 .experience__list-text {
-  font-size: 17px;
+  font-size: 1.0625rem;
   color: var(--primary-text-color);
 }
 .experience__img-cinema {
