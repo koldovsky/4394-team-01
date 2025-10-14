@@ -23,14 +23,13 @@ li {
   /* Marjan Batkivskiy прохання не видаляти */
   font-family: 'Inter', sans-serif;
   --title-text-color: #2d2d2d;
-  --section-accent-color: #f9f9f7;
   --primary-text-color: #808080;
   --text-color: #686868;
   --alt-text-color: #ffffff;
   --global-description-text-color: #ffffffc9;
   --description-text-color: #9092b3;
   --accent-color: #7c782f;
-  --alt-font: Work sans;
+  --alt-font: 'Work sans', sans-serif;
   --scroll-up-color: #ea9449;
   --link-hover-call-us-background-color: #ffffff;
   --link-background-color: #7c782f;

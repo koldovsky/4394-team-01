@@ -1,43 +1,96 @@
-.experience {
-  background-color: var(--section-accent-color);
+
+ .experience {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  display: flex;
+}
+.experience::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/about-us/experience-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+.experience__container-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
   padding: 90px 30px;
+}
+.experience__icon,
+.experience__title,
+.experience__subtitle,
+.experience__list-heading,
+.experience__list-text,
+.experience__list-img,
+.icon {
+  position: relative;
+  z-index: 1;
 }
 .experience__icon {
   color: var(--scroll-up-color);
+  width: 50px;
+  height: 50px;
 }
-.experience__transparent-word {
-  font-size: 2.25rem;
-  color: var(--title-text-color);
+.experience__features {
+  position: absolute;
+  z-index: 1;
 }
 .experience__title {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
   font-size: 2.125rem;
   color: var(--title-text-color);
+  display: inline;
+  text-align: left;
+  z-index: 1;
 }
 .experience__subtitle {
   font-size: 1.1875rem;
+  font-weight: 500;
   color: var(--link-hover-background-color);
+  z-index: 1;
 }
 .experience__list-heading {
+  font-family: var(--alt-font);
+  font-weight: 600;
   font-size: 1.375rem;
+  z-index: 1;
+}
+.experience__list-content {
+  display: block;
 }
 .experience__list-text {
   font-size: 1.0625rem;
   color: var(--primary-text-color);
+  text-align: left;
 }
 .experience__img-cinema {
   box-sizing: border-box;
-  width: 100%;
-  height: auto;
+  flex-direction: column;
 }
 .experience__list-item {
   list-style: none;
 }
 .experience__list-img {
-  background-color: var( --link-hover-call-us-background-color);
+  display: flex;
+  background-color: #00aaff;
   width: 70px;
   height: 70px;
   border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .icon {
   width: 40px;
+  position: absolute;
 }
