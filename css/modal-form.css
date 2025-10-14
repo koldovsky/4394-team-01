@@ -1,31 +1,90 @@
-.modal-container {
-  padding: 0px;
-  margin: 0;
-  border: none;
-  background: rgba(0, 0, 0, 0.3);
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+:root {
+    --background-color: #fff;
+    --header-bg-overlay: rgba(0, 0, 0, 0.3);
+    --close-btn-icon-color: rgb(124, 120, 47);
+    --header-icon-color: rgb(234, 148, 73);
+    --header-title-color: #2d2d2d;
+    --header-subtitle-color: #808080;
+    --font-family-primary: 'Work Sans', sans-serif;
 }
 
-.modal {
-  background: white;
-  width: 770px;
-  flex-direction: column;
-  display: flex;
+
+.modal-reservation-container {
+    padding: 0px;
+    margin: 0;
+    border: none;
+    background: var(--header-bg-overlay);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-reservation {
+    background: var(--background-color);
+    width: 770px;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    padding: 0px 15px;
 }
 
 .modal__close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
 }
+
 
 .modal__close-btn-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  color: var(--close-btn-icon-color); 
+  pointer-events: none;
 }
 
-.modal-header {
-  flex-direction: column;
-  display: flex;
+.modal__section {
+    padding: 100px 0px;
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-header{
+    flex-direction: column;
+    display: flex;
+}
+
+.modal__header-icon {
+    color: var(--header-icon-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__header-title {
+    color: var(--header-title-color);
+    text-align: center;
+    font-size: 46px;
+    font-family: var(--font-family-primary);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.modal__header-subtitle {
+    color: var(--header-subtitle-color);
+    text-align: center;
 }
 
 .modal__header-title {
