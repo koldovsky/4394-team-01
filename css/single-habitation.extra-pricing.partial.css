@@ -1,0 +1,97 @@
+/*Made by Ostap Halushchak*/
+
+:root {
+  --color-text: #6b7280;
+  --color-line: #9ca3af;
+  --color-olive: #7a7f3a;
+}
+.single__habitation-extras {
+  width: 100%;
+  max-width: 75rem;
+  display: grid;
+  gap: 3rem;
+  margin-inline: auto;
+  padding: 1rem;
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 4.1rem;
+  }
+  .extras-title,
+  .seasonal__prices-title {
+    font-size: 2.3rem;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    position: relative;
+    @media (min-width: 992px) {
+      font-size: 2.8rem;
+    }
+  }
+  .extras-line {
+    stroke: var(--color-line);
+    stroke-width: 1;
+    opacity: 0.35;
+  }
+  .extra__pricing_item-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-top: 2rem;
+    .extra__pricing_item-name {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      color: var(--color-olive);
+      white-space: nowrap;
+      font-weight: 700;
+      position: relative;
+    }
+    .extra__pricing_item-price {
+      color: var(--color-olive);
+      font-weight: 700;
+      font-size: 0.8rem;
+    }
+    .extra__pricing_item-description {
+      margin-top: 0.75rem;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      color: var(--color-text);
+    }
+  }
+  .extras__seasonal-prices {
+    display: flex;
+    flex-direction: column;
+    .seasonal__pricing-item {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      margin-top: 2rem;
+      @media (min-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 4.1rem;
+      }
+      .seasonal__pricing_item-name {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        color: var(--color-olive);
+        font-weight: 700;
+        white-space: nowrap;
+        position: relative;
+      }
+      .seasonal__pricing_item-price {
+        color: var(--color-olive);
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        white-space: nowrap;
+        font-size: 0.8rem;
+      }
+      .seasonal__pricing_item-description {
+        color: var(--color-text);
+        margin-top: 0.75rem;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

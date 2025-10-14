@@ -12,8 +12,8 @@
 @import 'habbits.time.css';
 @import 'index.canvas-tents-cozy-cabins.css';
 @import 'global.footer.css';
-@import 'cabin.css';
-@import 'cabin.extra-pricing.partial.css';
-@import 'cabin.guidelines.partial.css';
+@import 'single-habitation.css';
+@import 'single-habitation.extra-pricing.partial.css';
+@import 'single-habitation.guidelines.partial.css';
 @import 'habitations-main.partial.css';
 @import 'modal-form.css';
