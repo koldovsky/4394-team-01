@@ -1,0 +1,113 @@
+/* Kononenko Vladyslav */
+.habitations {
+  color: var();
+  margin-top: 35px;
+  padding: 90px 0;
+  background-image: url(../img/habitations/habitations-background.png);
+  background-size: cover;
+  background-position: center;
+
+  .habitations-inner {
+    text-align: left;
+    padding: 0 24px;
+    flex: 1;
+    width: 100%;
+
+    .habitations__intro {
+      display: flex;
+      justify-content: space-around;
+      /*align-items: left; */
+      flex-direction: column;
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+
+      .habitations__intro-inner {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        /* justify-content: space-around; */
+        align-items: center;
+        flex-direction: column;
+
+        .habitations__description {
+          font-size: 1.06rem;
+        }
+
+        .habitations__intro-left-inner {
+          .habitations__intro-image {
+            min-width: 272px;
+          }
+
+          .habitations__intro-icon {
+            color: #ea9449;
+          }
+        }
+
+        .habitations__subtitle {
+          font-size: 1.19rem;
+        }
+
+        .habitations__title {
+          font-size: 2.125rem;
+        }
+      }
+    }
+
+    .habitations__list {
+      margin-top: 45px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-direction: column;
+
+      @media (min-width: 480px) {
+        flex-direction: row;
+      }
+
+      .habitations__item {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: flex;
+        flex-direction: column;
+        margin-bottom: 35px;
+        padding: 0 15px;
+
+        .habitations__item-image {
+          min-height: 175.28px;
+          min-width: 272px;
+
+          @media (min-width: 480px) {
+            min-width: 201px;
+            min-height: 129.51px;
+            background-image: 100%;
+          }
+        }
+
+        .habitations__item-link {
+          text-decoration: none;
+        }
+
+        .habitations__features {
+          /* text-align: center;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: left;
+                    width: 100%; */
+
+          @media (min-width: 480px) {
+            flex-direction: column;
+          }
+
+          .habitations__feature {
+            padding: 0 12px;
+            display: flex;
+            /* justify-content: space-between; */
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+}

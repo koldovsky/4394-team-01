@@ -1,0 +1,43 @@
+.experience {
+  background-color: var(--section-accent-color);
+  padding: 90px 30px;
+}
+.experience__icon {
+  color: var(--scroll-up-color);
+}
+.experience__transparent-word {
+  font-size: 36px;
+  color: var(--title-text-color);
+}
+.experience__title {
+  font-size: 34px;
+  color: var(--title-text-color);
+}
+.experience__subtitle {
+  font-size: 19px;
+  color: var(--link-hover-background-color);
+}
+.experience__list-heading {
+  font-size: 22px;
+}
+.experience__list-text {
+  font-size: 17px;
+  color: var(--primary-text-color);
+}
+.experience__img-cinema {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+.experience__list-item {
+  list-style: none;
+}
+.experience__list-img {
+  background-color: var( --link-hover-call-us-background-color);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.icon {
+  width: 40px;
+}

@@ -1,0 +1,47 @@
+.modal-container {
+  padding: 0px;
+  margin: 0;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  width: 770px;
+  flex-direction: column;
+  display: flex;
+}
+
+.modal__close-btn {
+}
+
+.modal__close-btn-icon {
+}
+
+.modal-header {
+  flex-direction: column;
+  display: flex;
+}
+
+.modal__header-title {
+}
+
+.modal__header-subtitle {
+}
+
+.modal__reservation {
+}
+
+.modal__reservation-form {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.modal__reservation-input {
+}
