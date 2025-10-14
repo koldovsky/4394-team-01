@@ -1,6 +1,8 @@
 @import 'global.css';
 @import 'global.header-nav.css';
 @import 'global.header-hero.css';
+@import 'single-habitation.header-hero.css';
+@import 'single-habitation.header-background.css';
 @import 'single-habitation.guidelines.partial.css';
 @import 'single-habitation.extra-pricing.partial.css';
 @import 'global.footer.css';
