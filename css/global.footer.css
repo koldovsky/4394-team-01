@@ -1,7 +1,7 @@
 /* Diana Bruskova */
 .footer {
   width: 100%;
-  background-color: #2d2d2d;
+  background-color: var(--title-text-color);
 }
 .footer__container { 
     margin: 0 auto;
@@ -60,7 +60,7 @@
             width: 100%;
             padding-left: 10px;
             margin-bottom: 20px;
-            color: #ffffffc9;
+            color: var(--global-description-text-color);
             font-size: 0.7rem;
             overflow-wrap: break-word;
             line-height: 1rem;
@@ -101,7 +101,7 @@
             font-size: 0.6rem;
             font-style: italic;
             overflow-wrap: break-word;
-            color: #ffffffc9;
+            color: var(--global-description-text-color);
             @media (min-width: 768px) {
                 font-size: 0.7rem;
             }
@@ -156,7 +156,7 @@
             .media__label {
                 display: block;
                 margin-bottom: 3px;
-                color: #ffffffc9;
+                color: var(--global-description-text-color);
                 font-size: 0.4rem;
                 text-transform: uppercase;
                 letter-spacing: 0.15rem; 
@@ -209,7 +209,7 @@
     margin-top: 1.5rem;
     margin-bottom: 1rem;
     font-size: 0.5rem;
-    color: #ffffffc9;
+    color: var(--global-description-text-color);
     @media (min-width: 1204px) {
         margin-top: 0;
         margin-bottom: 0rem;
