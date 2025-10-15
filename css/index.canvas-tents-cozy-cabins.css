@@ -1,113 +1,212 @@
 /* Kononenko Vladyslav */
 .habitations {
-  color: var();
-  margin-top: 35px;
-  padding: 90px 0;
-  background-image: url(../img/habitations/habitations-background.png);
-  background-size: cover;
-  background-position: center;
+    margin-top: 35px;
+    padding: 90px 0;
+    background-image: url(../img/habitations/habitations-background.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  .habitations-inner {
-    text-align: left;
-    padding: 0 24px;
-    flex: 1;
-    width: 100%;
-
-    .habitations__intro {
-      display: flex;
-      justify-content: space-around;
-      /*align-items: left; */
-      flex-direction: column;
-      @media (min-width: 768px) {
-        flex-direction: row;
-      }
-
-      .habitations__intro-inner {
-        margin-top: 20px;
+    .habitations-inner {
         display: flex;
-        justify-content: space-between;
-        /* justify-content: space-around; */
+        justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding: 0 24px;
+        flex: 1;
 
-        .habitations__description {
-          font-size: 1.06rem;
+        @media(min-width: 768px) {
+            padding: 0 32px;
+
+
         }
 
-        .habitations__intro-left-inner {
-          .habitations__intro-image {
-            min-width: 272px;
-          }
-
-          .habitations__intro-icon {
-            color: #ea9449;
-          }
+        @media(min-width: 992px) {
+            padding: 0 40px;
         }
 
-        .habitations__subtitle {
-          font-size: 1.19rem;
+        /* width: 100%; */
+        @media(min-width: 1280px) {
+            width: 1170px;
+            height: 973.7px;
         }
 
-        .habitations__title {
-          font-size: 2.125rem;
+        .habitations__intro {
+            text-align: left;
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            flex-direction: column;
+            max-width: 1170px;
+            max-height: 973.75;
+
+            @media (min-width: 768px) {
+                flex-direction: row;
+            }
+
+            .habitations__intro-left {
+                flex: 1;
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-around;
+                /* justify-content: space-around; */
+                align-items: center;
+                flex-direction: column;
+                /* width: 50%; */
+
+                .habitations__description {
+                    font-size: 1.06rem;
+                }
+
+                .habitations__intro-left-inner {
+                    .habitations__intro-image {
+                        min-width: 272px;
+
+                    }
+
+                    .habitations__intro-icon {
+                        color: var(--scroll-up-color);
+                    }
+                }
+
+                .habitations__title {
+                    font-size: 2.125rem;
+
+                    @media (min-width: 768px) {
+                        font-size: 2.5rem;
+                    }
+                }
+
+            }
+
+            .habitations__intro-right {
+                flex: 1;
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-around;
+                /* width: 50%; */
+                /* justify-content: space-around; */
+                align-items: center;
+                flex-direction: column;
+
+                .habitations__subtitle {
+                    font-size: 1.19rem;
+                    color: var(--text-color);
+                }
+            }
+
+            .habitations__description {
+                color: var(--primary-text-color);
+            }
+
+            .habitations__link {
+                color: var(--scroll-up-color);
+            }
         }
-      }
     }
 
     .habitations__list {
-      margin-top: 45px;
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-start;
-      flex-direction: column;
-
-      @media (min-width: 480px) {
-        flex-direction: row;
-      }
-
-      .habitations__item {
+        margin-top: 45px;
         display: flex;
-        flex: 1;
-        justify-content: center;
-        align-items: flex;
+        justify-content: space-around;
+        align-items: flex-start;
         flex-direction: column;
-        margin-bottom: 35px;
-        padding: 0 15px;
+
+        @media (min-width: 480px) {
+            flex-direction: row;
+        }
+
+        .habitations__item {
+            display: flex;
+            justify-content: center;
+            align-items: flex; 
+            /* change align to center? */
+            flex-direction: column;
+            margin-bottom: 35px;
+            padding: 0 15px;
+            flex: 1;
+            /* text-align: left; */
+
+
+            .habitations__item-link {
+                color: var(--title-text-color);
+            }
+        }
+
+        .habitations__item-title {
+            text-align: left;
+        }
 
         .habitations__item-image {
-          min-height: 175.28px;
-          min-width: 272px;
+            min-height: 175.28px;
+            min-width: 272px;
+            @media (min-width: 480px) {
+                min-width: 201px;
+                min-height: 129.51px;
+                /* background-image: 100%; */
 
-          @media (min-width: 480px) {
-            min-width: 201px;
-            min-height: 129.51px;
-            background-image: 100%;
-          }
+                @media (min-width: 1280px) {
+                    max-width: 570px;
+                }
+            }
         }
 
-        .habitations__item-link {
-          text-decoration: none;
+    }
+
+    .habitations__item-description {
+        color: var(--primary-text-color);
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .habitations__item-meta {
+        color: var(--accent-color);
+        margin-top: 10px;
+    }
+
+    .habitations__link-form {
+        color: var(--alt-text-color);
+        text-decoration: none;
+        font-size: 0.825rem;
+        margin-top: 50px;
+        padding: 10px;
+        background-color: var(--accent-color);
+    }
+
+    .habitations__divider {
+        .habitations__item-description {
+            white-space: normal;
         }
 
-        .habitations__features {
-          /* text-align: center;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: left;
-                    width: 100%; */
+    }
 
-          @media (min-width: 480px) {
-            flex-direction: column;
-          }
+    .habitations__features {
+        margin: 10px 0 10px 0;
+        /* text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: left;
+            width: 100%; */
 
-          .habitations__feature {
+        @media (min-width: 480px) {
+            flex-direction: row;
+        }
+
+        .habitations__feature {
             padding: 0 12px;
             display: flex;
             /* justify-content: space-between; */
             flex-direction: row;
-          }
+
+            .habitations__feature-text {
+                color: var(--text-color);
+            }
+
+            .habitations__feature-icon {
+                color: var(--scroll-up-color);
+            }
         }
-      }
     }
-  }
 }

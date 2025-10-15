@@ -1,0 +1,8 @@
+
+.faq__question {
+    color: var(--primary-title-color);
+}
+
+.faq__answer {
+    color: var(--primary-text-color);
+}
