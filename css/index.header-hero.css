@@ -1,0 +1,171 @@
+/* Kostiantyn Kobel */
+.index__header_hero-content {
+  .header__hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 2rem 1.5rem 0;
+    color: var(--alt-text-color);
+    margin-bottom: 0;
+    @media (min-width: 768px) {
+      max-width: 60%;
+      text-align: right;
+      padding: 2.5rem 4rem;
+      margin-left: auto;
+    }
+    @media (min-width: 1024px) {
+      padding: 4rem 6rem;
+    }
+    .header__hero_scroll-up {
+      color: var(--scroll-up-color);
+    }
+    .header__hero-coords {
+      font-size: 0.9rem;
+      letter-spacing: 0.1rem;
+      margin-bottom: 1rem;
+      @media (min-width: 1024px) {
+        font-size: 1rem;
+      }
+    }
+    .header__hero-title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 2rem;
+      text-align: center;
+      @media (min-width: 768px) {
+        font-size: 3.6rem;
+        text-align: center;
+      }
+      @media (min-width: 1024px) {
+        font-size: 5rem;
+      }
+    }
+    .header__hero-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.3rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+      .header__hero-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: var(--alt-text-color);
+        border: 2px solid var(--alt-text-color);
+        padding: 1.2rem 2rem;
+        border-radius: 0.2rem;
+        transition: all 0.3s ease;
+        margin-bottom: 0;
+        @media (min-width: 768px) {
+          font-size: 0.8rem;
+          padding: 0.9rem 1.8rem;
+        }
+        .header__hero-link svg {
+          text-align: center;
+        }
+      }
+      .book-link {
+        background-color: var(--accent-color);
+        color: var(--alt-text-color);
+        &:hover {
+          background-color: var(--scroll-up-color);
+          text-decoration: underline;
+        }
+      }
+      .call-us-link {
+        background: transparent;
+        padding: 1.1rem 1.6rem;
+        @media (min-width: 768px) {
+          font-size: 0.8rem;
+          padding: 0.7rem 1.2rem;
+        }
+        &:hover {
+          background-color: var(--alt-text-color);
+          color: var(--text-color);
+          text-decoration: underline;
+        }
+      }
+    }
+    .header__hero-scroll {
+      display: flex;
+      justify-content: center;
+      opacity: 0.7;
+      margin-top: 1.5rem;
+    }
+  }
+  .header__hero-footer {
+    .header__hero_price-lists {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      text-align: center;
+      color: var(--text-color);
+      font-size: 1.2rem;
+      padding: 0 1rem 1rem;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.4rem;
+        padding: 2rem 4rem;
+      }
+      .price__list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex: 1;
+        @media (min-width: 768px) {
+          flex-direction: row;
+          text-align: center;
+          &:nth-child(2) {
+            flex-direction: column;
+            flex: 1.5;
+          }
+        }
+        .price__list-link {
+          color: var(--alt-text-color);
+          text-transform: uppercase;
+          text-decoration: underline;
+          font-size: 0.9rem;
+          @media (min-width: 320px) {
+            font-size: 0.8rem;
+          }
+          @media (min-width: 768px) {
+            font-size: 1rem;
+          }
+        }
+      }
+      .price__list_scroll_down-img {
+        color: var(--alt-text-color);
+      }
+      .price__list_quote-img {
+        color: var(--scroll-up-color);
+        font-size: 2rem;
+        @media (min-width: 768px) {
+          justify-content: flex-end;
+        }
+      }
+      .price__list-description {
+        font-size: 0.9rem;
+        color: var(--list-description);
+        margin-top: auto;
+        @media (min-width: 768px) {
+          width: 60%;
+        }
+      }
+    }
+  }
+}

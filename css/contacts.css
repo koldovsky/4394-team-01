@@ -1,3 +1,6 @@
-@import "global.css";
-@import "contacts.faq.css";
-@import "contacts.contact-us.css";
+/* Kostiantyn Kobel */
+@import 'global.css';
+@import 'global.header-nav.css';
+@import 'global.header-hero.css';
+@import 'contacts.header-background.css';
+@import 'global.footer.css';

@@ -1,8 +1,6 @@
-/* Diana Bruskova__________09 10 2015-----15:25 (start) */
-/* Marjan Batkivskiy_______09 10 2025----=16:39 */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Diana Bruskova ------------- (start + @import url) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 *::after,
@@ -12,13 +10,28 @@
   box-sizing: border-box;
 }
 
+ul,
+li {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 :root {
   scroll-behavior: smooth;
-  font-family: "Inter", sans-serif;
-  --primary-title-color: #2d2d2d;
-  --alt-title-color: #FFFFFF;
+  /* Marjan Batkivskiy прохання не видаляти */
+  font-family: 'Inter', sans-serif;
+  --title-text-color: #2d2d2d;
   --primary-text-color: #808080;
-  --alt-text-color: #686868;
+  --text-color: #686868;
+  --alt-text-color: #ffffff;
+  --global-description-text-color: #ffffffc9;
+  --description-text-color: #9092b3;
+  --accent-color: #7c782f;
+  --alt-font: 'Work sans', sans-serif;
+  --scroll-up-color: #ea9449;
+  --list-description: #f3f3f3;
 }
 
 img {
@@ -31,4 +44,21 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--alt-text-color);
+  header {
+    padding: 1.5rem 0;
+  }
+  .header__hero-title {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--alt-text-color);
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link {
+  text-decoration: none;
 }

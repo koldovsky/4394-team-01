@@ -1,0 +1,78 @@
+/*Made by Ostap Halushchak*/
+
+:root {
+  --color-text: #6b7280;
+  --color-accent: #ea9449;
+  --color-line: #9ca3af;
+  --container-max: 1140px;
+  --spacing-x: 20px;
+}
+.single__habitation {
+  .single__habitation-content {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--spacing-x) 60px var(--spacing-x);
+    .single__habitation-guidelines {
+      padding-top: 40px;
+      padding-bottom: 12px;
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 800;
+      line-height: 1.15;
+      margin: 0;
+    }
+    line {
+      stroke: var(--color-line);
+      stroke-width: 1;
+      opacity: 0.35;
+    }
+    .single__habitation-list {
+      list-style: none;
+      padding: 24px 0 0 0;
+      margin: 0;
+      counter-reset: gl;
+      color: var(--color-text);
+      display: block;
+      @media (min-width: 992px) {
+        columns: 2;
+        column-gap: 4rem;
+      }
+    }
+    .single__habitation__list-item {
+      counter-increment: gl;
+      break-inside: avoid;
+      margin-bottom: 28px;
+      padding-right: 0;
+    }
+    .single__habitation-subtitle {
+      position: relative;
+      margin: 0 0 6px 0;
+      font-size: 1.125rem;
+      line-height: 1.3;
+      font-weight: 800;
+      color: var(--color-accent);
+      padding-left: 2.25rem;
+    }
+    .single__habitation-subtitle::before {
+      content: counter(gl, decimal-leading-zero) '. ';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: 800;
+      color: var(--color-accent);
+    }
+    .single__habitation-text {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.7;
+      padding-left: 2.25rem;
+      display: block;
+    }
+  }
+  .single__habitation-image {
+    text-align: center;
+    margin-top: 40px;
+    margin: 0 auto 60px auto;
+    width: 75%;
+    height: auto;
+  }
+}

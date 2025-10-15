@@ -1,0 +1,149 @@
+.about-us {
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 2rem;
+  margin: 90px 0 0 0;
+  position: relative;
+  padding-bottom: 90px;
+
+  .about-us__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .about-us__background-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 8vw;
+    color: var(--title-text-color);
+    opacity: 0.07;
+    font-weight: 700;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+    line-height: 1;
+    text-align: right;
+  }
+
+  @media (max-width: 767px) {
+    .about-us__background-title {
+      font-size: 16vw;
+      text-align: center;
+    }
+  }
+
+  .about-us__image-wrapper {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .about-us__content {
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  .about-us__title {
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 2.125rem;
+    color: var(--title-text-color);
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .about-us__icon-main {
+    color: var(--scroll-up-color);
+  }
+
+  .about-us__subtitle {
+    font-size: 1.1875rem;
+    color: var(--text-color);
+    margin-bottom: 16px;
+  }
+
+  .about-us__description {
+    font-size: 1.0625rem;
+    color: var(--primary-text-color);
+    margin-bottom: 16px;
+  }
+
+  .about-us__feature-icon {
+    fill: var(--accent-color);
+     flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .about-us__feature {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .about-us__feature-text {
+    display: block;
+  }
+
+  .about-us__text {
+    font-size: 1.0625rem;
+    color: var(--primary-text-color);
+    margin-bottom: 16px;
+  }
+
+   
+  .about-us__title,
+  .about-us__subtitle,
+  .about-us__description,
+  .about-us__feature,
+  .about-us__text {
+    margin-bottom: 24px;
+  }
+
+  .about-us__nav {
+    font-size: 0.825rem;
+    background-color: var(--link-background-color);
+  }
+
+  .about-us__button {
+  }
+
+  .about-us__stat-value {
+    font-family: 'Work Sans', sans-serif !important;
+    font-size: 3.875rem;
+    color: var(--scroll-up-color);
+    margin: 50px 0 0 0;
+    padding: 0 15px;
+  }
+
+  .about-us__stat-label {
+    font-size: 0.75rem;
+    color: var(--primary-text-color);
+    margin: 50px 0 0 0;
+    padding: 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 105 0px;
+
+    .about-us__content {
+      flex: 1 1 0;
+      text-align: left;
+      align-items: flex-start;
+    }
+
+    .about-us__title {
+      font-size: 46px;
+    }
+  }
+}

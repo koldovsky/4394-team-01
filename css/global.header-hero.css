@@ -1,0 +1,43 @@
+/* Kostiantyn Kobel */
+.global__header-hero {
+  .header__hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 5.6rem 1.5rem;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+    }
+    .header__hero-title {
+      font-size: 2.1rem;
+      padding: 0 1.5rem;
+      line-height: 1.2;
+      font-weight: 700;
+      text-align: left;
+      @media (min-width: 768px) {
+        width: 80%;
+        font-size: 2.5rem;
+      }
+      @media (min-width: 1024px) {
+        font-size: 3rem;
+      }
+    }
+    .header__hero-description {
+      font-size: 1.1rem;
+      color: var(--global-description-text-color);
+      padding: 0.8rem 1.5rem;
+      line-height: 1.5;
+      @media (min-width: 768px) {
+        flex-grow: 1;
+        max-width: 50%;
+      }
+      @media (min-width: 1024px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
