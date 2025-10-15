@@ -7,7 +7,7 @@
   width: 100%;
 
   @media (min-width: 768px) {
-    padding: 0px 30px 15px 30px;  
+    padding: 0px 45px 15px 30px;  
   }
 
   .experience__description {
@@ -21,6 +21,9 @@
     }
 
     .experience__description-img--container {
+      min-width: 270px;
+      min-height: 220px;
+      overflow: hidden;
       @media (min-width: 768px) {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -29,7 +32,7 @@
       }
 
       .experience__description-img {
-      width: 100%;
+      width: 120%;
       height: 100%;
       object-fit: cover;
       }
@@ -106,7 +109,7 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding: 15px 0px;
+    /* padding: 15px 0px; */
 
     @media (min-width: 768px) {
       
@@ -123,7 +126,7 @@
       @media (min-width: 768px) {
         font-size: 5.6rem;
         font-weight: 600;
-        padding: 190px 40px;
+        padding: 205px 40px;
         line-height: 6rem;
         /* letter-spacing: 1.1rem; */
         /* padding-left: 40px;
