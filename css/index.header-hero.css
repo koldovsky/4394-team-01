@@ -74,17 +74,17 @@
         }
       }
       .book-link {
-        background-color: var(--link-background-color);
+        background-color: var(--accent-color);
         color: var(--alt-text-color);
         &:hover {
-          background-color: var(--link-hover-background-color);
+          background-color: var(--text-color);
           text-decoration: underline;
         }
       }
       .call-us-link {
         background: transparent;
         &:hover {
-          background-color: var(--link-hover-call-us-background-color);
+          background-color: var(--alt-text-color);
           color: var(--text-color);
           text-decoration: underline;
         }
