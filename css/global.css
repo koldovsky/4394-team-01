@@ -9,7 +9,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 ul,
 li {
   box-sizing: border-box;
@@ -17,7 +16,6 @@ li {
   padding: 0;
   margin: 0;
 }
-
 :root {
   scroll-behavior: smooth;
   /* Marjan Batkivskiy прохання не видаляти */
@@ -33,12 +31,10 @@ li {
   --scroll-up-color: #ea9449;
   --list-description: #f3f3f3;
 }
-
 img {
   display: block;
   max-width: 100%;
 }
-
 body {
   margin: 0;
   min-height: 100vh;
@@ -48,17 +44,12 @@ body {
   header {
     padding: 1.5rem 0;
   }
-  .header__hero-title {
-    font-family: 'Work Sans', sans-serif;
-    color: var(--alt-text-color);
-  }
 }
-
 .container {
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-
 .link {
   text-decoration: none;
 }

@@ -1,5 +1,66 @@
 /* Kostiantyn Kobel */
-.global__header {
+.container {
+  gap: 1rem;
+  .navbar-brand {
+    @media (min-width: 992px) {
+      justify-content: center;
+    }
+    .header__logo-image {
+      width: 2.8rem;
+    }
+  }
+  .global__header-container {
+    text-align: center;
+    gap: 1rem;
+    .navbar-nav {
+      @media (min-width: 1024px) {
+      }
+      .nav-link {
+        color: var(--alt-text-color);
+        font-weight: 600;
+        transition: color 0.3s;
+        @media (min-width: 1024px) {
+          font-size: 0.9rem;
+        }
+        &:hover {
+          color: var(--color-accent);
+        }
+      }
+    }
+    .header__description {
+      font-size: 0.9rem;
+      color: var(--description-text-color);
+      margin: 3rem 0 1.5rem;
+      @media (min-width: 1024px) {
+        font-size: 1rem;
+        margin: 0;
+      }
+    }
+    .social__media {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      list-style: none;
+      padding: 0;
+      .social__media-link {
+        transition: fill 0.3s, transform 0.3s;
+        @media (min-width: 1024px) {
+          font-size: 0.5rem;
+        }
+        &:hover {
+          fill: var(--accent-color);
+          transform: scale(1.1);
+        }
+        .social__media-img {
+          color: var(--alt-text-color);
+        }
+      }
+    }
+  }
+}
+
+/* .global__header {
   .global__header-nav {
     display: grid;
     grid-template-columns: 1fr;
@@ -100,4 +161,4 @@
       }
     }
   }
-}
+} */
