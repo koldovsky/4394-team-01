@@ -7,7 +7,11 @@
   width: 100%;
 
   @media (min-width: 768px) {
-    padding: 0px 45px 15px 30px;  
+    padding: 0px 45px 15px 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0px 30px 15px 30px;
   }
 
   .experience__description {
@@ -32,16 +36,15 @@
       }
 
       .experience__description-img {
-      width: 120%;
-      height: 100%;
-      object-fit: cover;
+        width: 120%;
+        height: 100%;
+        object-fit: cover;
       }
     }
 
     .experience__description--container {
-
       background-image: url('./../img/experience-nature/experiense_background_lining.jpg'),
-        linear-gradient(rgba(250, 249, 245, 0.93), rgba(250, 249, 245, 0.93));
+        linear-gradient(rgba(250, 249, 245, 0.94), rgba(250, 249, 245, 0.94));
       background-blend-mode: lighten;
       background-repeat: repeat;
       background-size: cover;
@@ -52,7 +55,10 @@
         padding: 85px 68px 65px 60px;
         margin-top: 0;
         margin-left: 15px;
-        
+      }
+
+      @media (min-width: 1440px) {
+        padding: 80px 90px;
       }
 
       .experience__description-title {
@@ -109,11 +115,6 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    /* padding: 15px 0px; */
-
-    @media (min-width: 768px) {
-      
-    }
 
     .experience__baner--text {
       font-family: var(--alt-font);
@@ -128,9 +129,12 @@
         font-weight: 600;
         padding: 205px 40px;
         line-height: 6rem;
-        /* letter-spacing: 1.1rem; */
-        /* padding-left: 40px;
-        padding-right: 40px; */
+      }
+
+      @media (min-width: 1440px) {
+        font-size: 7.38rem;
+        padding: 250px 230px;
+        line-height: 8rem;
       }
     }
   }
