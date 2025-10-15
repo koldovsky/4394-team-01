@@ -1,0 +1,121 @@
+
+
+.camp-infrastructure {
+    padding: 0 1.5rem;
+    background-image: url('../img/infrastructure/Infrastructure.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+  
+  .camp-infrastructure__header {
+    text-align: start;
+}
+  
+  .camp-infrastructure__logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+  
+  .camp-infrastructure__title {
+    font-size: 2.13rem;
+    color: var(--title-text-color);
+}
+  
+  .camp-infrastructure__contact {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+  
+  .camp-infrastructure__contact-icon {
+    width: 50px;
+    flex-shrink: 0;
+}
+  
+  .camp-infrastructure__contact-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 5px;
+}
+  
+  .camp-infrastructure__contact-question {
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-text-color);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+}
+  
+  .camp-infrastructure__contact-heading {
+    font-size: 1.37rem;
+    color: var(--title-text-color);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+}
+  
+  .camp-infrastructure__contact-email {
+    font-size: 1.25rem;
+    font-family: "Work Sans", sans-serif;
+    color: var(--scroll-up-color);
+    font-weight: 400;
+    overflow-wrap: anywhere;
+    word-break: keep-all;
+}
+  
+  
+  .camp-infrastructure__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 60px;
+}
+  
+  .camp-infrastructure__icon {
+    width: 50px;
+}
+  
+  .camp-infrastructure__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+  
+  .camp-infrastructure__item-title {
+    color: var(--title-text-color);
+    font-size: 1.38rem;
+}
+  
+  .camp-infrastructure__item-text {
+    font-size: 1.06rem;
+    color: var(--primary-text-color);
+}
+.camp-infrastructure__grid {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 420px) {
+    .camp-infrastructure__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 990px) {
+    .camp-infrastructure__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .camp-infrastructure__contact {
+        margin-top: 30px;
+
+    }
+
+    .camp-infrastructure__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
