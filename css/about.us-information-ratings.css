@@ -9,7 +9,6 @@
   margin: 90px 0 0 0;
   position: relative;
   padding-bottom: 90px;
-
   .about-us__image {
     width: 100%;
     height: auto;
@@ -17,7 +16,6 @@
     padding: 0 20px;
     box-sizing: border-box;
   }
-
   .about-us__background-title {
     position: absolute;
     top: 0;
@@ -32,10 +30,7 @@
     user-select: none;
     line-height: 1;
     text-align: right;
-  }
-
-  @media (max-width: 767px) {
-    .about-us__background-title {
+    @media (max-width: 767px) {
       font-size: 16vw;
       text-align: center;
     }
@@ -76,7 +71,7 @@
 
   .about-us__feature-icon {
     fill: var(--accent-color);
-     flex-shrink: 0;
+    flex-shrink: 0;
     margin-top: 2px;
   }
 
@@ -98,7 +93,6 @@
     margin-bottom: 16px;
   }
 
-   
   .about-us__title,
   .about-us__subtitle,
   .about-us__description,
