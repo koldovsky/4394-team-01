@@ -10,7 +10,7 @@
     padding: 0px 45px 15px 30px;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1200px) {
     padding: 0px 30px 15px 30px;
   }
 
@@ -57,7 +57,7 @@
         margin-left: 15px;
       }
 
-      @media (min-width: 1440px) {
+      @media (min-width: 1200px) {
         padding: 80px 90px;
       }
 
@@ -131,7 +131,7 @@
         line-height: 6rem;
       }
 
-      @media (min-width: 1440px) {
+      @media (min-width: 1200px) {
         font-size: 7.38rem;
         padding: 250px 230px;
         line-height: 8rem;
