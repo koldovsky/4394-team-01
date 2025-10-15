@@ -1,0 +1,175 @@
+.special-offers {
+    background: rgb(249, 249, 247);
+    padding: 90px 24px;
+    margin: 90px 0;
+
+    .special-offers__container {
+        margin: 0 auto;
+        width: 100%;
+        @media (min-width: 1024px) {
+            max-width: 1200px;
+        }
+
+        .special-offers__header {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-bottom: 45px;
+            @media (min-width: 768px) {
+                flex-direction: row;
+            }
+            .special-offers__title-area {
+                margin-bottom: 50px;
+
+                @media (min-width: 768px) {
+                    width: 50%;
+                }
+                .special-offers__title-icon {
+                    display: block;
+                    color: rgb(234, 148, 73);
+                    width: 50px;
+                    margin: 0 0 20px 0;
+                }
+                .special-offers__title-block {
+                    position: relative;
+
+                    .special-offers__title-transparent {
+                        position: absolute;
+                        left: 0;
+                        top: -40px;
+                        /* color: red; */
+                        color: rgb(245, 245, 240);
+                        font-size: 34px;
+                        letter-spacing: 2px;
+                        font-family: "Work Sans", sans-serif;
+                        font-weight: 600;
+                    }
+                    .special-offers__title {
+                        color: #2d2d2d;
+                        font-size: 34px;
+                        font-family: "Work Sans", sans-serif;
+                        font-weight: 600;
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
+            }
+            .special-offers__subtitle-area {
+                width: 50%;
+                @media (min-width: 768px) {
+                    width: 50%;
+                }
+                .subtitle--primary {
+                    color: rgb(104, 104, 104);
+                    font-size: 19px;
+                    line-height: 28.5px;
+                    font-weight: 500;
+                    margin-bottom: 25px;
+                }
+                p {
+                    font-size: 17px;
+                    line-height: 25.5px;
+                    color: rgb(128, 128, 128);
+                }
+            }
+        }
+
+        .special-offers__list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            @media (min-width: 768px) {
+                flex-direction: row;
+                justify-content: center;
+            }
+            .special-offers__item {
+                margin-bottom: 50px;
+                width: 100%;
+                max-width: 421px;
+                padding: 0 15px;
+                @media (min-width: 768px) {
+                    width: 50%;
+                    max-width: none;
+                }
+                @media (min-width: 1024px) {
+                    width: 100%;
+                    max-width: 376px;
+                }
+                .special-offers__item-area {
+                    background: rgb(255, 255, 255);
+                    padding: 31px;
+                    width: 100%;
+                    @media (min-width: 1024px) {
+                        min-height: 438px;
+                    }
+
+                    .special-offers__tag {
+                        color: rgb(128, 128, 128);
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 16.8px;
+                        margin-bottom: 20px;
+                        text-transform: uppercase;
+                        letter-spacing: 3px;
+                    }
+                    .special-offers__name {
+                        color: rgb(45, 45, 45);
+                        font-family: "Work Sans", sans-serif;
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 28.6px;
+                        padding-bottom: 15px;
+                        border-bottom: 1px solid rgb(236, 236, 236);
+                    }
+                    .special-offers__list-advantages {
+                        padding-top: 15px;
+
+                        .special-offers__item-advantage {
+                            display: flex;
+                            align-items: flex-start;
+                            margin-bottom: 16px;
+                            
+                            span {
+                                display: inline;
+                                width: 20px;
+                                height: 17px;
+                                color: rgb(234, 148, 73);
+                            }
+
+                            p {
+                                color: rgb(128, 128, 128);
+                                font-size: 17px;
+                                line-height: 25.6px;
+                                margin-left: 10px;
+                            }
+
+                            &:last-child {
+                                margin-bottom: 40px;
+                            }
+                        }
+                    }
+                    .special-offers__btn {
+                        background: rgb(124, 120, 47);
+                        font-size: 12px;
+                        line-height: 15.6px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        color: rgb(255, 255, 255);
+                        width: 100%;
+                        max-width: 117px;
+                        padding: 15px;
+                        text-align: center;
+                        display: block;
+
+                        &:hover {
+                            background: rgb(84, 81, 32);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

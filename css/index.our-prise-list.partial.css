@@ -1,0 +1,144 @@
+
+.campfire-section {
+  font-family: "Poppins", Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.campfire-section__hero {
+  position: relative;
+  background: url("https://res2.weblium.site/res/65a4dd651ae638000e4a167b/65c4be4d350ece000feaa9c6_optimized_1168.webp")
+    center / cover no-repeat;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.campfire-section__hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.campfire-section__hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  padding: 1rem;
+}
+
+.campfire-section__title {
+  font-size: clamp(1.5rem, 4vw, 2.8rem);
+  line-height: 1.3;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+.campfire-section__btn {
+  display: inline-block;
+  background-color: #bda75f;
+  color: #fff;
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  transition: background 0.3s ease;
+}
+
+.campfire-section__btn:hover {
+  background-color: #9e8c4a;
+}
+
+.campfire-section__prices {
+  padding: clamp(2rem, 6vw, 4rem) 0;
+  background-color: #fff;
+}
+
+.campfire-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 4vw, 2rem);
+}
+
+.campfire-section__price-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: start;
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.campfire-section__price-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.campfire-section__price-info {
+  width: 100%;
+}
+
+.campfire-section__price-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.campfire-section__price-subtitle {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.campfire-section__price-table {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.campfire-section__price-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 0.6rem 0;
+  font-size: clamp(0.85rem, 1.8vw, 1rem);
+  transition: background 0.2s ease;
+}
+
+.campfire-section__price-item:hover {
+  background: #fafafa;
+}
+
+.campfire-section__item-name {
+  font-weight: 500;
+}
+
+.campfire-section__item-price {
+  color: #bda75f;
+  font-weight: 600;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .campfire-section__hero {
+    min-height: 40vh;
+  }
+
+  .campfire-section__price-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .campfire-section__price-info {
+    text-align: center;
+  }
+}
