@@ -3,19 +3,19 @@
   .header__hero-content {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 16px;
     align-items: center;
     justify-content: center;
-    padding: 2rem 1.5rem 0;
+    padding: 32px 24px 0;
     color: var(--alt-text-color);
     margin-bottom: 20px;
     @media (min-width: 768px) {
-      padding: 2.5rem 0;
+      padding: 40px 0;
       display: flex;
       justify-content: flex-end;
     }
     @media (min-width: 1024px) {
-      padding: 4rem 0 0;
+      padding: 64px 0 0;
     }
     .header__hero_scroll-up {
       color: var(--scroll-up-color);
@@ -23,7 +23,7 @@
     .header__hero-coords {
       font-size: 0.9rem;
       letter-spacing: 0.1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 16px;
       @media (min-width: 768px) {
         justify-content: right;
       }
@@ -37,7 +37,7 @@
       font-weight: 700;
       text-transform: uppercase;
       line-height: 1.1;
-      margin-bottom: 2rem;
+      margin-bottom: 32px;
       text-align: center;
       @media (min-width: 768px) {
         font-size: 3.6rem;
@@ -53,8 +53,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
-      margin-bottom: 1.3rem;
+      gap: 16px;
+      margin-bottom: 20px;
       font-weight: 600;
       font-size: 0.9rem;
       @media (min-width: 370px) {
@@ -68,48 +68,26 @@
       .header__hero-link {
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 8px;
         text-decoration: none;
         color: var(--alt-text-color);
         border: 2px solid var(--alt-text-color);
-        padding: 1.2rem 2rem;
-        border-radius: 0.2rem;
+        padding: 20px 32px;
         transition: all 0.3s ease;
         margin-bottom: 0;
         @media (min-width: 768px) {
           font-size: 0.8rem;
-          padding: 0.9rem 1.8rem;
+          padding: 16px 30px;
         }
         .header__hero-link svg {
           text-align: center;
         }
       }
-      .book-link {
-        display: inline-block;
-        background-color: var(--accent-color);
-        margin-bottom: 25px;
-        border: 2px solid var(--accent-color);
-        cursor: pointer;
-        padding: 15px 30px;
-        &:hover {
-          background-color: var(--scroll-up-color);
-          text-decoration: underline;
-        }
-      }
-      .call-us-link {
-        display: inline-block;
+      .header__hero_btn {
         background: transparent;
-        margin-bottom: 25px;
-        border: 2px solid var(--alt-text-color);
-        cursor: pointer;
-        padding: 15px 30px;
-        @media (min-width: 768px) {
-          font-size: 0.8rem;
-        }
         &:hover {
           background-color: var(--alt-text-color);
           color: var(--text-color);
-          text-decoration: underline;
         }
       }
     }
@@ -117,7 +95,7 @@
       display: flex;
       justify-content: center;
       opacity: 0.7;
-      margin-top: 1.5rem;
+      margin-top: 24px;
     }
   }
   .header__hero-footer {
@@ -125,23 +103,23 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 2rem;
+      gap: 32px;
       text-align: center;
       color: var(--text-color);
       font-size: 1.2rem;
-      padding: 0 1rem 1rem;
+      padding: 0 16px 16px;
       @media (min-width: 768px) {
         flex-direction: row;
         justify-content: space-between;
         font-size: 0.4rem;
-        padding: 2rem 4rem;
+        padding: 32px 64px;
       }
       .price__list-item {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        gap: 3rem;
+        gap: 48px;
         flex: 1;
         @media (min-width: 768px) {
           flex-direction: row;

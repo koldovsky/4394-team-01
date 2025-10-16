@@ -8,13 +8,11 @@
   .customer__baner--video {
     min-width: 320px;
   }
-
   .customer-testimonials {
     padding: 0px 10px;
 
     .customer-rewiews__list {
       list-style: none;
-
       .customer-rewiews__item {
         height: 360px;
         text-align: center;
@@ -41,7 +39,6 @@
         .customer-rewiews__stars {
           fill: var(--accent-color);
         }
-
         .customer-rewiews__text {
           color: var(--primary-text-color);
           padding: 20px 0px;
@@ -50,7 +47,6 @@
             margin-bottom: 5px;
           }
         }
-
         .customer-rewiews__person {
           color: var(--title-text-color);
           font-weight: 700;
@@ -119,9 +115,3 @@
     .carousel-control-next {
       transform: translate(-50%, -50%);
     }
-
-    /* .carousel-control-prev-icon {
-      transform: rotate(180deg);
-    } */
-  }
-}

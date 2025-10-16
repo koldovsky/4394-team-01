@@ -1,6 +1,6 @@
 /* Kostiantyn Kobel */
 .global__header {
-  gap: 1rem;
+  gap: 16px;
   justify-content: center;
   .navbar-brand {
     @media (min-width: 992px) {
@@ -13,7 +13,7 @@
   .global__header-container {
     justify-content: center;
     text-align: center;
-    gap: 1rem;
+    gap: 16px;
     .navbar-nav {
       @media (min-width: 1024px) {
       }
@@ -25,14 +25,14 @@
           font-size: 0.9rem;
         }
         &:hover {
-          color: var(--color-accent);
+          color: var(--scroll-up-color);
         }
       }
     }
     .header__description {
       font-size: 0.9rem;
       color: var(--description-text-color);
-      margin: 3rem 0 1.5rem;
+      margin: 48px 0 24px;
       @media (min-width: 1024px) {
         font-size: 1rem;
         margin: 0;
@@ -64,4 +64,3 @@
     }
   }
 }
-
