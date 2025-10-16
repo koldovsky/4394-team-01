@@ -85,7 +85,12 @@
         transform: scale(1.1);
       }
       .social__media-img {
-        color: var(--alt-text-color);
+        fill: var(--alt-text-color);
+
+        &:hover {
+          fill: var(--description-text-color);
+          transform: scale(1.1);
+        }
       }
     }
   }
