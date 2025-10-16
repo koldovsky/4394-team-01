@@ -1,5 +1,5 @@
 /* --natalka__tkhoriv-- */
-.experience {
+/* .experience {
   position: relative;
   max-width: 75rem;
   width: 100%;
@@ -83,8 +83,8 @@
   align-items: start;
   box-sizing: border-box;
   color: var(--scroll-up-color);
-  width: 3.1rem;
-  height: 3.1rem;
+  width: 3.125rem;
+  height: 3.125rem;
   z-index: 2;
   flex-shrink: 0;
 }
@@ -230,4 +230,4 @@
   .experience__list-icon {
     width: 2.5rem;
   }
-}
+} */
