@@ -13,6 +13,15 @@
     .header__logo-image {
       width: 2.8rem;
     }
+    .navbar-toggler.navbar-toggler-icon-line:nth-child(1) {
+      transform: translateY(0) rotate(45deg);
+    }
+    .navbar-toggler.navbar-toggler-icon-line:nth-child(2) {
+      opacity: 0;
+    }
+    .navbar-toggler.navbar-toggler-icon-line:nth-child(3) {
+      transform: translateY(0) rotate(-45deg);
+    }
     .navbar-collapse.show {
       background-color: var(--title-text-color);
       position: absolute;
