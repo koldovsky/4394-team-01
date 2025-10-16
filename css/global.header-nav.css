@@ -1,65 +1,82 @@
 /* Kostiantyn Kobel */
 .global__header {
-  gap: 16px;
-  justify-content: center;
+  position: relative;
+  width: 100%;
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    transition: background-color 0.3s ease;
+  }
   .navbar-brand {
-    @media (min-width: 992px) {
-      justify-content: center;
-    }
     .header__logo-image {
       width: 2.8rem;
     }
+    .navbar-collapse.show {
+      background-color: var(--title-text-color);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
-  .global__header-container {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    .nav-link {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      color: var(--alt-text-color);
+      font-weight: 600;
+      transition: color 0.3s ease;
+      @media (min-width: 1024px) {
+        font-size: 0.9rem;
+      }
+      &:hover {
+        color: var(--scroll-up-color);
+      }
+    }
+  }
+  .header__description {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: var(--description-text-color);
+    margin: 48px 0 24px;
+    @media (min-width: 1024px) {
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+  .social__media {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
-    gap: 16px;
-    .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @media (min-width: 992px) {
+    }
+    .social__media-link {
+      transition: fill 0.3s, transform 0.3s;
       @media (min-width: 1024px) {
+        font-size: 0.5rem;
       }
-      .nav-link {
+      &:hover {
+        fill: var(--accent-color);
+        transform: scale(1.1);
+      }
+      .social__media-img {
         color: var(--alt-text-color);
-        font-weight: 600;
-        transition: color 0.3s;
-        @media (min-width: 1024px) {
-          font-size: 0.9rem;
-        }
-        &:hover {
-          color: var(--scroll-up-color);
-        }
-      }
-    }
-    .header__description {
-      font-size: 0.9rem;
-      color: var(--description-text-color);
-      margin: 48px 0 24px;
-      @media (min-width: 1024px) {
-        font-size: 1rem;
-        margin: 0;
-      }
-    }
-    .social__media {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      text-align: center;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      @media (min-width: 992px) {
-      }
-      .social__media-link {
-        transition: fill 0.3s, transform 0.3s;
-        @media (min-width: 1024px) {
-          font-size: 0.5rem;
-        }
-        &:hover {
-          fill: var(--accent-color);
-          transform: scale(1.1);
-        }
-        .social__media-img {
-          color: var(--alt-text-color);
-        }
       }
     }
   }
