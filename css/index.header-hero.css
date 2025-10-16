@@ -73,7 +73,6 @@
         color: var(--alt-text-color);
         border: 2px solid var(--alt-text-color);
         padding: 20px 32px;
-        border-radius: 0.2rem;
         transition: all 0.3s ease;
         margin-bottom: 0;
         @media (min-width: 768px) {
@@ -84,27 +83,8 @@
           text-align: center;
         }
       }
-      .book-link {
-        display: inline-block;
-        background-color: var(--accent-color);
-        margin-bottom: 25px;
-        border: 2px solid var(--accent-color);
-        cursor: pointer;
-        padding: 15px 30px;
-        &:hover {
-          background-color: var(--scroll-up-color);
-        }
-      }
-      .call-us-link {
-        display: inline-block;
+      .header__hero_btn {
         background: transparent;
-        margin-bottom: 25px;
-        border: 2px solid var(--alt-text-color);
-        cursor: pointer;
-        padding: 15px 30px;
-        @media (min-width: 768px) {
-          font-size: 0.8rem;
-        }
         &:hover {
           background-color: var(--alt-text-color);
           color: var(--text-color);
