@@ -20,6 +20,7 @@ li {
   scroll-behavior: smooth;
   /* Marjan Batkivskiy прохання не видаляти */
   font-family: 'Inter', sans-serif;
+  --alt-font: 'Work sans', sans-serif;
   --title-text-color: #2d2d2d;
   --primary-text-color: #808080;
   --text-color: #686868;
@@ -27,9 +28,16 @@ li {
   --global-description-text-color: #ffffffc9;
   --description-text-color: #9092b3;
   --accent-color: #7c782f;
-  --alt-font: 'Work sans', sans-serif;
   --scroll-up-color: #ea9449;
   --list-description: #f3f3f3;
+  --color-text: #6b7280;
+  --color-line: #9ca3af;
+  --color-olive: #7a7f3a;
+  --header-bg-overlay: rgba(0, 0, 0, 0.3);
+  --close-btn-icon-color: rgb(124, 120, 47);
+  --header-icon-color: rgb(234, 148, 73);
+  --container-max: 1140px;
+  --spacing-x: 20px;
 }
 img {
   display: block;

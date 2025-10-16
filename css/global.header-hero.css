@@ -4,17 +4,17 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
-    padding: 5.6rem 1.5rem;
+    gap: 16px;
+    padding: 90px 24px;
     @media (min-width: 768px) {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      gap: 2rem;
+      gap: 32px;
     }
     .header__hero-title {
       font-size: 2.1rem;
-      padding: 0 1.5rem;
+      padding: 0 24px;
       line-height: 1.2;
       font-weight: 700;
       text-align: left;
@@ -29,7 +29,7 @@
     .header__hero-description {
       font-size: 1.1rem;
       color: var(--global-description-text-color);
-      padding: 0.8rem 1.5rem;
+      padding: 13px 24px;
       line-height: 1.5;
       @media (min-width: 768px) {
         flex-grow: 1;
