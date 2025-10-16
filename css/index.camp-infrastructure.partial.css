@@ -1,15 +1,15 @@
-
-
 .camp-infrastructure {
     padding: 3rem 1.5rem;
-    background-image: url('../img/infrastructure/Infrastructure.png');
+    background-image: url('../img/infrastructure/infrastructure.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position-y: 30px;
     background-position-x: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
 
 }
-  
   .camp-infrastructure__header {
     text-align: start;
 }
@@ -18,14 +18,11 @@
     width: 50px;
     height: auto;
     margin-bottom: 1rem;
-}
-  
-  .camp-infrastructure__title {
+}.camp-infrastructure__title {
     font-size: 2.13rem;
     color: var(--title-text-color);
-}
-  
-  .camp-infrastructure__contact {
+} 
+.camp-infrastructure__contact {
     display: flex;
     align-items: flex-start;
     gap: 1rem;
@@ -122,3 +119,4 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
