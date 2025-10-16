@@ -46,35 +46,48 @@
   z-index: 1;
 }
 .experience__icon {
-  position: absolute;
+  position: relative;
+  /* top: 120px;
+  left: 30px; */
   display: flex;
   justify-content: start;
   box-sizing: border-box;;
   color: var(--scroll-up-color);
-  width: 50px;
-  height: 50px;
-   margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  max-width: 50px;
+  max-height: 50px;
   z-index: 2;
 }
 .experience__features {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
   z-index: 1;
 }
+.experience__text-section {
+  display: flex;
+  position: absolute;
+  align-items: start;
+  flex-direction: column;
+  margin-right: 30px;
+  top: 120px;
+  left: 30px;
+  z-index: 1;
+}
 .experience__title {
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--alt-font);
   font-weight: 600;
   font-size: 46px;
   color: var(--title-text-color);
   word-wrap: break-word;
   display: block;
-  line-height: 55.2px;
+  margin-top: 20px;
   z-index: 1;
 }
 .experience__subtitle {
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
   font-size: 19px;
   font-weight: 400;
   font-stretch: 100%;
@@ -83,9 +96,11 @@
   z-index: 1;
 }
 .experience__list-heading {
-  font-family: var(--title-text-color);
+  font-family: var(--alt-font);
+  font-kerning: auto;
   font-weight: 600;
-  font-size: 1.375rem;
+  font-size: 24px;
+  line-height: 31.2px;
   z-index: 1;
 }
 .experience__list-text {
@@ -95,16 +110,19 @@
   text-align: left;
 }
 .experience__img-cinema {
+  display: flex;
   position: absolute;
+  overflow: hidden;
   right: 0;
   top: 0;
   width: 50%;
   height: 100%;
   z-index: 1;
 }
-.experience__img-cinema img{
+.experience__img-cinema img {
 width: auto;
 height: 100%;
+object-fit: cover;
 display: block;
 }
 .experience__list-item {
@@ -114,15 +132,15 @@ display: block;
 .experience__list-img {
   display: flex;
   background-color: var(--alt-text-color);
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 1;
 }
-.icon {
-  width: 40px;
+.experience__list-icon {
+  width: 60px;
   position: absolute;
 }
