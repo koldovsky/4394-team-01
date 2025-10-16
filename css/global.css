@@ -20,6 +20,7 @@ li {
   scroll-behavior: smooth;
   /* Marjan Batkivskiy прохання не видаляти */
   font-family: 'Inter', sans-serif;
+  --alt-font: 'Work sans', sans-serif;
   --title-text-color: #2d2d2d;
   --primary-text-color: #808080;
   --text-color: #686868;
@@ -27,9 +28,11 @@ li {
   --global-description-text-color: #ffffffc9;
   --description-text-color: #9092b3;
   --accent-color: #7c782f;
-  --alt-font: 'Work sans', sans-serif;
   --scroll-up-color: #ea9449;
   --list-description: #f3f3f3;
+  --background-button-carusel: #4b4b4a;
+  --alt-arrow-button-carusel: #6e6e6d;
+  
 }
 img {
   display: block;
@@ -42,13 +45,31 @@ body {
   flex-direction: column;
   background-color: var(--alt-text-color);
   header {
-    padding: 1.5rem 0;
+  padding: 1.5rem 0;
   }
 }
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+.global__button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  margin-bottom: 25px;
+  border: 2px solid var(--accent-color);
+  cursor: pointer;
+  padding: 15px 30px;
+  &:hover {
+    background-color: var(--scroll-up-color);
+    border: 2px solid var(--scroll-up-color);
+  }
+  .global__button-text {
+    color: var(--alt-text-color);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+  }
 }
 .link {
   text-decoration: none;

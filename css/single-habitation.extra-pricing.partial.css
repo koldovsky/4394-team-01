@@ -1,27 +1,21 @@
 /*Made by Ostap Halushchak*/
-
-:root {
-  --color-text: #6b7280;
-  --color-line: #9ca3af;
-  --color-olive: #7a7f3a;
-}
 .single__habitation-extras {
   width: 100%;
-  max-width: 75rem;
+  max-width: 1200px;
   display: grid;
-  gap: 3rem;
+  gap: 48px;
   margin-inline: auto;
-  padding: 1rem;
+  padding: 16px;
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr;
-    gap: 4.1rem;
+    gap: 65px;
   }
   .extras-title,
   .seasonal__prices-title {
     font-size: 2.3rem;
     line-height: 1.1;
     font-weight: 800;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
     position: relative;
     @media (min-width: 992px) {
       font-size: 2.8rem;
@@ -35,8 +29,8 @@
   .extra__pricing_item-header {
     display: flex;
     align-items: baseline;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 16px;
+    margin-top: 32px;
     .extra__pricing_item-name {
       font-size: 0.8rem;
       text-transform: uppercase;
@@ -64,11 +58,11 @@
     .seasonal__pricing-item {
       display: flex;
       align-items: baseline;
-      gap: 1rem;
-      margin-top: 2rem;
+      gap: 16px;
+      margin-top: 32px;
       @media (min-width: 992px) {
         grid-template-columns: 1fr 1fr;
-        gap: 4.1rem;
+        gap: 65px;
       }
       .seasonal__pricing_item-name {
         font-size: 0.8rem;
@@ -88,8 +82,7 @@
       }
       .seasonal__pricing_item-description {
         color: var(--color-text);
-        margin-top: 0.75rem;
-        margin-bottom: 2rem;
+        margin: 12px 0 32px;
         font-size: 1.1rem;
       }
     }
