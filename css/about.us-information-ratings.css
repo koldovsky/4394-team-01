@@ -70,7 +70,7 @@
   .about-us__feature-icon {
     fill: var(--accent-color);
     flex-shrink: 0;
-    
+    margin-top: 2px;
   }
 
   .about-us__feature {
