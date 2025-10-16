@@ -20,11 +20,6 @@
         padding-top: 40px;
         padding-bottom: 70px;
 
-        .customer-rewiews__item--active {
-          opacity: 1;
-          transform: scale(1);
-        }
-
         .customer-rewiews__stars {
           fill: var(--accent-color);
         }
@@ -41,15 +36,5 @@
         }
       }
     }
-
-    /* .customer__button {
-           
-          }
-          .customer__button--left {
-            
-          }
-          .customer__button--right {
-            
-          } */
   }
 }

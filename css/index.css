@@ -6,13 +6,9 @@
 @import 'index.experience-nature.css';
 @import 'index.customer-rewiews.css';
 @import 'index.about-camping.css';
-@import 'index.camp-infrastructure.partial.css';
-@import 'index.our-price-list.partial.css';
-@import 'discount-section.css';
-@import 'habbits.time.css';
+@import 'index.promo-discount.css';
 @import 'index.canvas-tents-cozy-cabins.css';
-@import 'global.footer.css';
-@import 'single-habitation.css';
-@import 'single-habitation.extra-pricing.partial.css';
-@import 'single-habitation.guidelines.partial.css';
+@import 'index.camp-infrastructure.partial.css';
+@import 'index.our-prise-list.partial.css';
 @import 'modal-form.css';
+@import 'global.footer.css';
