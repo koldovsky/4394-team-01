@@ -30,6 +30,9 @@ li {
   --alt-font: 'Work sans', sans-serif;
   --scroll-up-color: #ea9449;
   --list-description: #f3f3f3;
+  --background-button-carusel: #4b4b4a;
+  --alt-arrow-button-carusel: #6e6e6d;
+  
 }
 img {
   display: block;
@@ -42,7 +45,7 @@ body {
   flex-direction: column;
   background-color: var(--alt-text-color);
   header {
-    padding: 1.5rem 0;
+  padding: 1.5rem 0;
   }
 }
 .container {
