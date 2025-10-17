@@ -1,11 +1,7 @@
 /* Kostiantyn Kobel */
 .global__header {
-  position: relative;
-  width: 100%;
   .navbar {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
     background: transparent;
     transition: background-color 0.3s ease;
   }
@@ -13,33 +9,8 @@
     .header__logo-image {
       width: 2.8rem;
     }
-    .navbar-toggler.navbar-toggler-icon-line:nth-child(1) {
-      transform: translateY(0) rotate(45deg);
-    }
-    .navbar-toggler.navbar-toggler-icon-line:nth-child(2) {
-      opacity: 0;
-    }
-    .navbar-toggler.navbar-toggler-icon-line:nth-child(3) {
-      transform: translateY(0) rotate(-45deg);
-    }
-    .navbar-collapse.show {
-      background-color: var(--title-text-color);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 10;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
   }
   .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
     .nav-link {
       font-size: 1.1rem;
       text-transform: uppercase;
@@ -47,6 +18,7 @@
       font-weight: 600;
       transition: color 0.3s ease;
       @media (min-width: 1024px) {
+        gap: 1rem;
         font-size: 0.9rem;
       }
       &:hover {
@@ -60,6 +32,9 @@
     font-size: 0.9rem;
     color: var(--description-text-color);
     margin: 48px 0 24px;
+    @media (min-width: 786px) {
+      text-align: center;
+    }
     @media (min-width: 1024px) {
       font-size: 1rem;
       margin: 0;

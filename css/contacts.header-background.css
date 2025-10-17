@@ -3,9 +3,8 @@
   background-image: url('../img/header/contacts-header-background.jpg');
   height: 100%;
   width: 100%;
-  @media (min-width: 320px) {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60vh;
 }
