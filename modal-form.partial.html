@@ -2,12 +2,18 @@
 
 <dialog
   class="modal-reservation-container"
-  open
+  id="modal"
   role="dialog"
   aria-modal="true"
+  onclick="if(event.target === this) this.close()"
 >
   <div class="modal-reservation">
-    <button class="modal__close-btn" type="button" aria-label="Close">
+    <button
+      class="modal__close-btn"
+      aria-label="Close"
+      type="button"
+      onclick="document.getElementById('modal').close()"
+    >
       <svg
         class="modal__close-btn-icon"
         xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +64,7 @@
           <h2 class="modal__header-title">Reservation Form</h2>
           <p class="modal__header-subtitle">
             Ready to embark on your glamping adventure? Secure your spot under
-            the stars by completing the reservation form below
+            the stars by completing the reservation form below.
           </p>
         </div>
         <div class="modal__reservation">
@@ -139,13 +145,19 @@
                 class="modal__reservation-input modal__reservation-input--checkbox"
                 required
               />
-              <span class="modal__reservation-label-text">
+              <span
+                class="modal__reservation-label modal__reservation-label-text"
+              >
                 I acknowledge and agree to the booking policies and glamping
                 rules.
               </span>
             </label>
             <button class="modal__reservation-button" type="submit">
-              SEND A REQUEST
+              <span
+                class="modal__reservation-button modal__reservation-button-text"
+              >
+                Send a request
+              </span>
             </button>
           </form>
         </div>
