@@ -54,7 +54,29 @@
   color: var(--text-color);
   margin-top: 1.56rem;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  display: block;
   padding: 0 0.9375rem;
+  overflow-wrap: break-word;
+}
+.activity__gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  gap: 10px;
+  margin-top: 45px;
+}
+.activity__gallery-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.activity__gallery-underline-container {
+  margin-top: 50px;
+}
+.under__line {
+  padding: 15px;
 }
