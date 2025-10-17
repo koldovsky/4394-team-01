@@ -5,10 +5,11 @@
           max-width: 1200px;
           margin: auto;
           .contact-us__info-container {
+               margin: 0 0 50px;
                display: grid;
                grid-template-columns: 1fr;
                @media (min-width: 768px) {
-                    grid-template-columns: 6fr 2fr 4fr;
+                    grid-template-columns: 1fr 0.33fr 0.67fr;
                }
 
                .contact-us__info {
@@ -19,7 +20,7 @@
                     background-repeat: no-repeat;
                     }
                     .contact-us__title {
-                         font-family: 'Work Sans', sans-serif;
+                         font-family: 'Work Sans', sagit ns-serif;
                          color: var(--title-text-color);
                          font-size: 34px;
                          font-weight: 600;
@@ -86,7 +87,8 @@
                display: flex;
                flex-direction: column;
                justify-items: center;
-               
+               margin-top: 60px;
+               padding: 0 20px;
                @media (min-width: 768px) {
                     grid-column-start: 3;
                }
