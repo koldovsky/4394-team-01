@@ -1,12 +1,7 @@
 /* Kostiantyn Kobel */
 .global__header {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  width: 100%;
   .navbar {
     align-items: center;
-    justify-content: space-between;
     background: transparent;
     transition: background-color 0.3s ease;
   }
