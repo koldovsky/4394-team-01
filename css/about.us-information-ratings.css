@@ -23,38 +23,38 @@
   .about-us__content {
     box-sizing: border-box;
     padding: 0 20px;
+    flex: 1 1 0;
+      text-align: left;
+      align-items: flex-start;
   }
   .about-us__title {
+    font-size: 46px;
     font-family: var(--alt-font);
-    font-weight: bold;
+    font-weight: 600;
     font-size: 2.125rem;
     color: var(--title-text-color);
     justify-content: space-around;
     position: relative;
   }
-
   .about-us__icon-main {
+    margin-bottom: 15px;
     color: var(--scroll-up-color);
   }
-
   .about-us__subtitle {
     font-size: 1.1875rem;
     color: var(--text-color);
     margin-bottom: 16px;
   }
-
   .about-us__description {
     font-size: 1.0625rem;
     color: var(--primary-text-color);
     margin-bottom: 16px;
   }
-
   .about-us__feature-icon {
     fill: var(--accent-color);
     flex-shrink: 0;
     margin-top: 2px;
   }
-
   .about-us__feature {
     font-size: 0.875rem;
     color: var(--text-color);
@@ -66,13 +66,11 @@
   .about-us__feature-text {
     display: block;
   }
-
   .about-us__text {
     font-size: 1.0625rem;
     color: var(--primary-text-color);
     margin-bottom: 16px;
   }
-
   .about-us__title,
   .about-us__subtitle,
   .about-us__description,
@@ -80,12 +78,10 @@
   .about-us__text {
     margin-bottom: 24px;
   }
-
   .about-us__nav {
     font-size: 0.825rem;
     background-color: var(--link-background-color);
   }
-
   .about-us__button {
     display: inline-block;
     background-color: var(--accent-color);
@@ -93,18 +89,14 @@
     border: 2px solid var(--accent-color);
     cursor: pointer;
     padding: 15px 30px;
+    color: var(--alt-text-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
     &:hover {
-      background-color: var(--scroll-up-color);
-      border: 2px solid var(--scroll-up-color);
-    }
-    .about-us__button-text {
-      color: var(--alt-text-color);
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.1rem;
+      border: 2px solid
     }
   }
-
   .about-us__stat-value {
     font-weight: 600;
     font-family: var(--alt-font);
@@ -113,29 +105,19 @@
     margin: 50px 0 0 0;
     padding: 0 15px;
   }
-
   .about-us__stat-label {
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
     font-weight: 700;
     font-size: 0.75rem;
     color: var(--primary-text-color);
-    margin: 50px 0 0 0;
+    margin: 10px 0 0 0;
     padding: 0 15px;
   }
-
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     padding: 105 0px;
-
-    .about-us__content {
-      flex: 1 1 0;
-      text-align: left;
-      align-items: flex-start;
-    }
-
-    .about-us__title {
-      font-size: 46px;
-    }
   }
 }
