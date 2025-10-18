@@ -1,54 +1,82 @@
 .contact-us {
-     padding: 120px 0 30px;
+     padding: 90px 0 30px;
      background-color: #f9f9f7;
+     @media (min-width: 768px) {
+          padding: 120px 0 30px;
+     }
      .contact-us__main-container {
           max-width: 1200px;
           margin: auto;
+          padding: 0 24px;
+          @media (min-width: 768px) {
+                    padding: 0 15px;
+               }
           .contact-us__info-container {
                margin: 0 0 50px;
                display: grid;
                grid-template-columns: 1fr;
                @media (min-width: 768px) {
-                    grid-template-columns: 1fr 0.33fr 0.67fr;
+                    grid-template-columns: 1fr 0.4fr 0.6fr;
                }
-
                .contact-us__info {
-                    .contact-us__decor {
-                    color: var(--scroll-up-color);
                     background-image: url(../img/contacts/contacts-contact-us-back.png);
-                    background-size: contain;
                     background-repeat: no-repeat;
+                    background-size: 100% auto;
+                    max-width: 550px;
+                    .contact-us__decor {
+                         color: var(--scroll-up-color);
+                         margin-bottom: 20px;
+                         @media (min-width: 768px) {
+                              margin-bottom: 20px;
+                         }
+                         .contact-us__decor-icon {
+                              width:50px;
+                              height:50px;
+                         }
                     }
                     .contact-us__title {
-                         font-family: 'Work Sans', sagit ns-serif;
+                         font-family: 'Work Sans', sans-serif;
                          color: var(--title-text-color);
                          font-size: 34px;
                          font-weight: 600;
+                         @media (min-width: 768px) {
+                              font-size: 46px;
+                         }
                     }
                     .contact-us__text {
                          font-family: 'Inter', sans-serif;
-                         color: var(--primary-text-color);
+                         color: var(--text-color);
                          font-size: 19px; 
-                         font-weight: 500;   
-                         line-height: 28.5px;          
+                         font-weight: 550;   
+                         line-height: 28.5px;
+                         margin: 0 0 30px;      
                     }
                     .contact-us__item{
                          display: flex;
                          flex-direction: row;
+                         padding: 7.5px 0;
 
                          .contact-us__icon-wrapper {
                               background-color: var(--alt-text-color);
                               width: 52px;
                               height: 52px;
                               border-radius: 50%;
+                              flex-shrink: 0;
                               background-repeat: no-repeat;
-                              padding: 12.5px;
+                              background-position: center;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              @media (min-width: 768px) {
+                                   width: 70px;
+                                   height: 70px;
+                              }
                               
                               .contact-us__icon {
-                                   
                                    color: var(--scroll-up-color);
                                    width: 26px;
                                    height: auto;
+                                   display: block;
                                    @media (min-width: 768px) {
                                         width: 40px;
                                         height: auto;
@@ -56,7 +84,7 @@
                               }
                          }
                          .contact-us__details-list {
-                              padding: 0;
+                              margin: 7.5px;
                               .contact-us__details-title {
                                    color: var(--accent-color);
                                    font-family: 'Inter', sans-serif;
@@ -88,9 +116,9 @@
                flex-direction: column;
                justify-items: center;
                margin-top: 60px;
-               padding: 0 20px;
                @media (min-width: 768px) {
                     grid-column-start: 3;
+                    
                }
                
                .contact-us__input {
