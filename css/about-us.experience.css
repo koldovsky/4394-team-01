@@ -1,5 +1,5 @@
 /* --natalka__tkhoriv-- */
-.experience {
+/* .experience {
   position: relative;
   max-width: 75rem;
   width: 100%;
@@ -24,6 +24,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
+  
 }
 @media (max-width: 600px) {
   .experience__bg-image {
@@ -231,4 +232,4 @@
   .experience__list-icon {
     width: 2.5rem;
   }
-}
+} */
