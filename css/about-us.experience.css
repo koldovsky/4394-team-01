@@ -24,10 +24,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
+  
 }
 @media (max-width: 600px) {
   .experience__bg-image {
     width: 100%;
+    object-fit: cover;
   }
 }
 .experience__container-wrapper {
