@@ -7,8 +7,6 @@
      }
 
      .contact-us__main-container {
-          max-width: 1200px;
-          margin: auto;
           padding: 0 24px;
           @media (min-width: 768px) {
                padding: 0 15px;
@@ -159,8 +157,6 @@
           }
      }
      .contact-us__main-image-wraper {
-          max-width: 1200px;
-          margin: 0 auto;
           .main-image-wraper {
                display: block;
                max-width: 100%;
