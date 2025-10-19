@@ -1,16 +1,18 @@
+/* Kateryna Kysten */
 .contact-us {
      padding: 90px 0 30px;
-     background-color: #f9f9f7;
+     background-color: var(--backgroun-contacts-color);
      @media (min-width: 768px) {
           padding: 120px 0 30px;
      }
+
      .contact-us__main-container {
           max-width: 1200px;
           margin: auto;
           padding: 0 24px;
           @media (min-width: 768px) {
-                    padding: 0 15px;
-               }
+               padding: 0 15px;
+          }
           .contact-us__info-container {
                margin: 0 0 50px;
                display: grid;
@@ -55,7 +57,6 @@
                          display: flex;
                          flex-direction: row;
                          padding: 7.5px 0;
-
                          .contact-us__icon-wrapper {
                               background-color: var(--alt-text-color);
                               width: 52px;
@@ -71,7 +72,6 @@
                                    width: 70px;
                                    height: 70px;
                               }
-                              
                               .contact-us__icon {
                                    color: var(--scroll-up-color);
                                    width: 26px;
@@ -101,8 +101,7 @@
                                    font-size: 17px;
                                    line-height: 25.5px;
                                    margin:auto;
-                                   }
-                              
+                              }
                               .contact-us__details-link {
                                    text-decoration: none;
                                    color: inherit;
@@ -111,6 +110,7 @@
                     }
                }
           }
+
           .contact-us__form {
                display: flex;
                flex-direction: column;
@@ -118,11 +118,9 @@
                margin-top: 60px;
                @media (min-width: 768px) {
                     grid-column-start: 3;
-                    
                }
-               
                .contact-us__input {
-                    background-color: #f9f9f7;
+                    background-color: var(--backgroun-contacts-color);
                     border: none;
                     border-bottom: 2px solid rgba(128, 128, 128, 0.16);
                     outline: none;
@@ -143,7 +141,6 @@
                          outline: 2px solid #007bff;
                          border-radius: 2px;
                     }
-                    
                }
                .contact-us__input-button {
                     background-color: var(--accent-color);
@@ -161,7 +158,6 @@
                }
           }
      }
-
      .contact-us__main-image-wraper {
           max-width: 1200px;
           margin: 0 auto;

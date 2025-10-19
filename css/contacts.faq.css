@@ -1,3 +1,4 @@
+/* Kateryna Kysten */
 .faq {
   padding: 30px 0 120px;
   background-image: url(../img/contacts/contacts-faq-back.png);
@@ -13,7 +14,6 @@
         grid-template-columns: 1fr;
         padding: 0 24px;
         gap: 50px 0;
-
         @media (min-width: 480px) {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -22,11 +22,9 @@
             padding: 0 15px;
             gap: 30px;
         }
-
         .faq__item {
             padding: 35px 27px;
             background-color: var(--alt-text-color);
-
             .faq__question {
                 font-family: 'Work Sans', sans-serif;
                 color: var(--title-text-color);
@@ -38,18 +36,15 @@
                     font-weight: 600;
                     line-height: 31.2px;
                 }
-
-
                 &::after {
-                content: '';
-                display: block;
-                width: 45px;
-                height: 3px;
-                background-color: var(--scroll-up-color);
-                margin: 15px 0;
+                    content: '';
+                    display: block;
+                    width: 45px;
+                    height: 3px;
+                    background-color: var(--scroll-up-color);
+                    margin: 15px 0;
                 }
             }
-
             .faq__answer {
                 font-family: 'Inter', sans-serif;
                 color: var(--primary-text-color);
