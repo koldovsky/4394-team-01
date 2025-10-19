@@ -8,18 +8,15 @@
   position: relative;
   padding-bottom: 90px;
   .about-us__image {
+    display: grid;
+    grid-template-columns: auto;
     width: 100%;
     height: auto;
     display: block;
     padding: 0 20px;
     box-sizing: border-box;
   }
-  .about-us__image-wrapper {
-    
-    width: 100%;
-    max-width: 360px;
-    margin: 0 auto;
-  }
+  
   .about-us__content {
     box-sizing: border-box;
     padding: 0 20px;
