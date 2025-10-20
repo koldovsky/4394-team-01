@@ -1,11 +1,18 @@
+/* --natalka__tkhoriv-- */
 .activity__gallery {
   display: flex;
   box-sizing: border-box;
   position: relative;
   margin: 0 auto;
+  max-width: 1200px;
 }
 .activity__gallery-container {
   padding: 5.625rem 1.5rem 1.875rem;
+}
+@media (min-width: 600px) {
+  .activity__gallery-container {
+    padding: 120px 40px 30px;
+  }
 }
 .activity__gallery-icon {
   color: var(--scroll-up-color);
@@ -18,23 +25,32 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
   z-index: 1;
-  margin-top: 3.125rem;
+}
+@media (min-width: 600px) {
+  .activity__gallery-text {
+    margin: 0;
+  }
 }
 .activity__gallery-transparent-img {
   position: absolute;
-  top: 13.375rem;
-  left: 1.5rem;
-  width: 100%;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
   height: auto;
-  max-width: calc(100% - 3.625rem);
+  width: calc(100% - 48px);
   z-index: 0;
 }
 @media (min-width: 600px) {
   .activity__gallery-transparent-img {
-    max-width: 700px;
+    max-width: 500px;
     position: absolute;
+    display: block;
     top: 120px;
+    transform: translateX(-50%);
+    height: auto;
+    width: calc(100% - 48px);
   }
 }
 .activity__gallery-title {
@@ -52,9 +68,46 @@
   font-weight: 400;
   font-size: 1.187rem;
   color: var(--text-color);
-  margin-top: 1.56rem;
+  margin-top: 25px;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  display: block;
   padding: 0 0.9375rem;
+  overflow-wrap: break-word;
+}
+.activity__gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  gap: 10px;
+  margin-top: 45px;
+}
+@media (min-width: 600px) {
+  .activity__gallery-images {
+    gap: 30px;
+  }
+}
+.activity__gallery-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+@media (min-width: 600px) {
+  .activity__gallery-img img {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+
+  .activity__gallery-img img:hover {
+    opacity: 0.9;
+  }
+}
+.activity__gallery-underline-container {
+  margin-top: 50px;
+}
+.under__line {
+  padding: 15px;
 }
