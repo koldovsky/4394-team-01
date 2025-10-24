@@ -1,34 +1,30 @@
 .about-us {
   font-family: 'Inter', sans-serif;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
   text-align: left;
-  margin: 90px 0 0 0;
+  margin-top: 90px;
   position: relative;
-  padding-bottom: 90px;
-  .about-us__image {
-    display: grid;
-    grid-template-columns: auto;
+  .image-wrapper {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about-us__image {
+    width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
   }
-  
   .about-us__content {
     box-sizing: border-box;
     padding: 0 20px;
-    flex: 1 1 0;
-      text-align: left;
-      align-items: flex-start;
+    text-align: left;
   }
   .about-us__title {
-    font-size: 46px;
+    font-size: 2.125rem;
     font-family: var(--alt-font);
     font-weight: 600;
-    font-size: 2.125rem;
     color: var(--title-text-color);
     justify-content: space-around;
     position: relative;
@@ -92,32 +88,35 @@
     text-transform: uppercase;
     text-decoration: none;
     &:hover {
-      border: 2px solid
+      border: 2px solid;
     }
   }
-  .about-us__stat{
-    margin: 50px 0 0 0;
-    padding: 0 15px;
+}
+@media (min-width: 768px) {
+  .about-us {
+    grid-template-columns: 4fr 6fr;
+    align-items: center;
+    max-width: 1200px;
+    margin: 90px auto;
   }
-  .about-us__stat-value {
-    font-weight: 600;
-    font-family: var(--alt-font);
-    font-size: 3.875rem;
-    color: var(--scroll-up-color);
-    
+  .about-us__image,
+  .about-us__content {
+    padding: 0;
   }
-  .about-us__stat-label {
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 0.75rem;
-    color: var(--primary-text-color);
-    
+}
+@media (min-width: 1024px) {
+  .about-us {
+    grid-template-columns: 4fr 7fr;
+    max-width: 1400px;
   }
-  @media (min-width: 768px) {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 105 0px;
+  .about-us__title {
+    font-size: 2.5rem;
+  }
+  .about-us__subtitle {
+    font-size: 1.25rem;
+  }
+  .about-us__description,
+  .about-us__text {
+    font-size: 1.125rem;
   }
 }
