@@ -6,7 +6,8 @@ const splitStringArray = (string) => string.split(" ");
 //Create a function which translates a given DNA string into RNA.
 //https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 // 2- Dna-to-Rna
-const convertDnaToRna = (dna) => dna.replace(/T/g, 'U');
+const convertDnaToRna = (dna) => dna.replaceAll('T', 'U');
+
 
 //Find the maximum and minimum value of a list
 //https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
