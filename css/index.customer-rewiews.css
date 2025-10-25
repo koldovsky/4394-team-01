@@ -8,7 +8,7 @@
   .customer__baner--video {
     min-width: 320px;
   }
-  .customer-testimonials {
+  .customer-testimonials__carusel {
     padding: 0px 10px;
 
     .customer-rewiews__list {
