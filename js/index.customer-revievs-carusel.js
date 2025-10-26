@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
 let currentSlide = 0;
 
 function renderCarusel() {
-    const caruselItemContainer = document.querySelector('customer-reviews__item');
-    caruselItemContainer.innerHTML = slides[currentSlide];
+    const caruselItemContainer = document.querySelector('customer-reviews__list');
+    caruselItemContainer.innerHTML = customerReviews[currentSlide];
 }
 
 function showNextSlide() {
