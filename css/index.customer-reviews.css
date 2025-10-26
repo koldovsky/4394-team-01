@@ -11,9 +11,9 @@
   .customer-testimonials__carusel {
     padding: 0px 10px;
 
-    .customer-rewiews__list {
+    .customer-reviews {
       list-style: none;
-      .customer-rewiews__item {
+      .customer-reviews__item {
         height: 360px;
         text-align: center;
         margin-left: 40px;
@@ -36,10 +36,10 @@
           padding-bottom: 60px;
         }
 
-        .customer-rewiews__stars {
+        .customer-reviews__stars {
           fill: var(--accent-color);
         }
-        .customer-rewiews__text {
+        .customer-reviews__text {
           color: var(--primary-text-color);
           padding: 20px 0px;
 
@@ -47,7 +47,7 @@
             margin-bottom: 5px;
           }
         }
-        .customer-rewiews__person {
+        .customer-reviews__person {
           color: var(--title-text-color);
           font-weight: 700;
 
