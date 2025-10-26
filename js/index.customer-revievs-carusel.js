@@ -1,46 +1,40 @@
 import { customerReviews } from './customer-rewiews.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-  const reviewsContainer = document.querySelector('.customer-reviews');
-  if (!reviewsContainer) return;
+const slideTemplates = customerReviews.map(({ stars, text, person }) => 
+    `<div class="customer-reviews__item">${stars}<p class="customer-reviews__text">"${text}"</p><p class="customer-reviews__person">${person}</p></div>`
+);
 
-  let currentSlide = 0;
+let currentSlide = 0;
 
-  // створюємо DOM для всіх слайдів
-  customerReviews.forEach(({ stars, text, person }) => {
-    const item = document.createElement('div');
-    item.classList.add('customer-reviews__item');
-    item.innerHTML = `
-      ${stars}
-      <p class="customer-reviews__text">"${text}"</p>
-      <p class="customer-reviews__person">${person}</p>
-    `;
+function renderCarusel() {
+    const caruselItemsContainer = document.querySelector('.customer-reviews');
+    if (!caruselItemsContainer) return;
 
-    function renderCarousel() {
-
-        carouselItemsContainer.innerHTML = slideTemplates[currentSlide];
-        if (window.matchMedia("(min-width: 640px)").matches) {
-            const secondSlideIndex = (currentSlide + 1) % slides.length;
-            carouselItemsContainer.innerHTML += slideTemplates[secondSlideIndex];
-            if (window.matchMedia("(min-width: 1024px)").matches) {
-                const thirdSlideIndex = (currentSlide + 2) % slides.length;
-                carouselItemsContainer.innerHTML += slideTemplates[thirdSlideIndex];
-            }
+    caruselItemsContainer.innerHTML = slideTemplates[currentSlide];
+    if (window.matchMedia("(min-width: 640px)").matches) {
+        const secondSlideIndex = (currentSlide + 1) % slides.length;
+        carouselItemsContainer.innerHTML += slideTemplates[secondSlideIndex];
+        if (window.matchMedia("(min-width: 1024px)").matches) {
+            const thirdSlideIndex = (currentSlide + 2) % slides.length;
+            carouselItemsContainer.innerHTML += slideTemplates[thirdSlideIndex];
         }
     }
+}
 
-    function showNextSlide() {
+function showNextSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
     renderCarousel();
-    }
+}
 
-    function showPrevSlide() {
+function showPrevSlide() {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     renderCarousel();
-    }
+}
 
-    renderCarousel();
-  });
+renderCarousel();
+
+
+
 
   
 
