@@ -6,7 +6,7 @@ const slideTemplates = customerReviews.map(({ stars, text, person }) =>
 
 let currentSlide = 0;
 
-function renderCarusel() {
+function renderCarousel() {
     const caruselItemsContainer = document.querySelector('.customer-reviews');
     if (!caruselItemsContainer) return;
 
