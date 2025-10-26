@@ -52,6 +52,10 @@ body {
   max-width: 1200px;
   margin: auto;
 }
+.container__contacts {
+  max-width: 1200px;
+  margin: auto;
+}
 .global__button {
   display: inline-block;
   background-color: var(--accent-color);
