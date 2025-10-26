@@ -17,17 +17,17 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-let currentSlide = 0;
+// let currentSlide = 0;
 
-function renderCarusel() {
-    const caruselItemContainer = document.querySelector('customer-reviews__list');
-    caruselItemContainer.innerHTML = reviewsContainer[currentSlide];
-}
+// function renderCarusel() {
+//     const caruselItemContainer = document.querySelector('customer-reviews__list');
+//     caruselItemContainer.innerHTML = reviewsContainer[currentSlide];
+// }
 
-function showNextSlide() {
-    currentSlide = (currentSlide + 1) % reviewsContainer.length;
-    renderCarusel();
-}
+// function showNextSlide() {
+//     currentSlide = (currentSlide + 1) % reviewsContainer.length;
+//     renderCarusel();
+// }
 
-setInterval(showNextSlide, 3000);
+// setInterval(showNextSlide, 3000);
 
