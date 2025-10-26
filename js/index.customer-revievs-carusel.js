@@ -10,7 +10,7 @@ function renderCarousel() {
     const carouselItemsContainer = document.querySelector('.customer-reviews');
     if (!carouselItemsContainer) return;
 
-    caruselItemsContainer.innerHTML = slideTemplates[currentSlide];
+    carouselItemsContainer.innerHTML = slideTemplates[currentSlide];
     if (window.matchMedia("(min-width: 640px)").matches) {
         const secondSlideIndex = (currentSlide + 1) % customerReviews.length;
         carouselItemsContainer.innerHTML += slideTemplates[secondSlideIndex];
