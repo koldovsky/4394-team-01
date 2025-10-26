@@ -2,9 +2,11 @@ import { customerReviews } from './customer-rewiews.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const reviewsContainer = document.querySelector('.customer-reviews');
-
   if (!reviewsContainer) return;
 
+  let currentIndex = 0;
+
+  // створюємо DOM для всіх слайдів
   customerReviews.forEach(({ stars, text, person }) => {
     const item = document.createElement('div');
     item.classList.add('customer-reviews__item');
@@ -15,8 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     reviewsContainer.appendChild(item);
   });
-});
 
+  const slides = document.querySelectorAll('.customer-reviews__item');
+  
 // let currentSlide = 0;
 
 // function renderCarusel() {
