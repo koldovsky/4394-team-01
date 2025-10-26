@@ -32,7 +32,7 @@ li {
   --list-description: #f3f3f3;
   --background-button-carusel: #4b4b4a;
   --alt-arrow-button-carusel: #6e6e6d;
-  --backgroun-contacts-color:#f9f9f7; 
+  --backgroun-contacts-color: #f9f9f7;
 }
 img {
   display: block;
@@ -50,12 +50,7 @@ body {
 }
 .container {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.container__contacts {
-  max-width: 1200px;
-  margin: auto; 
+  margin: auto;
 }
 .global__button {
   display: inline-block;
