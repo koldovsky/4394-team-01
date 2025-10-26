@@ -25,7 +25,7 @@ function renderCarusel() {
 }
 
 function showNextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
+    currentSlide = (currentSlide + 1) % customerReviews.length;
     renderCarusel();
 }
 
