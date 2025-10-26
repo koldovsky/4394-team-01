@@ -32,7 +32,9 @@ li {
   --list-description: #f3f3f3;
   --background-button-carusel: #4b4b4a;
   --alt-arrow-button-carusel: #6e6e6d;
-  --backgroun-contacts-color:#f9f9f7; 
+  --background-contacts-color:#f9f9f7; 
+  --color-border:#faf9f5;
+
 }
 img {
   display: block;
