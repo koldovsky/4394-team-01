@@ -1,21 +1,87 @@
-const slides = [
-    '<div class="customer-rewiews__item"> <svg class="customer-rewiews__stars" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 90 20" enable-background="new 0 0 90 20" xml:space="preserve" height="100%"> <path d="M34.307,7.766l-4.548-0.732c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0l-2.035,3.956l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084l-0.778,4.527c-0.16,1.348,1.235,0.617,1.235,0.617l3.862-1.967l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C35.609,8.084,34.307,7.766,34.307,7.766z"> </path> <path d="M70.056,7.765l-4.548-0.732c0,0-1.166-2.652-1.92-3.955c-0.755-1.303-1.303,0-1.303,0L60.25,7.033l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084l-0.778,4.527c-0.16,1.348,1.235,0.617,1.235,0.617L62.9,15.33l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C71.358,8.083,70.056,7.765,70.056,7.765z"> </path> <path d = "M52.181,7.766l-4.548-0.732c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0l-2.035,3.956l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084l-0.778,4.527c-0.16,1.348,1.235,0.617,1.235,0.617l3.862-1.967l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C53.483,8.084,52.181,7.766,52.181,7.766z" > </path > <path d="M16.431,7.765l-4.548-0.732c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0L6.625,7.033l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084L4.178,16.68c-0.16,1.348,1.235,0.617,1.235,0.617l3.862-1.967l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C17.734,8.083,16.431,7.765,16.431,7.765z"> </path> <path d="M87.931,7.765l-4.548-0.731c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0l-2.035,3.956l-4.64,0.685  c-1.188,0.549-0.205,1.349-0.205,1.349l3.176,3.085l-0.778,4.526c-0.16,1.349,1.235,0.617,1.235,0.617l3.862-1.966l3.934,2.012  c1.349,0.616,1.097-0.755,1.097-0.755l-0.687-4.412l3.086-3.131C89.233,8.083,87.931,7.765,87.931,7.765z"> </path> </svg > <p class="customer-rewiews__text">"We opted for a tent overlooking the tranquil lake, and it was the perfect setting for a peaceful retreat."</p> <p class="customer-rewiews__person">Jessica Wilson, Tampa</p> </div >',
-    '<div class="customer-rewiews__item"><svg class="customer-rewiews__stars" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 90 20" enable-background="new 0 0 90 20" xml:space="preserve" height="100%"><path d="M34.307,7.766l-4.548-0.732c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0l-2.035,3.956l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084l-0.778,4.527c-0.16,1.348,1.235,0.617,1.235,0.617l3.862-1.967l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C35.609,8.084,34.307,7.766,34.307,7.766z"></path><path d="M70.056,7.765l-4.548-0.732c0,0-1.166-2.652-1.92-3.955c-0.755-1.303-1.303,0-1.303,0L60.25,7.033l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084l-0.778,4.527c-0.16,1.348,1.235,0.617,1.235,0.617L62.9,15.33l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C71.358,8.083,70.056,7.765,70.056,7.765z"></path><path d = "M52.181,7.766l-4.548-0.732c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0l-2.035,3.956l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084l-0.778,4.527c-0.16,1.348,1.235,0.617,1.235,0.617l3.862-1.967l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C53.483,8.084,52.181,7.766,52.181,7.766z" ></path ><path d="M16.431,7.765l-4.548-0.732c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0L6.625,7.033l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084L4.178,16.68c-0.16,1.348,1.235,0.617,1.235,0.617l3.862-1.967l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C17.734,8.083,16.431,7.765,16.431,7.765z"></path><path d="M87.931,7.765l-4.548-0.731c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0l-2.035,3.956l-4.64,0.685  c-1.188,0.549-0.205,1.349-0.205,1.349l3.176,3.085l-0.778,4.526c-0.16,1.349,1.235,0.617,1.235,0.617l3.862-1.966l3.934,2.012  c1.349,0.616,1.097-0.755,1.097-0.755l-0.687-4.412l3.086-3.131C89.233,8.083,87.931,7.765,87.931,7.765z"></path></svg ><p class="customer-rewiews__text">"The geodesic dome we stayed in was a unique experience, offering unparalleled views of the star-studded sky at night."</p><p class="customer-rewiews__person">Amanda Lowson, New York</p></div>',
-    '<div class="customer-rewiews__item"><svg class="customer-rewiews__stars" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 90 20" enable-background="new 0 0 90 20" xml:space="preserve" height="100%"><path d="M34.307,7.766l-4.548-0.732c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0l-2.035,3.956l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084l-0.778,4.527c-0.16,1.348,1.235,0.617,1.235,0.617l3.862-1.967l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C35.609,8.084,34.307,7.766,34.307,7.766z"></path><path d="M70.056,7.765l-4.548-0.732c0,0-1.166-2.652-1.92-3.955c-0.755-1.303-1.303,0-1.303,0L60.25,7.033l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084l-0.778,4.527c-0.16,1.348,1.235,0.617,1.235,0.617L62.9,15.33l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C71.358,8.083,70.056,7.765,70.056,7.765z"></path><path d = "M52.181,7.766l-4.548-0.732c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0l-2.035,3.956l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084l-0.778,4.527c-0.16,1.348,1.235,0.617,1.235,0.617l3.862-1.967l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C53.483,8.084,52.181,7.766,52.181,7.766z" ></path ><path d="M16.431,7.765l-4.548-0.732c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0L6.625,7.033l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084L4.178,16.68c-0.16,1.348,1.235,0.617,1.235,0.617l3.862-1.967l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C17.734,8.083,16.431,7.765,16.431,7.765z"></path><path d="M87.931,7.765l-4.548-0.731c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0l-2.035,3.956l-4.64,0.685  c-1.188,0.549-0.205,1.349-0.205,1.349l3.176,3.085l-0.778,4.526c-0.16,1.349,1.235,0.617,1.235,0.617l3.862-1.966l3.934,2.012  c1.349,0.616,1.097-0.755,1.097-0.755l-0.687-4.412l3.086-3.131C89.233,8.083,87.931,7.765,87.931,7.765z"></path></svg ><p class="customer-rewiews__text">"We enjoyed exploring the nearby trails for mountain biking, and the kids had a blast roasting marshmallows over the campfire."</p><p class="customer-rewiews__person">Dean Peterson, Nebraska</p></div>',
-    '<div class="customer-rewiews__item"><svg class="customer-rewiews__stars" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 90 20" enable-background="new 0 0 90 20" xml:space="preserve" height="100%"><path d="M34.307,7.766l-4.548-0.732c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0l-2.035,3.956l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084l-0.778,4.527c-0.16,1.348,1.235,0.617,1.235,0.617l3.862-1.967l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C35.609,8.084,34.307,7.766,34.307,7.766z"></path><path d="M70.056,7.765l-4.548-0.732c0,0-1.166-2.652-1.92-3.955c-0.755-1.303-1.303,0-1.303,0L60.25,7.033l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084l-0.778,4.527c-0.16,1.348,1.235,0.617,1.235,0.617L62.9,15.33l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C71.358,8.083,70.056,7.765,70.056,7.765z"></path><path d = "M52.181,7.766l-4.548-0.732c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0l-2.035,3.956l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084l-0.778,4.527c-0.16,1.348,1.235,0.617,1.235,0.617l3.862-1.967l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C53.483,8.084,52.181,7.766,52.181,7.766z" ></path ><path d="M16.431,7.765l-4.548-0.732c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0L6.625,7.033l-4.64,0.686  c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084L4.178,16.68c-0.16,1.348,1.235,0.617,1.235,0.617l3.862-1.967l3.934,2.012  c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C17.734,8.083,16.431,7.765,16.431,7.765z"></path><path d="M87.931,7.765l-4.548-0.731c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0l-2.035,3.956l-4.64,0.685  c-1.188,0.549-0.205,1.349-0.205,1.349l3.176,3.085l-0.778,4.526c-0.16,1.349,1.235,0.617,1.235,0.617l3.862-1.966l3.934,2.012  c1.349,0.616,1.097-0.755,1.097-0.755l-0.687-4.412l3.086-3.131C89.233,8.083,87.931,7.765,87.931,7.765z"></path></svg ><p class="customer-rewiews__text">"Hidden Heaven Glamping exceeded all our expectations. The tree house accommodation was like a fairytale!"</p><p class="customer-rewiews__person">Eric Wastler, California</p></div>'
-]
+import { customerReviews } from './customer-rewiews.js';
 
-let currentSlide = 0;
+document.addEventListener('DOMContentLoaded', () => {
+  const reviewsContainer = document.querySelector('.customer-reviews');
+  if (!reviewsContainer) return;
 
-function renderCarusel() {
-    const caruselItemContainer = document.querySelector('customer-rewiews__list');
-    caruselItemContainer.innerHTML = slides[currentSlide];
-}
+  let currentSlide = 0;
 
-function showNextSlide() {
+  // створюємо DOM для всіх слайдів
+  customerReviews.forEach(({ stars, text, person }) => {
+    const item = document.createElement('div');
+    item.classList.add('customer-reviews__item');
+    item.innerHTML = `
+      ${stars}
+      <p class="customer-reviews__text">"${text}"</p>
+      <p class="customer-reviews__person">${person}</p>
+    `;
+
+    function renderCarousel() {
+
+        carouselItemsContainer.innerHTML = slideTemplates[currentSlide];
+        if (window.matchMedia("(min-width: 640px)").matches) {
+            const secondSlideIndex = (currentSlide + 1) % slides.length;
+            carouselItemsContainer.innerHTML += slideTemplates[secondSlideIndex];
+            if (window.matchMedia("(min-width: 1024px)").matches) {
+                const thirdSlideIndex = (currentSlide + 2) % slides.length;
+                carouselItemsContainer.innerHTML += slideTemplates[thirdSlideIndex];
+            }
+        }
+    }
+
+    function showNextSlide() {
     currentSlide = (currentSlide + 1) % slides.length;
-    renderCarusel();
-}
+    renderCarousel();
+    }
 
-setInterval(showNextSlide, 3000);
+    function showPrevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    renderCarousel();
+    }
 
+    renderCarousel();
+  });
+
+  
+
+//   const slides = document.querySelectorAll('.customer-reviews__item');
+
+//   // функція для показу конкретного слайду
+//   function showSlide(index) {
+//     slides.forEach((slide, i) => {
+//       slide.style.display = i === index ? 'block' : 'none';
+//     });
+//   }
+
+//   // кнопки керування
+//   const prevBtn = document.createElement('button');
+//   prevBtn.classList.add('customer-reviews__btn', 'customer-reviews__btn--prev');
+//   prevBtn.textContent = '←';
+
+//   const nextBtn = document.createElement('button');
+//   nextBtn.classList.add('customer-reviews__btn', 'customer-reviews__btn--next');
+//   nextBtn.textContent = '→';
+
+//   reviewsContainer.parentElement.appendChild(prevBtn);
+//   reviewsContainer.parentElement.appendChild(nextBtn);
+
+//   // обробники натискання
+//   prevBtn.addEventListener('click', () => {
+//     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+//     showSlide(currentIndex);
+//   });
+
+//   nextBtn.addEventListener('click', () => {
+//     currentIndex = (currentIndex + 1) % slides.length;
+//     showSlide(currentIndex);
+//   });
+
+//   // автопрокрутка (опціонально)
+//   setInterval(() => {
+//     currentIndex = (currentIndex + 1) % slides.length;
+//     showSlide(currentIndex);
+//   }, 5000);
+
+//   // показати перший слайд
+//   showSlide(currentIndex);
+});
