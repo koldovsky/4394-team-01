@@ -7,8 +7,8 @@ const slideTemplates = customerReviews.map(({ stars, text, person }) =>
 let currentSlide = 0;
 
 function renderCarousel() {
-    const caruselItemsContainer = document.querySelector('.customer-reviews');
-    if (!caruselItemsContainer) return;
+    const carouselItemsContainer = document.querySelector('.customer-reviews');
+    if (!carouselItemsContainer) return;
 
     caruselItemsContainer.innerHTML = slideTemplates[currentSlide];
     if (window.matchMedia("(min-width: 640px)").matches) {
@@ -22,12 +22,12 @@ function renderCarousel() {
 }
 
 function showNextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
+    currentSlide = (currentSlide + 1) % customerReviews.length;
     renderCarousel();
 }
 
 function showPrevSlide() {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    currentSlide = (currentSlide - 1 + customerReviews.length) % customerReviews.length;
     renderCarousel();
 }
 
