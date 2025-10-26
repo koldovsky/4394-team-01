@@ -19,18 +19,43 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const slides = document.querySelectorAll('.customer-reviews__item');
-  
-// let currentSlide = 0;
 
-// function renderCarusel() {
-//     const caruselItemContainer = document.querySelector('customer-reviews__list');
-//     caruselItemContainer.innerHTML = reviewsContainer[currentSlide];
-// }
+  // функція для показу конкретного слайду
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.display = i === index ? 'block' : 'none';
+    });
+  }
 
-// function showNextSlide() {
-//     currentSlide = (currentSlide + 1) % reviewsContainer.length;
-//     renderCarusel();
-// }
+  // кнопки керування
+  const prevBtn = document.createElement('button');
+  prevBtn.classList.add('customer-reviews__btn', 'customer-reviews__btn--prev');
+  prevBtn.textContent = '←';
 
-// setInterval(showNextSlide, 3000);
+  const nextBtn = document.createElement('button');
+  nextBtn.classList.add('customer-reviews__btn', 'customer-reviews__btn--next');
+  nextBtn.textContent = '→';
 
+  reviewsContainer.parentElement.appendChild(prevBtn);
+  reviewsContainer.parentElement.appendChild(nextBtn);
+
+  // обробники натискання
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  });
+
+  // автопрокрутка (опціонально)
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }, 5000);
+
+  // показати перший слайд
+  showSlide(currentIndex);
+});
