@@ -12,10 +12,10 @@ function renderCarousel() {
 
     caruselItemsContainer.innerHTML = slideTemplates[currentSlide];
     if (window.matchMedia("(min-width: 640px)").matches) {
-        const secondSlideIndex = (currentSlide + 1) % slides.length;
+        const secondSlideIndex = (currentSlide + 1) % customerReviews.length;
         carouselItemsContainer.innerHTML += slideTemplates[secondSlideIndex];
         if (window.matchMedia("(min-width: 1024px)").matches) {
-            const thirdSlideIndex = (currentSlide + 2) % slides.length;
+            const thirdSlideIndex = (currentSlide + 2) % customerReviews.length;
             carouselItemsContainer.innerHTML += slideTemplates[thirdSlideIndex];
         }
     }
