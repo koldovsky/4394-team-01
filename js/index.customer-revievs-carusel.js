@@ -78,4 +78,3 @@ renderCarousel();
 
 //   // показати перший слайд
 //   showSlide(currentIndex);
-});
