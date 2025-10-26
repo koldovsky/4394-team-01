@@ -10,8 +10,9 @@
     color: var(--alt-text-color);
     margin-bottom: 20px;
     @media (min-width: 768px) {
-      padding: 40px 0;
       justify-content: flex-end;
+      padding: 40px 0;
+      margin-bottom: 50px;
     }
     @media (min-width: 1024px) {
       padding: 64px 0 0;
@@ -43,7 +44,7 @@
         text-align: right;
       }
       @media (min-width: 1024px) {
-        font-size: 5rem;
+        font-size: 3.5rem;
         text-align: right;
       }
     }
@@ -123,6 +124,7 @@
         @media (min-width: 768px) {
           flex-direction: row;
           text-align: center;
+          justify-content: center;
           &:nth-child(2) {
             flex-direction: column;
             flex: 1.5;
@@ -144,13 +146,16 @@
       .price__list_scroll_down-img {
         color: var(--alt-text-color);
       }
+      .item__articul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
       .price__list_quote-img {
         color: var(--scroll-up-color);
         font-size: 2rem;
         padding: 16px 0 0;
-        @media (min-width: 768px) {
-          justify-content: flex-end;
-        }
       }
       .price__list-description {
         font-size: 0.9rem;
