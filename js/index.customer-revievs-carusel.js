@@ -21,11 +21,11 @@ let currentSlide = 0;
 
 function renderCarusel() {
     const caruselItemContainer = document.querySelector('customer-reviews__list');
-    caruselItemContainer.innerHTML = customerReviews[currentSlide];
+    caruselItemContainer.innerHTML = reviewsContainer[currentSlide];
 }
 
 function showNextSlide() {
-    currentSlide = (currentSlide + 1) % customerReviews.length;
+    currentSlide = (currentSlide + 1) % reviewsContainer.length;
     renderCarusel();
 }
 
