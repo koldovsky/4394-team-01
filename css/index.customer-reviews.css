@@ -66,7 +66,7 @@
       background-color: var(--background-button-carusel);
       margin-top: auto;
       margin-bottom: auto;
-      opacity: 1;
+      opacity: 2;
 
       @media (min-width: 768px) {
         width: 32px;
