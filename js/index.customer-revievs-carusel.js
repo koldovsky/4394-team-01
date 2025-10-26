@@ -33,48 +33,11 @@ function showPrevSlide() {
 
 renderCarousel();
 
+const nextBtn = document.querySelector('.carousel-control-next');
 
+nextBtn.addEventListener('click', showNextSlide)
 
+const prevBtn = document.querySelector('.carousel-control-prev');
+prevBtn.addEventListener('click', showPrevSlide);
 
-  
-
-//   const slides = document.querySelectorAll('.customer-reviews__item');
-
-//   // функція для показу конкретного слайду
-//   function showSlide(index) {
-//     slides.forEach((slide, i) => {
-//       slide.style.display = i === index ? 'block' : 'none';
-//     });
-//   }
-
-//   // кнопки керування
-//   const prevBtn = document.createElement('button');
-//   prevBtn.classList.add('customer-reviews__btn', 'customer-reviews__btn--prev');
-//   prevBtn.textContent = '←';
-
-//   const nextBtn = document.createElement('button');
-//   nextBtn.classList.add('customer-reviews__btn', 'customer-reviews__btn--next');
-//   nextBtn.textContent = '→';
-
-//   reviewsContainer.parentElement.appendChild(prevBtn);
-//   reviewsContainer.parentElement.appendChild(nextBtn);
-
-//   // обробники натискання
-//   prevBtn.addEventListener('click', () => {
-//     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-//     showSlide(currentIndex);
-//   });
-
-//   nextBtn.addEventListener('click', () => {
-//     currentIndex = (currentIndex + 1) % slides.length;
-//     showSlide(currentIndex);
-//   });
-
-//   // автопрокрутка (опціонально)
-//   setInterval(() => {
-//     currentIndex = (currentIndex + 1) % slides.length;
-//     showSlide(currentIndex);
-//   }, 5000);
-
-//   // показати перший слайд
-//   showSlide(currentIndex);
+window.addEventListener('resize', renderCarousel);
