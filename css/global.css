@@ -46,6 +46,8 @@ li {
   --container-max-width: 1200px;
   --border-radius: 8px;
   --transition-speed: 0.3s;
+  --color-border: #faf9f5;
+  --background-countown-color: #f1eeee;
 }
 img {
   display: block;
@@ -65,6 +67,10 @@ body {
   }
 }
 .container {
+  max-width: 1200px;
+  margin: auto;
+}
+.container__contacts {
   max-width: 1200px;
   margin: auto;
 }
