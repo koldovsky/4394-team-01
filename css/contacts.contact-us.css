@@ -159,10 +159,27 @@
           .contact-us__modal {
                position: fixed;
                inset: 0;
-               display: none;
+               display: flex;
                align-items: center;
                justify-content: center;
                background-color: rgba(0, 0, 0, 0.5);
+               .contact-us__modal-content {
+                    display: flex;
+                    flex-direction: column;                    
+                    background-color: var(--alt-text-color); 
+                    min-width: 344px;
+                    padding: 43px 32px 65px 32px;
+                    align-items: center;
+                    justify-content: center;
+                    .contact-us__modal-icon-wrapper {
+                         .contact-us__modal-icon {
+                              width: 34px;
+                              height: 34px;
+                              color: var(--scroll-up-color);
+                         }
+                    }
+               }
+
           }
           .contact-us__modal.active {
                display: flex;
