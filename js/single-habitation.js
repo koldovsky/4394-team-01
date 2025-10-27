@@ -1,6 +1,5 @@
 function init() {
   import('./global.header-burger.js');
-  import('./contact.contact-us-modal.js');
 }
 
 const totalPartials = document.querySelectorAll(
