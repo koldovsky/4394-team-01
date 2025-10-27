@@ -100,113 +100,132 @@
                 color: var(--scroll-up-color);
             }
         }
-    }
 
-    .habitations__list {
-        margin-top: 45px;
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        flex-direction: column;
-
-        @media (min-width: 480px) {
-            flex-direction: row;
-        }
-
-        @media(min-width: 1280px) {
-            max-width: 1130px;
-            /* height: 973.7px; */
-        }
-
-        .habitations__item {
+        .habitations__list {
+            margin-top: 45px;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-between;
+            align-items: start;
             flex-direction: column;
-            margin-bottom: 35px;
-            padding: 0 15px;
-            flex: 1;
-
-
-            .habitations__item-link {
-                color: var(--title-text-color);
-                text-decoration: none;
-                font-family: var(--alt-font);
-            }
-        }
-
-        .habitations__item-title {
-            text-align: left;
-        }
-
-        .habitations__item-image {
-            min-height: 175.28px;
-            min-width: 272px;
 
             @media (min-width: 480px) {
-                min-width: 201px;
-                min-height: 129.51px;
+                flex-direction: row;
+            }
 
-                @media (min-width: 1280px) {
-                    max-width: 570px;
+            @media(min-width: 1280px) {
+                max-width: 1130px;
+                /* height: 973.7px; */
+            }
+
+            .habitations__item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 35px;
+                padding: 0 15px;
+                flex: 1;
+
+
+                .habitations__item-link {
+                    color: var(--title-text-color);
+                    text-decoration: none;
+                    font-family: var(--alt-font);
                 }
             }
-        }
 
-    }
+            .habitations__item-title {
+                text-align: left;
+            }
 
-    .habitations__item-description {
-        color: var(--primary-text-color);
-        margin-bottom: 20px;
-        text-align: left;
-    }
+            .habitations__item-image {
+                min-height: 175.28px;
+                min-width: 272px;
 
-    .habitations__item-meta {
-        color: var(--accent-color);
-        margin-top: 10px;
-    }
+                @media (min-width: 480px) {
+                    min-width: 201px;
+                    min-height: 129.51px;
 
-    .habitations__link-form {
-        color: var(--alt-text-color);
-        text-decoration: none;
-        font-size: 0.825rem;
-        margin-top: 50px;
-        padding: 10px;
-        background-color: var(--accent-color);
-    }
+                    @media (min-width: 1280px) {
+                        max-width: 570px;
+                    }
+                }
+            }
 
-    .habitations__divider {
-        .habitations__item-description {
-            white-space: normal;
-        }
+            .habitations__item-description {
+                color: var(--primary-text-color);
+                margin-bottom: 20px;
+                text-align: left;
+            }
 
-    }
+            .habitations__item-meta {
+                color: var(--accent-color);
+                margin-top: 10px;
+            }
 
-    .habitations__features {
-        margin: 10px 0 10px 0;
-        /* text-align: center;
+            .habitations__link-form {
+                color: var(--alt-text-color);
+                text-decoration: none;
+                font-size: 0.825rem;
+                margin-top: 50px;
+                padding: 10px;
+                background-color: var(--accent-color);
+            }
+
+            .habitations__divider {
+                .habitations__item-description {
+                    white-space: normal;
+                }
+
+            }
+
+            .habitations__features {
+                margin: 10px 0 10px 0;
+                /* text-align: center;
             display: flex;
             flex-direction: row;
             align-items: left;
             width: 100%; */
 
-        @media (min-width: 480px) {
-            flex-direction: row;
-        }
+                @media (min-width: 480px) {
+                    flex-direction: row;
+                }
 
-        .habitations__feature {
-            padding: 0 12px;
-            display: flex;
-            /* justify-content: space-between; */
-            flex-direction: row;
+                .habitations__feature {
+                    padding: 0 12px;
+                    display: flex;
+                    /* justify-content: space-between; */
+                    flex-direction: row;
 
-            .habitations__feature-text {
-                color: var(--text-color);
+                    .habitations__feature-text {
+                        color: var(--text-color);
+                    }
+
+                    .habitations__feature-icon {
+                        color: var(--scroll-up-color);
+                    }
+                }
             }
 
-            .habitations__feature-icon {
-                color: var(--scroll-up-color);
+        }
+        .countdown-timer{
+            margin: 30px 20px;
+            .countdown-timer__label{
+                color:var(--title-text-color);
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            .countdown-timer__time{
+                padding: 10px 20px;
+                background-color: var(--background-countown-color);
+                color:var(--title-text-color);
+                font-size: 2.5rem;
+                text-align: center;
             }
         }
     }
+
+
+
+
 }
