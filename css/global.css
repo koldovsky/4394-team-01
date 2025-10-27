@@ -62,9 +62,9 @@ body {
   header {
     padding: 1.5rem 0;
   }
-  .no-scroll {
-    overflow: hidden;
-  }
+}
+.no-scroll {
+  overflow: hidden;
 }
 .container {
   max-width: 1200px;
