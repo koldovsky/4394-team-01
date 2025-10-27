@@ -33,6 +33,21 @@ li {
   --background-button-carusel: #4b4b4a;
   --alt-arrow-button-carusel: #6e6e6d;
   --backgroun-contacts-color: #f9f9f7;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+
+  /* Other */
+  --header-height: 4rem;
+  --container-max-width: 1200px;
+  --border-radius: 8px;
+  --transition-speed: 0.3s;
+  --color-border: #faf9f5;
+  --background-countown-color: #f1eeee;
 }
 img {
   display: block;
@@ -47,6 +62,9 @@ body {
   header {
     padding: 1.5rem 0;
   }
+  .no-scroll {
+    overflow: hidden;
+  }
 }
 .container {
   max-width: 1200px;
@@ -57,12 +75,17 @@ body {
   margin: auto;
 }
 .global__button {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   background-color: var(--accent-color);
+  color: var(--alt-text-color);
+  text-decoration: none;
   margin-bottom: 25px;
   border: 2px solid var(--accent-color);
   cursor: pointer;
-  padding: 15px 30px;
+  padding: 0 30px;
+  height: 53px;
+  transition: all 0.3s ease;
   &:hover {
     background-color: var(--scroll-up-color);
     border: 2px solid var(--scroll-up-color);

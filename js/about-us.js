@@ -1,9 +1,5 @@
-// Marjan Batkivskiy
 function init() {
   import('./global.header-burger.js');
-  import('./index.customer-revievs-carusel.js');
-  import('./index.habitations.special-offers.js');
-  import('./index.habitations-main-countdown.js')
 }
 
 const totalPartials = document.querySelectorAll(
