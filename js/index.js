@@ -1,6 +1,7 @@
 // Marjan Batkivskiy
 function init() {
-  import('./index.customer-revievs-carusel.js');
+  // import('./index.customer-revievs-carusel.js');
+  import('./global.header-burger.js');
 }
 
 const totalPartials = document.querySelectorAll(
