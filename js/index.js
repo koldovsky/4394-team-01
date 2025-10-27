@@ -1,6 +1,6 @@
 // Marjan Batkivskiy
 function init() {
-  import('./index.customer-revievs-carusel.js');
+  import('./index.customer-reviews-carousel.js');
   import('./index.habitations.special-offers.js');
 }
 

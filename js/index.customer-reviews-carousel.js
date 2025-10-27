@@ -1,4 +1,4 @@
-import { customerReviews } from './customer-rewiews.js';
+import { customerReviews } from './customer-reviews.js';
 
 const slideTemplates = customerReviews.map(({ stars, text, person }) => 
     `<div class="customer-reviews__item">${stars}<p class="customer-reviews__text">"${text}"</p><p class="customer-reviews__person">${person}</p></div>`

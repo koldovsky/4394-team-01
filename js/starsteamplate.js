@@ -1,5 +1,5 @@
 export const starsTeamplate = `
-  <svg class="customer-rewiews__stars" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 20">
+  <svg class="customer-reviews__stars" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 20">
     <path d="M34.307,7.766l-4.548-0.732c0,0-1.166-2.653-1.92-3.956c-0.755-1.303-1.303,0-1.303,0l-2.035,3.956l-4.64,0.686
       c-1.188,0.549-0.205,1.35-0.205,1.35l3.176,3.084l-0.778,4.527c-0.16,1.348,1.235,0.617,1.235,0.617l3.862-1.967l3.934,2.012
       c1.349,0.617,1.097-0.754,1.097-0.754l-0.687-4.412l3.086-3.131C35.609,8.084,34.307,7.766,34.307,7.766z"></path>
