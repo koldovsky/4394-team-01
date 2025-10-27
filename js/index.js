@@ -2,9 +2,9 @@
 function init() {
   import('./global.header-burger.js');
   import('./index.customer-reviews-carousel.js');
+  import('./about-us.activitygallery.carousel.js');
   import('./index.habitations.special-offers.js');
   import('./index.habitations-main-countdown.js');
-  import('./about-us.activitygallery-carousel.js');
 }
 
 const totalPartials = document.querySelectorAll(

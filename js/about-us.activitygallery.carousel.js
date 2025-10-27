@@ -8,9 +8,13 @@ const galleryImages = document.querySelectorAll('.activity__gallery-images img')
 let currentIndex = 0;
 galleryImages.forEach((img, index) => {
   img.addEventListener('click', () => {
-    modal.classList.remove('hidden');
+    modal.classList.add('active');
     currentIndex = index;
     modalImage.src = img.src;
     modalImage.style.transform = 'scale(1)';
   });
 });
+
+
+  closeBtn.addEventListener('click', () => modal.classList.remove('active'));
+  document.querySelector('.gallery__modal-overlay').addEventListener('click', () => modal.classList.remove('active'));
