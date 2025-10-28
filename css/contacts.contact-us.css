@@ -159,18 +159,68 @@
           .contact-us__modal {
                position: fixed;
                inset: 0;
-               display: flex;
+               display: none;
                align-items: center;
                justify-content: center;
                background-color: rgba(0, 0, 0, 0.5);
                .contact-us__modal-content {
                     display: flex;
+                    position: relative;
                     flex-direction: column;                    
                     background-color: var(--alt-text-color); 
                     min-width: 344px;
                     padding: 43px 32px 65px 32px;
                     align-items: center;
                     justify-content: center;
+                    .contact-us__modal-title {
+                         font-family: 'Work Sans', sans-serif;
+                         color: var(--primary-text-color);
+                         font-size: 16px;
+                         font-weight: 700;
+                         padding: 5px 0;
+                         margin-top: 25px;
+                    }
+                    .contact-us__modal-text {
+                         font-family: 'Inter', sans-serif;
+                         font-size: 14px;
+                         font-weight: 550;
+                         color: var(--primary-text-color);
+                         padding: 5px 0;
+                    }
+                    .contact-us__modal-close {
+                         font-family: 'Inter', sans-serif;
+                         font-size: 12px;
+                         font-weight: 700;
+                         color: var(--alt-text-color);
+                         border: none;                        
+                         .contact-us__modal-close__span {
+                              display: block;
+                              position: absolute;
+                              top: 10%;
+                              right: 7%;
+                              width: 16px;
+                              height: 2px;
+                              background-color: var(--text-color);
+                              &:first-child {
+                                   transform: rotate(45deg);
+                              }
+                              &:last-child {
+                                   transform: rotate(-45deg);
+                              }
+                         }
+                         &:hover .contact-us__modal-close__span {
+                              background-color: var(--title-text-color);
+                              cursor: pointer;
+                         }
+                         &:hover {
+                              cursor: pointer;
+                         }
+                    }
+                    .contact-us__modal-close-wrapper {
+                         background-color: var(--scroll-up-color);
+                         padding: 11px 97px;
+                         margin-top: 40px;
+                    }
                     .contact-us__modal-icon-wrapper {
                          .contact-us__modal-icon {
                               width: 34px;

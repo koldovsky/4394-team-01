@@ -2,15 +2,17 @@
 
 const form = document.querySelector('.contact-us__form');
 const modal = document.querySelector('.contact-us__modal');
-const closeBtn = document.querySelector('.contact-us__modal-close');
+const closeButtons = document.querySelectorAll('.contact-us__modal-close');
 
 form.addEventListener ('submit', function(e) {
-      e.preventDefault();
-      modal.classList.add('active');
-      form.reset();
-    }
+    e.preventDefault();
+    modal.classList.add('active');
+    form.reset();
+  }
 )
 
-closeBtn.addEventListener('click', function () {
-  modal.classList.remove('active');
+closeButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    modal.classList.remove('active');
+  });
 });
