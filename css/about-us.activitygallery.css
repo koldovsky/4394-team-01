@@ -40,6 +40,7 @@
   height: auto;
   width: calc(100% - 48px);
   z-index: 0;
+  pointer-events: none;
 }
 @media (min-width: 600px) {
   .activity__gallery-transparent-img {
