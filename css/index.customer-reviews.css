@@ -16,9 +16,14 @@
       list-style: none;
       display: grid;
       grid-template-columns: 1fr;
+
       @media (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
         align-items: stretch;
+      }
+
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
       }
       .customer-reviews__item {
         height: 360px;
@@ -29,6 +34,7 @@
         padding-bottom: 70px;
 
         @media (min-width: 768px) {
+          position: relative;
           max-width: 410px;
           height: auto;
           text-align: center;
@@ -52,12 +58,19 @@
           padding: 20px 20px;
 
           @media (min-width: 768px) {
-            margin-bottom: 5px;
+            margin-bottom: 20px;
+            line-height: 1.7rem;
+            font-weight: 500;
           }
         }
         .customer-reviews__person {
+          position: absolute;
+          bottom: 0px;   
+          left: 50%;      
+          transform: translateX(-50%);
           color: var(--title-text-color);
-          font-weight: 700;
+          font-weight: 600;
+          white-space: nowrap;
 
           @media (min-width: 768px) {
             margin: 0;
