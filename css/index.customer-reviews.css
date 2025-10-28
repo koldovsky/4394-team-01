@@ -128,11 +128,11 @@
     }
 
     .carousel-control-prev {
-      left: 25px;
+      left: 20px;
     }
 
     .carousel-control-next {
-      right: 25px;
+      right: 20px;
     }
   }
 }
