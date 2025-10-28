@@ -98,6 +98,7 @@
       }
 
       @media (min-width: 1200px) {
+        border:none;
         background-color: inherit;
       }
 
@@ -113,23 +114,24 @@
         }
 
         @media (min-width: 1200px) {
-          width: 30px;
-          height: 30px;
+          width: 32px;
+          height: 32px;
           color: var(--alt-arrow-button-carousel);
         }
 
-        .carousel__icon use {
+        /* .carousel__icon use {
           fill: var(--arrow-button-carousel);
           opacity: 0.8;
-        }
+        } */
 
         .carousel__icon {
-          fill: #c8c8c7;
-          color: #c8c8c7;
+          /* fill: #c8c8c7;
+          color: #c8c8c7; */
           transition: fill 0.3s ease;
 
           @media (max-width: 1199px) {
             display: none;
+            border: none;
           }
         }
 
