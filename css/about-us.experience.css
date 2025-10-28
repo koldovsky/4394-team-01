@@ -26,10 +26,6 @@
   overflow: hidden;
   z-index: 0;
 }
-@media (max-width: 600px) {
-  .experience__bg-image {
-  }
-}
 .experience__container-wrapper {
   position: relative;
   z-index: 1;
