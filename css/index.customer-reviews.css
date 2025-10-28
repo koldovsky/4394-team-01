@@ -14,6 +14,12 @@
 
     .customer-reviews {
       list-style: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+      }
       .customer-reviews__item {
         height: 360px;
         text-align: center;
@@ -87,9 +93,7 @@
       .carousel-control-next-icon {
         width: 18px;
         height: 18px;
-        /* explicit arrow color */
-        /* fill: var(--arrow-button-carousel);
-        color: var(--arrow-button-carousel); */
+        color: var(--arrow-button-carousel);
 
         @media (min-width: 768px) {
           width: 22px;
@@ -123,11 +127,11 @@
     }
 
     .carousel-control-prev {
-      left: 25px; 
+      left: 25px;
     }
 
     .carousel-control-next {
-      right: 25px; 
+      right: 25px;
     }
   }
 }
