@@ -123,6 +123,4 @@ function renderOffers(offers) {
     offersList.innerHTML = offersHtml.join('');
 };
 
-document.addEventListener("DOMContentLoaded", function () {
-    renderOffers(offers);
-});
+renderOffers(offers);
