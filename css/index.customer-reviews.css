@@ -17,7 +17,7 @@
       display: grid;
       grid-template-columns: 1fr;
 
-      @media (min-width: 768px) {
+      @media (min-width: 640px) {
         grid-template-columns: 1fr 1fr;
         align-items: stretch;
       }
@@ -26,12 +26,10 @@
         grid-template-columns: repeat(3, 1fr);
       }
       .customer-reviews__item {
-        height: 360px;
+        height: auto;
         text-align: center;
         margin-left: 40px;
         margin-right: 40px;
-        padding-top: 40px;
-        padding-bottom: 70px;
 
         @media (min-width: 768px) {
           position: relative;
@@ -64,15 +62,15 @@
           }
         }
         .customer-reviews__person {
-          position: absolute;
-          bottom: 0px;   
-          left: 50%;      
-          transform: translateX(-50%);
           color: var(--title-text-color);
           font-weight: 600;
           white-space: nowrap;
 
           @media (min-width: 768px) {
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
             margin: 0;
           }
         }
@@ -93,6 +91,7 @@
       justify-content: center;
       z-index: 3;
       opacity: 1;
+      cursor: pointer;
 
       @media (min-width: 768px) {
         width: 32px;
@@ -100,6 +99,7 @@
       }
 
       @media (min-width: 1200px) {
+        border: none;
         background-color: inherit;
       }
 
@@ -115,27 +115,23 @@
         }
 
         @media (min-width: 1200px) {
-          width: 30px;
-          height: 30px;
+          width: 32px;
+          height: 32px;
           color: var(--alt-arrow-button-carousel);
-        }
-
-        .carousel__icon use {
-          fill: var(--arrow-button-carousel);
-          opacity: 0.8;
         }
 
         .carousel__icon {
           transition: fill 0.3s ease;
 
+          &:hover {
+            color: var(--color-accent-hover);
+            transform: scale(1.1);
+          }
+
           @media (max-width: 1199px) {
             display: none;
+            border: none;
           }
-        }
-
-        &:hover .carousel__icon {
-          fill: var(--color-accent-hover);
-          transform: scale(1.1);
         }
       }
     }
