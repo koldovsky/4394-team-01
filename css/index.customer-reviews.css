@@ -32,10 +32,9 @@
           max-width: 410px;
           height: 320px;
           text-align: center;
-          padding: 0px 15px 60px 15px;
+          padding: 0px 15px;
           margin-left: auto;
           margin-right: auto;
-          grid-column: 1/2;
           grid-row: 1/2;
         }
 
