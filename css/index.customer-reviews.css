@@ -17,7 +17,7 @@
       display: grid;
       grid-template-columns: 1fr;
 
-      @media (min-width: 768px) {
+      @media (min-width: 640px) {
         grid-template-columns: 1fr 1fr;
         align-items: stretch;
       }
@@ -26,12 +26,10 @@
         grid-template-columns: repeat(3, 1fr);
       }
       .customer-reviews__item {
-        height: 360px;
+        height: auto;
         text-align: center;
         margin-left: 40px;
         margin-right: 40px;
-        padding-top: 40px;
-        padding-bottom: 70px;
 
         @media (min-width: 768px) {
           position: relative;
@@ -64,15 +62,15 @@
           }
         }
         .customer-reviews__person {
-          position: absolute;
-          bottom: 0px;   
-          left: 50%;      
-          transform: translateX(-50%);
           color: var(--title-text-color);
           font-weight: 600;
           white-space: nowrap;
 
           @media (min-width: 768px) {
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
             margin: 0;
           }
         }
@@ -126,6 +124,8 @@
         }
 
         .carousel__icon {
+          fill: #c8c8c7;
+          color: #c8c8c7;
           transition: fill 0.3s ease;
 
           @media (max-width: 1199px) {
