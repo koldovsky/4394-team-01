@@ -9,7 +9,7 @@
     min-width: 320px;
   }
   .customer-testimonials__carousel {
-    padding: 0px 10px;
+    padding: 40px 10px 60px 10px;
     position: relative;
 
     .customer-reviews {
