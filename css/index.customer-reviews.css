@@ -8,8 +8,9 @@
   .customer__baner--video {
     min-width: 320px;
   }
-  .customer-testimonials__carusel {
+  .customer-testimonials__carousel {
     padding: 0px 10px;
+    position: relative;
 
     .customer-reviews {
       list-style: none;
@@ -60,17 +61,22 @@
 
     .carousel-control-prev,
     .carousel-control-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       width: 24px;
       height: 24px;
       border-radius: 50%;
-      background-color: var(--background-button-carusel);
-      margin-top: auto;
-      margin-bottom: auto;
-      opacity: 2;
+      background-color: var(--background-button-carousel);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+      opacity: 1;
 
       @media (min-width: 768px) {
-        width: 32px;
-        height: 32px;
+        width: 42px;
+        height: 42px;
       }
 
       @media (min-width: 1200px) {
@@ -79,18 +85,26 @@
 
       .carousel-control-prev-icon,
       .carousel-control-next-icon {
-        width: 12px;
-        height: 12px;
+        width: 18px;
+        height: 18px;
+        /* explicit arrow color */
+        /* fill: var(--arrow-button-carousel);
+        color: var(--arrow-button-carousel); */
 
         @media (min-width: 768px) {
-          width: 20px;
-          height: 20px;
+          width: 22px;
+          height: 22px;
         }
 
         @media (min-width: 1200px) {
           width: 30px;
           height: 30px;
-          color: var(--alt-arrow-button-carusel);
+          color: var(--alt-arrow-button-carousel);
+        }
+
+        .carousel__icon use {
+          fill: var(--arrow-button-carousel);
+          opacity: 0.8;
         }
 
         .carousel__icon {
@@ -109,11 +123,11 @@
     }
 
     .carousel-control-prev {
-      transform: translate(50%, -50%);
+      left: 25px; 
     }
 
     .carousel-control-next {
-      transform: translate(-50%, -50%);
+      right: 25px; 
     }
   }
 }

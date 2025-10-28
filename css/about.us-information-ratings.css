@@ -48,16 +48,23 @@
     color: var(--scroll-up-color);
   }
   .about-us__background-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(10%, 0%);
-  font-size: 72px;
-  color: rgba(0,0,0,0.05);
-  font-weight: bold;
-  pointer-events: none;
-  z-index: 0;
-}
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10%, 0%);
+    color: rgb(245, 245, 240);
+    font-size: 72px;
+    letter-spacing: 2px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      top: 0;
+      left: 0;
+      transform: translate(10%, 0%);
+      font-size: 100px;
+    }
+  }
   .about-us__subtitle {
     font-size: 1.1875rem;
     color: var(--text-color);

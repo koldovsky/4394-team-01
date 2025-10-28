@@ -30,8 +30,9 @@ li {
   --accent-color: #7c782f;
   --scroll-up-color: #ea9449;
   --list-description: #f3f3f3;
-  --background-button-carusel: #4b4b4a;
-  --alt-arrow-button-carusel: #6e6e6d;
+  --background-button-carousel: #4b4b4a;
+  --arrow-button-carousel: #c8c8c7;
+  --alt-arrow-button-carousel: #6e6e6d;
   --backgroun-contacts-color: #f9f9f7;
 
   /* Spacing */
@@ -62,9 +63,9 @@ body {
   header {
     padding: 1.5rem 0;
   }
-  .no-scroll {
-    overflow: hidden;
-  }
+}
+.no-scroll {
+  overflow: hidden;
 }
 .container {
   max-width: 1200px;
