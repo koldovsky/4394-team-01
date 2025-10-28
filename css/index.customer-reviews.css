@@ -91,6 +91,7 @@
       justify-content: center;
       z-index: 3;
       opacity: 1;
+      cursor: pointer;
 
       @media (min-width: 768px) {
         width: 32px;
@@ -98,7 +99,7 @@
       }
 
       @media (min-width: 1200px) {
-        border:none;
+        border: none;
         background-color: inherit;
       }
 
@@ -119,25 +120,18 @@
           color: var(--alt-arrow-button-carousel);
         }
 
-        /* .carousel__icon use {
-          fill: var(--arrow-button-carousel);
-          opacity: 0.8;
-        } */
-
         .carousel__icon {
-          /* fill: #c8c8c7;
-          color: #c8c8c7; */
           transition: fill 0.3s ease;
+
+          &:hover {
+            color: var(--color-accent-hover);
+            transform: scale(1.1);
+          }
 
           @media (max-width: 1199px) {
             display: none;
             border: none;
           }
-        }
-
-        &:hover .carousel__icon {
-          fill: var(--color-accent-hover);
-          transform: scale(1.1);
         }
       }
     }
