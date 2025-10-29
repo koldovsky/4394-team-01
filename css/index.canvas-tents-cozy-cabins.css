@@ -208,20 +208,43 @@
             }
 
         }
-        .countdown-timer{
+
+        .countdown-timer {
             margin: 30px 20px;
-            .countdown-timer__label{
-                color:var(--title-text-color);
+
+            .countdown-timer__label {
+                color: var(--title-text-color);
                 font-size: 2.5rem;
                 text-align: center;
             }
-            .countdown-timer__time{
-                padding: 10px 20px;
-                background-color: var(--background-countown-color);
-                color:var(--title-text-color);
-                font-size: 2.5rem;
+
+            .countdown-timer__time {
+                display: flex;
+                flex-direction: row;
+                margin-top: 20px;
+                align-items: center;
+                justify-content: center;
                 text-align: center;
+                white-space: normal;
+                word-break: break-all;
+
+                .countdown__part {
+
+                    padding: 10px 20px;
+                    background-color: var(--background-countown-color);
+                    color: var(--title-text-color);
+                    font-size: 2.5rem;
+                }
+
+                .countdown__separator {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px 20px;
+                    font-size: 2.5rem;
+                }
             }
+
         }
     }
 
