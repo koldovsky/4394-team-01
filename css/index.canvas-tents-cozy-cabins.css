@@ -167,9 +167,10 @@
                 color: var(--alt-text-color);
                 text-decoration: none;
                 font-size: 0.825rem;
-                margin-top: 50px;
                 padding: 10px;
                 background-color: var(--accent-color);
+                border: none;
+                cursor: pointer;
             }
 
             .habitations__divider {
