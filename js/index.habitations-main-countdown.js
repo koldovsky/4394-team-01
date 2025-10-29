@@ -21,3 +21,4 @@ setInterval(() => {
     const s = Math.floor((left / 1000) % 60);
     countdownEl.textContent = `${h.toString().padStart(2, "0")}:${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
 }, 1000);
+localStorage.clear()
