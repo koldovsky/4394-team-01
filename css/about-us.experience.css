@@ -149,11 +149,11 @@
   word-break: break-word;
   overflow-wrap: break-word;
   margin-bottom: 16px;
+  line-height: 25.5px;
 }
 @media (max-width: 600px) {
   .experience__list-text {
     margin-bottom: 0;
-    line-height: 25.5px;
   }
 }
 .experience__list-content {
