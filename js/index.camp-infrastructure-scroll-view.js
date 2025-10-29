@@ -11,6 +11,7 @@ function initScrollIntoCampInfrastructure() {
     campInfrastructureView.scrollIntoView({
       behavior: "smooth",
       block: "start",
+      inline: "start"
     });
   });
 }

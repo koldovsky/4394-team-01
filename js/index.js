@@ -5,7 +5,9 @@ function init() {
   import('./index.customer-reviews-carousel.js');
   import('./index.habitations.special-offers.js');
   import('./index.habitations-main-countdown.js');
-  import('./index.scrollIntoCampInfrastructure.js');
+  import('./index.camp-infrastructure-scroll-view.js');
+  import('./index.customer-reviews-scroll-view.js');
+  
   
 }
 
