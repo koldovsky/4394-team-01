@@ -19,6 +19,17 @@ setInterval(() => {
     const h = Math.floor(left / (1000 * 60 * 60));
     const m = Math.floor((left / (1000 * 60)) % 60);
     const s = Math.floor((left / 1000) % 60);
-    countdownEl.textContent = `${h.toString().padStart(2, "0")}:${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+
+    const hours = h.toString().padStart(2, "0");
+    const minutes = m.toString().padStart(2, "0");
+    const seconds = s.toString().padStart(2, "0");
+
+    countdownEl.innerHTML = `
+    <p class="countdown__part countdown__hours">${hours}</p>
+    <p class="countdown__separator">:</p>
+    <p class="countdown__part countdown__minutes">${minutes}</p>
+    <p class="countdown__separator">:</p>
+    <p class="countdown__part countdown__seconds">${seconds}</p>
+  `;
 }, 1000);
 
