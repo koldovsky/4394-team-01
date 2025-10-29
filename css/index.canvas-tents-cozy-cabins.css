@@ -215,7 +215,12 @@
 
             .countdown-timer__label {
                 color: var(--title-text-color);
+              @media (min-width: 320px){
+              font-size: 1.5rem;
+            }
+              @media(min-width: 720px){
                 font-size: 2.5rem;
+             }
                 text-align: center;
             }
 
@@ -234,7 +239,12 @@
                     padding: 10px 20px;
                     background-color: var(--background-countown-color);
                     color: var(--title-text-color);
-                    font-size: 2.5rem;
+                    @media (min-width: 320px){
+              font-size: 1.5rem;
+            }
+              @media (min-width: 720px){
+                font-size: 2.5rem;
+             }
                 }
 
                 .countdown__separator {
@@ -242,7 +252,12 @@
                     align-items: center;
                     justify-content: center;
                     padding: 10px 20px;
-                    font-size: 2.5rem;
+                    @media (min-width: 320px){
+              font-size: 1.5rem;
+            }
+              @media(min-width: 720px){
+                font-size: 2.5rem;
+             }
                 }
             }
 
