@@ -7,8 +7,7 @@ function init() {
   import('./index.habitations-main-countdown.js');
   import('./index.camp-infrastructure-scroll-view.js');
   import('./index.customer-reviews-scroll-view.js');
-  
-  
+  import('./index.campfire-scroll-view.js');
 }
 
 const totalPartials = document.querySelectorAll(
