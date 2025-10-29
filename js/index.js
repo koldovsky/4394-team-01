@@ -5,6 +5,8 @@ function init() {
   import('./index.customer-reviews-carousel.js');
   import('./index.habitations.special-offers.js');
   import('./index.habitations-main-countdown.js');
+  import('./index.scrollIntoCampInfrastructure.js');
+  
 }
 
 const totalPartials = document.querySelectorAll(
