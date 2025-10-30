@@ -1,52 +1,116 @@
-.campfire-hero {
-  background-image: url('https://res2.weblium.site/res/65c6167b519095009f163b9e/65cded4cc5c522000f1d29d8_optimized.webp');
+.campfire-section {
+  font-family: "Poppins", sans-serif;
+}
+
+.campfire-section__hero {
+  background-image: url("https://res2.weblium.site/res/65c6167b519095009f163b9e/65cded4cc5c522000f1d29d8_optimized.webp");
   background-size: cover;
   background-position: center;
   min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
   text-align: center;
-  color: var(--alt-text-color);
   position: relative;
 }
 
-.campfire-hero::after {
-  content: '';
+.campfire-section__hero::after {
+  content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
 }
 
-.hero-content {
+.campfire-section__hero-content {
   position: relative;
   z-index: 2;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  background-color: #a1a04f;
-  color: var(--alt-text-color);
-  padding: 10px 25px;
+.campfire-section__title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.campfire-section__btn {
+  background: #a1a04f;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 4px;
   text-decoration: none;
-  border-radius: 3px;
-  font-weight: bold;
+  font-weight: 600;
+}
+
+.campfire-section__btn:hover {
+  background: #8e8d47;
+}
+
+/* Prices */
+.campfire-section__prices {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.campfire-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.campfire-section__price-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.campfire-section__price-info {
+  flex: 1;
+}
+
+.campfire-section__price-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.campfire-section__price-subtitle {
+  margin-bottom: 20px;
+  color: #777;
+}
+
+.campfire-section__price-table {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.campfire-section__price-table li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.campfire-section__price-table li span:first-child {
+  font-weight: 500;
+}
+
+.campfire-section__price-table li span:last-child {
+  color: #a1a04f;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
-  .campfire-hero {
-    min-height: 50vh;
-    padding: 20px;
+  .campfire-section__container {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .hero-content h2 {
-    font-size: 22px;
-    line-height: 1.3;
-  }
-
-  .btn {
-    padding: 8px 18px;
-    font-size: 14px;
+  .campfire-section__price-table li {
+    flex-direction: column;
   }
 }

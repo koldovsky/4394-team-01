@@ -1,79 +1,239 @@
 .modal-reservation-container {
-  padding: 0px;
+  padding: 0;
   margin: 0;
   border: none;
-  background: var(--header-bg-overlay);
+  background: rgba(0, 0, 0, 0.3);
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  inset: 0;
+  overflow: hidden;
 }
+
 .modal-reservation {
   background: var(--alt-text-color);
-  width: 770px;
+  width: 100%;
+  max-height: 95vh;
   flex-direction: column;
   display: flex;
   position: relative;
-  padding: 0px 15px;
-  .modal__close-btn {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 10;
-    .modal__close-btn-icon {
-      width: 24px;
-      height: 24px;
-      display: block;
-      color: var(--close-btn-icon-color);
-      pointer-events: none;
-    }
+  padding: 15px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.modal__close-btn-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  color: var(--accent-color);
+  pointer-events: none;
+}
+
+.modal__section {
+  padding: 40px 20px;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-header {
+  flex-direction: column;
+  display: flex;
+}
+
+.modal__header-icon {
+  color: var(--scroll-up-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__header-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.modal__header-title {
+  color: var(--title-text-color);
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  margin-top: 15px;
+}
+
+.modal__header-subtitle {
+  color: var(--primary-text-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 15px;
+}
+
+.modal__reservation {
+  margin-top: 45px;
+}
+
+.modal__reservation-form {
+  flex-direction: column;
+  display: flex;
+}
+
+.modal__reservation-input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px 18px;
+  border: none;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: rgba(45, 45, 45, 0.06);
+}
+
+.modal__reservation-input::placeholder {
+  color: rgba(104, 104, 104, 0.5);
+}
+
+.modal__reservation-input:focus {
+  outline: none;
+}
+
+.modal__reservation-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal__reservation-input--checkbox {
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--text-color);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.modal__reservation-label-text {
+  font-size: 15px;
+  line-height: 20px;
+  padding-left: 8px;
+  color: var(--text-color);
+  font-weight: 350;
+}
+
+.modal__reservation-button {
+  margin-top: 45px;
+  padding: 12px 20px;
+  background-color: var(--accent-color);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__reservation-button-text {
+  color: var(--alt-text-color);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.modal__reservation-button:active {
+  transform: scale(0.98);
+  transition: ease-in-out 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal__reservation-button:focus-visible {
+  outline: 2px solid #5c9eff;
+}
+
+.modal__reservation-button-text:hover {
+  box-shadow: none;
+}
+
+@media (min-width: 547px) {
+  .modal__reservation-input--checkbox {
+    margin-bottom: 0;
   }
+}
+
+@media (min-width: 601px) {
+  .modal-reservation {
+    width: 670px;
+    padding: 0 15px;
+  }
+
   .modal__section {
-    padding: 100px 0px;
-    .modal__content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      .modal-header {
-        flex-direction: column;
-        display: flex;
-        .modal__header-icon {
-          color: var(--header-icon-color);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .modal__header-title {
-          color: var(--title-text-color);
-          text-align: center;
-          font-size: 46px;
-          font-family: var(--alt-font);
-          font-weight: bold;
-          margin: 10px 0;
-        }
-        .modal__header-subtitle {
-          color: var(--primary-text-color);
-          text-align: center;
-        }
-      }
-      .modal__reservation {
-        .modal__reservation-form {
-          flex-direction: column;
-          display: flex;
-          align-items: center;
-          .modal__reservation-input {
-          }
-        }
-      }
-    }
+    padding: 100px 80px;
   }
+
+  .modal__header-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+
   .modal__header-title {
+    font-size: 46px;
+    line-height: 52.2px;
+    margin-top: 20px;
   }
+
   .modal__header-subtitle {
+    font-size: 19px;
+    line-height: 28.5px;
+    margin-top: 25px;
+  }
+
+  .modal__reservation {
+    margin-top: 62px;
+  }
+
+  .modal__reservation-input {
+    padding: 15px 26px;
+    font-size: 15px;
+  }
+
+  .modal__reservation-label-text {
+    font-size: 17px;
+    line-height: 25.5px;
+  }
+
+  .modal__reservation-button {
+    margin-top: 56px;
+    padding: 15px 26px;
+  }
+
+  .modal__reservation-input--checkbox {
+    margin-bottom: 25px;
+  }
+
+  .modal__reservation-button-text {
+    font-size: 12px;
+    line-height: 15.5px;
+    margin: 0;
+    padding: 0;
   }
 }

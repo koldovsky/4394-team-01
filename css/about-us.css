@@ -3,8 +3,11 @@
 @import 'global.header-hero.css';
 @import 'about-us.header-background.css';
 @import 'about.us-information-ratings.css';
+@import 'about-us.statistics.css';
 @import 'about-us.experience.css';
 @import 'about-us.activitygallery.css';
 @import 'about-us.slider.css';
 @import 'about-us.event-venue.css';
 @import 'global.footer.css';
+
+

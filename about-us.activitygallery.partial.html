@@ -1,7 +1,11 @@
 <!-- natalka_tkhoriv -->
 <section class="activity__gallery">
   <div class="activity__gallery-container">
-    <img class="activity__gallery-transparent-img" src="https://res2.weblium.site/res/65a4dd651ae638000e4a167b/65b25ac2761897000fc1ea6d_optimized?nowebp" alt="transparent text" />
+    <img
+      class="activity__gallery-transparent-img"
+      src="img/about-us/Gallery.png"
+      alt="transparent text"
+    />
     <div class="activity__gallery-text">
       <div class="activity__gallery-icon">
         <svg
@@ -41,35 +45,79 @@
     <div class="activity__gallery-images">
       <div class="activity__gallery-img activity__gallery-img--dog">
         <img
-          width="50"
           src="img/about-us/photo_with_dog.jpeg"
           alt="photo with dog"
         />
       </div>
       <div class="activity__gallery-img activity__gallery-img--door">
-        <img width="50" src="img/about-us/opened_door.jpeg" alt="opened door" />
+        <img
+          src="img/about-us/opened_door.jpeg"
+          alt="opened door"
+        />
       </div>
       <div class="activity__gallery-img activity__gallery-img--fire">
         <img
-          width="50"
           src="img/about-us/family_fire.jpeg"
           alt="family near the fire"
         />
       </div>
       <div class="activity__gallery-img activity__gallery-img--interior">
-        <img width="50" src="img/about-us/interior.jpeg" alt="interior" />
+        <img
+          src="img/about-us/interior.jpeg"
+          alt="interior"
+        />
       </div>
       <div class="activity__gallery-img activity__gallery-img--view">
-        <img width="50" src="img/about-us/nature_view.jpeg" alt="nature view" />
+        <img
+          src="img/about-us/nature_view.jpeg"
+          alt="nature view"
+        />
       </div>
       <div class="activity__gallery-img activity__gallery-img--guitar">
         <img
-          width="50"
           src="img/about-us/play_the_guitar.jpg"
           alt="play the guitar"
         />
       </div>
     </div>
-    <hr class="under__line" />
+    <div class="activity__gallery-underline-container">
+      <hr class="under__line" />
+    </div>
   </div>
 </section>
+
+<div id="galleryModal" class="modal">
+  <div class="gallery__modal-overlay"></div>
+  <nav class="gallery__modal-navbar">
+  <ul class="gallery__toolbar">
+    <li>
+      <button id="zoomInBtn" aria-label="Zoom in">
+        <img src="img/about-us/gallery-modal-icons/zoom-plus.svg" alt="Zoom in">
+      </button>
+    </li>
+    <li>
+      <button id="zoomOutBtn" aria-label="Zoom out">
+        <img src="img/about-us/gallery-modal-icons/zoom-out.svg" alt="Zoom out">
+      </button>
+    </li>
+    <li>
+      <button id="closeGalleryModal" aria-label="Close modal">
+        <img src="img/about-us/gallery-modal-icons/close.svg" alt="Close">
+      </button>
+    </li>
+  </ul>
+</nav>
+<div class="gallery__modal-content">
+    <div class="image-wrapper">
+      <img id="modalImage" src="" alt="gallery image" />
+    </div>
+<div class="gallery__modal-nav-buttons">
+      <button id="prevBtn" class="prevBtn">
+        <img src="img/about-us/gallery-modal-icons/arrow-left.svg" alt="" />
+      </button>
+      <button id="nextBtn" class="nextBtn">
+        <img src="img/about-us/gallery-modal-icons/arrow-right.svg" alt="" />
+      </button>
+    </div>
+  </div>
+</div>

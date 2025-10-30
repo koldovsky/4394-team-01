@@ -1,5 +1,5 @@
 <!-- Kostiantyn Kobel -->
-<section class="container index__header_hero-content">
+<section class="container index__header_hero">
   <div class="header__hero-content">
     <div class="header__hero_scroll-up" aria-hidden="true">
       <svg
@@ -37,11 +37,14 @@
     <p class="header__hero-coords">39°N 120°W / 39°N 120°W</p>
     <h1 class="header__hero-title" id="hero-title">Hidden Heaven</h1>
     <div class="header__hero-links">
-      <a class="header__hero-link global__button" href="habitations.html">
+      <a
+        class="header__hero-link global__button global__button-text"
+        href="habitations.html"
+      >
         BOOK NOW
       </a>
       <a
-        class="header__hero-link global-button header__hero_btn"
+        class="header__hero-link global__button global__button-text"
         href="contacts.html"
       >
         <svg
@@ -63,14 +66,18 @@
             fill="currentColor"
           ></path>
         </svg>
-        <span class="global-button global__button-text">CALL US</span>
+        <span>CALL US</span>
       </a>
     </div>
   </div>
   <div class="header__hero-footer">
     <div class="header__hero_price-lists">
       <div class="price__list-item">
-        <a class="price__list-link" href="#">price list</a>
+        <a id="ourPriceListButton" class="price__list-link" href="#campfire">
+          price list
+        </a>
+      </div>
+      <div class="price__list-item">
         <svg
           class="price__list_scroll_down-img"
           xmlns="http://www.w3.org/2000/svg"
@@ -107,33 +114,37 @@
         </svg>
       </div>
       <div class="price__list-item">
-        <svg
-          class="price__list_quote-img"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          version="1.1"
-          x="0px"
-          y="0px"
-          viewBox="0 0 512 512"
-          enable-background="new 0 0 512 512"
-          xml:space="preserve"
-          width="50"
-          height="100%"
-        >
-          <g fill="currentColor">
-            <path
-              d="M420.586,346.029c0,27.717-6,54.371-17.093,79.371c64.561-43.279,105.525-105.061,107.213-173.808l1.25-1.406V85.381   H299.279v213.306h115.338C418.523,314.029,420.586,329.842,420.586,346.029z"
-              fill="currentColor"
-            ></path>
-            <path
-              d="M116.258,298.688c4.125,15.717,6.281,31.938,6.281,48.527c0,27.719-6.031,54.404-17.124,79.404   c65.402-43.842,106.588-106.621,107.275-176.432h0.031v-0.844c0-0.344,0-0.656,0-1c0-0.344,0-0.688,0-1.031V85.381H0.044v213.306   H116.258z"
-              fill="currentColor"
-            ></path>
-          </g>
-        </svg>
-        <p class="price__list-description">
-          One of the best glamping spots in Washington
-        </p>
+        <div class="item_articul">
+          <svg
+            class="price__list_quote-img"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            x="0px"
+            y="0px"
+            viewBox="0 0 512 512"
+            enable-background="new 0 0 512 512"
+            xml:space="preserve"
+            width="50"
+            height="100%"
+          >
+            <g fill="currentColor">
+              <path
+                d="M420.586,346.029c0,27.717-6,54.371-17.093,79.371c64.561-43.279,105.525-105.061,107.213-173.808l1.25-1.406V85.381   H299.279v213.306h115.338C418.523,314.029,420.586,329.842,420.586,346.029z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M116.258,298.688c4.125,15.717,6.281,31.938,6.281,48.527c0,27.719-6.031,54.404-17.124,79.404   c65.402-43.842,106.588-106.621,107.275-176.432h0.031v-0.844c0-0.344,0-0.656,0-1c0-0.344,0-0.688,0-1.031V85.381H0.044v213.306   H116.258z"
+                fill="currentColor"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="item-articul">
+          <p class="price__list-description">
+            One of the best glamping spots in Washington
+          </p>
+        </div>
       </div>
     </div>
   </div>

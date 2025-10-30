@@ -1,35 +1,32 @@
 <!-- Kateryna Kysten -->
 <section class="contact-us">
-  <div class="contact-us__main-container">
-    <div class="contact-us__decor">
-      <svg
-        class="contact-us__decor-icon"
-        width="50"
-        height="50"
-        viewBox="0 0 100 100"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
-      >
-        <polygon
-          points="49.415,14.946 72.995,38.526 78.489,33.032 49.415,3.958 20.342,33.032 25.836,38.526"
-          fill="currentColor"
-        />
-        <polygon
-          points="49.415,35.703 72.995,59.282 78.489,53.788 49.415,24.714 20.342,53.788 25.836,59.282"
-          fill="currentColor"
-        />
-        <polygon
-          points="49.415,56.458 72.995,80.039 78.489,74.545 49.415,45.471 20.342,74.545 25.836,80.039"
-          fill="currentColor"
-        />
-      </svg>
-    </div>
-
+  <div class="contact-us__main-container container__contacts">
     <div class="contact-us__info-container">
       <div class="contact-us__info">
-        <h2 class="contact-us__title">
-          We're Here to Assist You
-        </h2>
+        <div class="contact-us__decor">
+          <svg
+            class="contact-us__decor-icon"
+            width="50"
+            height="50"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <polygon
+              points="49.415,14.946 72.995,38.526 78.489,33.032 49.415,3.958 20.342,33.032 25.836,38.526"
+              fill="currentColor"
+            />
+            <polygon
+              points="49.415,35.703 72.995,59.282 78.489,53.788 49.415,24.714 20.342,53.788 25.836,59.282"
+              fill="currentColor"
+            />
+            <polygon
+              points="49.415,56.458 72.995,80.039 78.489,74.545 49.415,45.471 20.342,74.545 25.836,80.039"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+        <h2 class="contact-us__title">We're Here to Assist You</h2>
         <p class="contact-us__text">
           Feel free to reach out to us with any inquiries or to book your
           enchanting glamping getaway. We're here to assist you!
@@ -42,6 +39,8 @@
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
+              stroke="currentColor"
+              stroke-width="1"
             >
               <title>Tent</title>
               <path
@@ -53,9 +52,7 @@
 
           <ul class="contact-us__details-list">
             <li>
-              <p class="contact-us__details-title">
-                Address
-              </p>
+              <p class="contact-us__details-title">Address</p>
             </li>
             <li>
               <p class="contact-us__details">
@@ -71,6 +68,8 @@
               class="contact-us__icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 100 100"
+              stroke="currentColor"
+              stroke-width="1"
             >
               <title>Phone</title>
               <path
@@ -105,7 +104,7 @@
         </div>
       </div>
 
-      <form class="contact-us__form" action="#">
+      <form class="contact-us__form" action="https://formspree.io/f/movpwqqd" method="POST">
         <input
           class="contact-us__input"
           type="text"
@@ -137,7 +136,39 @@
       </form>
     </div>
 
-    <div class="contact-us__main-image-wraper">
+    <div class="contact-us__modal">
+      <div class="contact-us__modal-content">
+        <button class="contact-us__modal-close">
+          <span class="contact-us__modal-close__span"></span>
+          <span class="contact-us__modal-close__span"></span>
+        </button>
+        <div class="contact-us__modal-icon-wrapper">
+          <svg
+            class="contact-us__modal-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 43 32"
+            aria-hidden="true"
+          >
+            <g>
+              <path fill="currentColor" d="M18.32 32c-1.51 0-2.93-.62-3.997-1.746-.43-.455-.43-1.19 0-1.645.43-.455 1.128-.455 1.558 0 .653.686 1.52 1.065 2.44 1.065.92 0 1.787-.38 2.438-1.066l19.03-20.077c.652-.687 1.01-1.6 1.01-2.572 0-.97-.358-1.885-1.01-2.572-1.344-1.418-3.532-1.418-4.876 0L24.31 14.573c-.43.454-1.13.454-1.56 0-.43-.454-.43-1.19 0-1.644L33.354 1.743c2.204-2.325 5.79-2.325 7.994 0 2.204 2.325 2.204 6.108 0 8.433l-19.03 20.077C21.25 31.38 19.83 32 18.32 32z"></path>
+              <path fill="currentColor" fill-opacity=".359" d="M24 26.134l-3.295 3.44c-1.82 1.9-4.77 1.9-6.59 0L2.365 17.307c-1.82-1.9-1.82-4.98 0-6.88 1.82-1.9 4.77-1.9 6.59 0L24 26.133z"></path>
+              <path fill="currentColor" d="M18.053 32c-1.592 0-3.088-.645-4.214-1.817L1.742 17.59c-2.324-2.42-2.324-6.354 0-8.773C2.868 7.645 4.365 7 5.957 7c1.592 0 3.088.645 4.213 1.817L25.66 24.94c.453.473.453 1.24 0 1.712l-3.393 3.53C21.142 31.356 19.645 32 18.053 32zM5.957 9.42c-.97 0-1.884.393-2.57 1.108-1.42 1.475-1.42 3.876 0 5.352l12.096 12.592c.686.715 1.6 1.11 2.57 1.11.97 0 1.884-.395 2.57-1.11l2.572-2.676L8.527 10.528c-.686-.715-1.6-1.11-2.57-1.11z"></path>
+            </g>
+          </svg>
+        </div>
+        <p class="contact-us__modal-title">
+          Thank you!
+        </p>
+        <p class="contact-us__modal-text">
+          We will contact you shortly
+        </p>
+          <button class="contact-us__modal-close contact-us__modal-close-wrapper">
+            Ok
+          </button>
+      </div>
+    </div>
+
+    <div class="contact-us__main-image-wraper container__contacts">
       <img
         src="img/contacts/contacts-faq-main.png"
         alt="Accommodations Types"

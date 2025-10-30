@@ -1,95 +1,175 @@
 /* Kostiantyn Kobel */
 .global__header {
-  position: relative;
-  width: 100%;
-  .navbar {
+  .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
-    transition: background-color 0.3s ease;
-  }
-  .navbar-brand {
-    .header__logo-image {
-      width: 2.8rem;
-    }
-    .navbar-toggler.navbar-toggler-icon-line:nth-child(1) {
-      transform: translateY(0) rotate(45deg);
-    }
-    .navbar-toggler.navbar-toggler-icon-line:nth-child(2) {
-      opacity: 0;
-    }
-    .navbar-toggler.navbar-toggler-icon-line:nth-child(3) {
-      transform: translateY(0) rotate(-45deg);
-    }
-    .navbar-collapse.show {
-      background-color: var(--title-text-color);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 10;
+    .header__logo {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      text-decoration: none;
+      .header__logo-image {
+        width: 2.8rem;
+        display: block;
+        @media (max-width: 768px) {
+          position: absolute;
+          left: 30px;
+          z-index: 101;
+        }
+      }
     }
-  }
-  .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    .nav-link {
-      font-size: 1.1rem;
-      text-transform: uppercase;
-      color: var(--alt-text-color);
-      font-weight: 600;
-      transition: color 0.3s ease;
-      @media (min-width: 1024px) {
+    .header__burger {
+      display: none;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      z-index: 101;
+      @media (max-width: 768px) {
+        display: block;
+      }
+      .header__burger-line {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: var(--alt-text-color);
+        transition: transform var(--transition-speed) ease,
+          opacity var(--transition-speed) ease;
+        &:nth-child(1) {
+          transform: translateY(-8px);
+        }
+        &:nth-child(2) {
+          transform: translateY(0);
+        }
+        &:nth-child(3) {
+          transform: translateY(8px);
+        }
+      }
+      &.is-active {
+        .header__burger-line {
+          &:nth-child(1) {
+            transform: translateY(0) rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            transform: translateY(0) rotate(-45deg);
+          }
+        }
+      }
+    }
+    .header__nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background-color: var(--title-text-color);
+      @media (max-width: 768px) {
+        position: fixed;
+        top: 0.1rem;
+        left: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: height var(--transition-speed) ease;
+        z-index: 100;
+        &.is-open {
+          height: 100vh;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+      }
+      @media (min-width: 768px) {
+        background-color: transparent;
+      }
+      .header__menu {
+        display: flex;
+        list-style: none;
+        gap: var(--spacing-md);
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 768px) {
+          flex-direction: row;
+          align-items: center;
+          padding: var(--spacing-md);
+          gap: var(--spacing-sm);
+        }
+        .header__menu-item {
+          @media (max-width: 768px) {
+            width: 100%;
+            text-align: center;
+          }
+        }
+        .header__menu-link {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: var(--alt-text-color);
+          font-weight: 500;
+          font-size: 1rem;
+          transition: color 0.3s ease;
+          @media (min-width: 768px) {
+            font-size: 0.7rem;
+            gap: 0.5rem;
+          }
+          @media (min-width: 990px) {
+            font-size: 1.1rem;
+          }
+          &:hover {
+            color: var(--scroll-up-color);
+          }
+        }
+      }
+      .header__description {
+        color: var(--description-text-color);
         font-size: 0.9rem;
-      }
-      &:hover {
-        color: var(--scroll-up-color);
-      }
-    }
-  }
-  .header__description {
-    display: flex;
-    justify-content: center;
-    font-size: 0.9rem;
-    color: var(--description-text-color);
-    margin: 48px 0 24px;
-    @media (min-width: 1024px) {
-      font-size: 1rem;
-      margin: 0;
-    }
-  }
-  .social__media {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    @media (min-width: 992px) {
-    }
-    .social__media-link {
-      transition: fill 0.3s, transform 0.3s;
-      @media (min-width: 1024px) {
-        font-size: 0.5rem;
-      }
-      &:hover {
-        fill: var(--accent-color);
-        transform: scale(1.1);
-      }
-      .social__media-img {
-        fill: var(--alt-text-color);
+        margin-left: 1rem;
 
-        &:hover {
-          fill: var(--description-text-color);
-          transform: scale(1.1);
+        @media (min-width: 786px) {
+          text-align: center;
+          margin: 0;
+        }
+        @media (min-width: 1024px) {
+          font-size: 1rem;
+          padding: 0 30px;
+        }
+      }
+      .social__media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        .social__media-link {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          transition: fill 0.3s, transform 0.3s;
+          @media (min-width: 1024px) {
+            font-size: 0.5rem;
+          }
+          &:hover {
+            fill: var(--accent-color);
+            transform: scale(1.1);
+          }
+          .social__media-img {
+            fill: var(--alt-text-color);
+            transition: fill 0.3s, transform 0.3s;
+            &:hover {
+              fill: var(--description-text-color);
+              transform: scale(1.1);
+            }
+          }
         }
       }
     }

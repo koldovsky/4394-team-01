@@ -195,16 +195,10 @@
           With spacious interiors and panoramic views of the wilderness, our
           geodesic domes provide the perfect setting for a memorable retreat.
         </p>
-        <section id="modal">
-          <a
-            href="#"
-            class="habitations__link-form"
-            data-hx-get="modal-form.partial.html"
-            data-hx-target="#modal"
-            data-hx-swap="innerHTML"
-          >
+        <section id="modal-container">
+          <button class="habitations__link-form modal-open-btn">
             BOOK NOW
-          </a>
+          </button>
         </section>
       </div>
       <div class="habitations__item">
@@ -312,18 +306,16 @@
           These quaint cabins exude warmth and character, with their handcrafted
           wooden exteriors and inviting interiors.
         </p>
-        <section id="modal">
-          <a
-            href="#"
-            class="habitations__link-form"
-            data-hx-get="modal-form.partial.html"
-            data-hx-target="#modal"
-            data-hx-swap="innerHTML"
-          >
+        <section id="modal-container">
+          <button class="habitations__link-form modal-open-btn">
             BOOK NOW
-          </a>
+          </button>
         </section>
       </div>
+    </div>
+    <div class="countdown-timer">
+      <p class="countdown-timer__label">Special Offer Ends In:</p>
+      <div class="countdown-timer__time countdown"></div>
     </div>
   </div>
 </section>

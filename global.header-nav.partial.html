@@ -1,46 +1,52 @@
 <!-- Kostiantyn Kobel -->
-<section class="container global__header">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="./index.html">
-      <img class="header__logo-image" src="img/header/logo.svg" alt="Logo" />
+<section class="global__header">
+  <div class="container header__container">
+    <a class="header__logo" href="./index.html">
+      <img
+        class="header__logo-image"
+        src="img/header/logo.svg"
+        alt="Hidden Heaven Logo"
+        width="48"
+        height="48"
+      />
     </a>
     <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
+      class="header__burger"
+      aria-label="Toggle menu"
       aria-expanded="false"
-      aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
+      <span class="header__burger-line"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="about-us.html">
-            ABOUT US
-          </a>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="about-us.html">ABOUT US</a>
         </li>
-        <li class="nav-item">
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="habitations.html">HABITATIONS</a>
+        </li>
+        <li class="header__menu-item">
           <a
-            class="nav-link active"
-            aria-current="page"
-            href="habitations.html"
+            id="scrollButtonIntoCampInfrastructure"
+            class="header__menu-link"
+            href="#infrastructure"
           >
-            HABITATIONS
+            SERVICES
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">SERVICES</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">TESTIMONIALS</a>
-        </li>
-        <li>
-          <a class="nav-link active" aria-current="page" href="contacts.html">
-            CONTACTS
+        <li class="header__menu-item">
+          <a
+            id="customerReviewsButton"
+            class="header__menu-link"
+            href="#testimonials"
+          >
+            TESTIMONIALS
           </a>
+        </li>
+        <li class="header__menu-item">
+          <a class="header__menu-link" href="contacts.html">CONTACTS</a>
         </li>
       </ul>
       <p class="header__description">Your escape awaits here.</p>
@@ -52,7 +58,7 @@
             aria-label="Facebook"
           >
             <svg
-              width="43"
+              width="35"
               class="social__media-img si68e395936cca38cc42d32c6fd078e121b522404783e90d04a4c34cfa1759745435311 svgIcon_1J7 darkTheme_3jZ"
               viewBox="0 0 32 32"
             >
@@ -64,14 +70,14 @@
           </a>
         </li>
 
-        <li class="social-media__item">
+        <li class="social__media-item">
           <a
             class="social__media-link"
             href="https://x.com/"
             aria-label="X (Twitter)"
           >
             <svg
-              width="43"
+              width="35"
               class="social__media-img si68e395936cca38cc42d32c6fd078e121b522404783e90d04a4c34cfa1759745435311 svgIcon_1J7 darkTheme_3jZ"
               viewBox="0 0 32 32"
             >
@@ -83,17 +89,13 @@
           </a>
         </li>
 
-        <li class="social-media__item">
+        <li class="social__media-item">
           <a
             class="social__media-link"
             href="https://www.instagram.com/"
             aria-label="Instagram"
           >
-            <svg
-              width="43"
-              class="social__media-img "
-              viewBox="0 0 32 32"
-            >
+            <svg width="35" class="social__media-img" viewBox="0 0 32 32">
               <g>
                 <path
                   class="logo_2gS"
@@ -108,14 +110,14 @@
           </a>
         </li>
 
-        <li class="social-media__item">
+        <li class="social__media-item">
           <a
             class="social__media-link"
             href="https://www.youtube.com/"
             aria-label="YouTube"
           >
             <svg
-              width="43"
+              width="35"
               class="social__media-img si68e395936cca38cc42d32c6fd078e121b522404783e90d04a4c34cfa1759745435311 svgIcon_1J7 darkTheme_3jZ"
               viewBox="0 0 32 32"
             >
@@ -127,6 +129,6 @@
           </a>
         </li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </section>
