@@ -1,41 +1,45 @@
 /* --natalka__tkhoriv-- */
 .experience {
   position: relative;
-  max-width: 75rem;
+  max-width: 1200px;
   width: 100%;
+  min-height: 100vh;
   display: flex;
   margin: 0 auto;
+  overflow: hidden;
 }
-@media (max-width: 600px) {
-  .experience {
-    flex-direction: column;
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-  }
-}
+
 .experience__bg-image {
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
   z-index: 0;
 }
+
 @media (max-width: 600px) {
+  .experience {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
   .experience__bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
+
 .experience__container-wrapper {
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  padding: 7.5rem 1.8rem 6.2rem;
+  padding: 105px 30px 95px;
   width: 50%;
   box-sizing: border-box;
 }
@@ -47,13 +51,14 @@
 }
 .experience__transparent-image {
   position: absolute;
-  top: 7.5rem;
-  left: 1.8rem;
+  top: 105px;
+  left: 30px;
   width: 100%;
   height: auto;
   max-width: calc(100% - 3.7rem);
   z-index: 1;
 }
+
 @media (max-width: 600px) {
   .experience__transparent-image {
     position: absolute;
@@ -110,7 +115,7 @@
   font-stretch: 100%;
   color: var(--text-color);
   margin-top: 1.56rem;
-  margin-bottom: 0;
+  margin-bottom: 32.5px;
   display: block;
   z-index: 1;
 }
@@ -124,7 +129,8 @@
   font-size: 1.5rem;
   line-height: 1.95rem;
   z-index: 1;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
+  text-align: left;
 }
 @media (max-width: 600px) {
   .experience__list-heading {
@@ -134,7 +140,7 @@
   }
 }
 .experience__list-text {
-  font-size: 1.06rem;
+  font-size: 17px;
   font-weight: 300;
   color: var(--primary-text-color);
   text-align: left;
@@ -142,7 +148,8 @@
   white-space: normal;
   word-break: break-word;
   overflow-wrap: break-word;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
+  line-height: 25.5px;
 }
 @media (max-width: 600px) {
   .experience__list-text {
@@ -154,7 +161,7 @@
   min-width: 0;
   word-break: break-word;
   flex-wrap: wrap;
-  margin: 0.46rem;
+  margin: 8px;
 }
 @media (max-width: 600px) {
   .experience__list-content {
@@ -204,7 +211,7 @@
   display: flex;
   align-items: flex-start;
   list-style: none;
-  padding: 0.46rem 0;
+  margin-bottom: 15px;
 }
 .experience__list-img {
   display: flex;

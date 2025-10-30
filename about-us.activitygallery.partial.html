@@ -86,21 +86,38 @@
   </div>
 </section>
 
-<div id="galleryModal" class="modal hidden">
+<div id="galleryModal" class="modal">
   <div class="gallery__modal-overlay"></div>
-  <div class="gallery__modal-content">
-    <div class="gallery__modal-controls">
-      <div class="gallery__zoom-buttons">
-        <button id="zoomInBtn" aria-label="Zoom in">+</button>
-        <button id="zoomOutBtn" aria-label="Zoom out">-</button>
-      </div>
-      <button id="closeGalleryModal" aria-label="Close modal">x</button>
+  <nav class="gallery__modal-navbar">
+  <ul class="gallery__toolbar">
+    <li>
+      <button id="zoomInBtn" aria-label="Zoom in">
+        <img src="img/about-us/gallery-modal-icons/zoom-plus.svg" alt="Zoom in">
+      </button>
+    </li>
+    <li>
+      <button id="zoomOutBtn" aria-label="Zoom out">
+        <img src="img/about-us/gallery-modal-icons/zoom-out.svg" alt="Zoom out">
+      </button>
+    </li>
+    <li>
+      <button id="closeGalleryModal" aria-label="Close modal">
+        <img src="img/about-us/gallery-modal-icons/close.svg" alt="Close">
+      </button>
+    </li>
+  </ul>
+</nav>
+<div class="gallery__modal-content">
+    <div class="image-wrapper">
+      <img id="modalImage" src="" alt="gallery image" />
     </div>
-    <img id="modalImage" src="" alt="gallery image" />
-    <div class="gallery__modal-nav-buttons">
-      <button id="prevBtn">←</button>
-      <button id="nextBtn">→</button>
+<div class="gallery__modal-nav-buttons">
+      <button id="prevBtn" class="prevBtn">
+        <img src="img/about-us/gallery-modal-icons/arrow-left.svg" alt="" />
+      </button>
+      <button id="nextBtn" class="nextBtn">
+        <img src="img/about-us/gallery-modal-icons/arrow-right.svg" alt="" />
+      </button>
     </div>
   </div>
 </div>
-
