@@ -1,7 +1,9 @@
 .campfire-section {
   font-family: "Poppins", sans-serif;
+  color: #333;
 }
 
+/* HERO блок */
 .campfire-section__hero {
   background-image: url("https://res2.weblium.site/res/65c6167b519095009f163b9e/65cded4cc5c522000f1d29d8_optimized.webp");
   background-size: cover;
@@ -10,8 +12,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   text-align: center;
+  color: #fff;
   position: relative;
 }
 
@@ -28,8 +30,9 @@
 }
 
 .campfire-section__title {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .campfire-section__btn {
@@ -39,13 +42,14 @@
   border-radius: 4px;
   text-decoration: none;
   font-weight: 600;
+  transition: background 0.3s ease;
 }
 
 .campfire-section__btn:hover {
   background: #8e8d47;
 }
 
-/* Prices */
+/* PRICES блок */
 .campfire-section__prices {
   padding: 60px 20px;
   background: #fff;
@@ -54,17 +58,26 @@
 .campfire-section__container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.campfire-section__price-content {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.campfire-section__price-image {
+  flex: 1;
 }
 
 .campfire-section__price-image img {
   width: 100%;
-  max-width: 450px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  object-fit: cover;
 }
 
 .campfire-section__price-info {
@@ -75,11 +88,12 @@
   font-size: 1.8rem;
   margin-bottom: 10px;
   color: #333;
+  font-weight: 700;
 }
 
 .campfire-section__price-subtitle {
   margin-bottom: 20px;
-  color: #777;
+  color: #666;
 }
 
 .campfire-section__price-table {
@@ -88,29 +102,51 @@
   margin: 0;
 }
 
-.campfire-section__price-table li {
+.campfire-section__price-item {
   display: flex;
   justify-content: space-between;
-  padding: 8px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #eee;
 }
 
-.campfire-section__price-table li span:first-child {
+.campfire-section__item-name {
   font-weight: 500;
 }
 
-.campfire-section__price-table li span:last-child {
+.campfire-section__item-price {
   color: #a1a04f;
   font-weight: 600;
 }
 
-@media (max-width: 768px) {
-  .campfire-section__container {
+/* --- АДАПТИВ --- */
+@media (max-width: 992px) {
+  .campfire-section__price-content {
     flex-direction: column;
     text-align: center;
   }
 
-  .campfire-section__price-table li {
+  .campfire-section__price-image img {
+    max-width: 90%;
+  }
+
+  .campfire-section__price-info {
+    width: 100%;
+  }
+
+  .campfire-section__price-item {
     flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .campfire-section__title {
+    font-size: 1.8rem;
+  }
+
+  .campfire-section__btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
   }
 }
