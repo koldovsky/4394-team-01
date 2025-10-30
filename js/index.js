@@ -3,7 +3,6 @@ function init() {
   import('./global.header-burger.js');
   import('./about-us.js');
   import('./index.customer-reviews-carousel.js');
-  import('./index.customer-reviews-carousel-smooth-scroling.js');
   import('./index.habitations.special-offers.js');
   import('./index.habitations-main-countdown.js');
   import('./index.camp-infrastructure-scroll-view.js');
