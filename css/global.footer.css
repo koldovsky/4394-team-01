@@ -169,6 +169,9 @@
       @media (min-width: 768px) {
         align-self: center;
       }
+      @media (min-width: 1200px) {
+        align-self: start;
+      }
     }
     .media__link-bold {
       display: block;
