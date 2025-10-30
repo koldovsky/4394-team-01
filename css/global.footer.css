@@ -104,8 +104,8 @@
   font-style: italic;
   overflow-wrap: break-word;
   color: var(--global-description-text-color);
-  @media (min-width:1200px) {
-      align-self: flex-start;
+  @media (min-width: 1200px) {
+    align-self: flex-start;
   }
 }
 .media {
@@ -133,7 +133,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   flex-wrap: wrap;
   @media (min-width: 1204px) {
     flex-direction: row;
@@ -145,6 +145,10 @@
   }
   .media__img {
     flex-shrink: 0;
+    margin-right: 10px;
+    @media (min-width: 768px) {
+      margin-right: 0px;
+    }
   }
   .media__item {
     display: flex;
@@ -156,11 +160,15 @@
     }
     .media__label {
       display: block;
+      align-self: start;
       margin-bottom: 3px;
       color: var(--global-description-text-color);
       font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 0.15rem;
+      @media (min-width: 768px) {
+        align-self: center;
+      }
     }
     .media__link-bold {
       display: block;
