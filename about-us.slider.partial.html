@@ -59,3 +59,81 @@
     <hr class="under__line" />
   </div>
 </section>
+const sliderTrack = document.querySelector('.about-us__slider-track');
+const slides = Array.from(document.querySelectorAll('.about-us__slider-container'));
+const prevBtn = document.getElementById('leftArrow');
+const nextBtn = document.getElementById('rightArrow');
+
+let currentIndex = slides.length;
+
+slides.slice(0, -1).forEach(slide => sliderTrack.appendChild(slide.cloneNode(true)));
+slides.slice(0, -1).forEach(slide => sliderTrack.insertBefore(slide.cloneNode(true), sliderTrack.firstChild));
+
+const allSlides = Array.from(document.querySelectorAll('.about-us__slider-container'));
+
+function getSlidesPerView() { return window.innerWidth <= 600 ? 1 : 3; }
+
+// function updateSliderPosition(animate = true) {
+//   const slide = allSlides[0];
+//   const style = window.getComputedStyle(slide);
+//   const gap = 30;
+//   const slideWidth = slide.offsetWidth;
+//   sliderTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
+//   const offset = -currentIndex * (slideWidth + gap);
+//   sliderTrack.style.transform = `translateX(${offset}px)`;
+// }
+function updateSliderPosition(animate = true) {
+  const slide = allSlides[0];
+  const gap = 30;
+  const slideWidth = slide.offsetWidth;
+
+  sliderTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
+
+  let offset = -currentIndex * (slideWidth + gap);
+
+  // Додаткове зміщення для центрування першого слайда на мобільних
+  if (window.innerWidth <= 600) {
+    const slidesPerView = 1;
+    const containerWidth = sliderTrack.parentElement.offsetWidth;
+    const totalSlideWidth = slideWidth * slidesPerView + gap * (slidesPerView - 1);
+    offset += (containerWidth - totalSlideWidth) / 2; // центрування
+  }
+
+  sliderTrack.style.transform = `translateX(${offset}px)`;
+}
+
+
+
+
+function moveNext() { 
+  currentIndex++;
+  updateSliderPosition(true);
+
+  const totalSlides = slides.length;
+  setTimeout(() => { 
+    if (currentIndex >= totalSlides * 2) { 
+      currentIndex = totalSlides;
+      updateSliderPosition(false);
+    } 
+  }, 500); 
+} 
+
+function movePrev() {
+  currentIndex--;
+  updateSliderPosition(true);
+
+  const totalSlides = slides.length;
+  setTimeout(() => {
+    if (currentIndex < totalSlides) {
+      currentIndex = totalSlides * 2 - 1;
+      updateSliderPosition(false);
+    } 
+  }, 500); 
+} 
+
+nextBtn.addEventListener('click', moveNext);
+prevBtn.addEventListener('click', movePrev);
+
+window.addEventListener('resize', () => updateSliderPosition(false));
+
+updateSliderPosition(false);
