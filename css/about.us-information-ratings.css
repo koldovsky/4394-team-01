@@ -4,7 +4,7 @@
    grid-template-columns: 1fr;
    align-items: center;
    text-align: left;
-   padding-top: 100px;
+   padding-top: 120px;
    position: relative;
    .about-us__image-wrapper {
      width: 100%;
@@ -38,20 +38,36 @@
      font-family: 'Work Sans', sans-serif;
      font-weight: 600;
    }
-  
+
   .about-us__countdown {
     position: absolute;
-    top: 16px;
+    top: 5px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 12px;
+    flex-direction: column;
     align-items: center;
+    gap: 12px;
     z-index: 60;
     padding: 6px 8px;
     pointer-events: auto;
     background: transparent;
   }
+
+  .about-us__countdown .countdown-heading {
+    font-weight: bold;
+    font-size: clamp(0.95rem, 3.5vw, 1.25rem);
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 6px;
+    display: inline-flex;
+    gap: 6px;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .about-us__countdown .countdown-heading-letter { display: inline-block; margin: 0; }
+  .about-us__countdown .countdown-row { display: flex; gap: 12px; align-items: center; }
 
  
   .about-us__countdown .countdown-item {
@@ -91,6 +107,8 @@
       gap: 8px;
       padding: 4px 6px;
     }
+    .about-us__countdown .countdown-heading { font-size: clamp(0.9rem, 4vw, 1.05rem); gap: 3px; }
+    .about-us__countdown .countdown-heading-letter { margin: 0; }
     .about-us__countdown .countdown-item { min-width: 52px; padding: 6px 8px; }
     .about-us__countdown .countdown-value { font-size: 0.95rem; }
     .about-us__countdown .countdown-label { font-size: 0.55rem; }

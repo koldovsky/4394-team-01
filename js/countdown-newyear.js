@@ -13,6 +13,38 @@ function initCountdown() {
 
   const target = getNextNewYear();
 
+ 
+  let heading = el.querySelector('.countdown-heading');
+  if (!heading) {
+    heading = document.createElement('div');
+    heading.className = 'countdown-heading';
+    const text = 'Time left until New Year';
+  
+    let letterIndex = 0;
+    for (let i = 0; i < text.length; i++) {
+      const ch = text[i];
+      const span = document.createElement('span');
+      span.className = 'countdown-heading-letter';
+      span.textContent = ch;
+      if (ch !== ' ') {
+       
+        span.style.color = (letterIndex % 2 === 0) ? 'var(--accent-color)' : 'var(--scroll-up-color)';
+        letterIndex++;
+      }
+      heading.appendChild(span);
+    }
+    el.insertBefore(heading, el.firstChild);
+
+  
+    const items = Array.from(el.querySelectorAll('.countdown-item'));
+    if (items.length) {
+      const row = document.createElement('div');
+      row.className = 'countdown-row';
+      items.forEach(i => row.appendChild(i));
+      el.appendChild(row);
+    }
+  }
+
   function pad(v) {
     return String(v).padStart(2, '0');
   }
