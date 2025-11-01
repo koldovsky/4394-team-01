@@ -2,6 +2,7 @@ function init() {
   import('./global.header-burger.js');
   import('./about-us.activitygallery.carousel.js');
   import('./about-us.animation-tree.js');
+  import('./countdown-newyear.js');
 }
 
 const totalPartials = document.querySelectorAll(
