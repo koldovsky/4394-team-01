@@ -1,4 +1,7 @@
 /* --natalka__tkhoriv-- */
+  * {
+  -webkit-tap-highlight-color: transparent;
+}
 .activity__gallery {
   display: flex;
   box-sizing: border-box;
@@ -14,7 +17,7 @@
   }
 }
 .activity__gallery-container {
-  padding: 120px 24px 30px;
+  padding: 120px 30px 30px;
 }
 .activity__gallery-icon {
   color: var(--scroll-up-color);
@@ -102,7 +105,18 @@
   transition: opacity 0.3s ease;
 }
 .activity__gallery-img img:hover {
-  opacity: 0.9;
+  opacity: 0.8;
+}
+@media (hover: hover) and (pointer: fine) {
+  .activity__gallery-img img:hover {
+    opacity: 0.8;
+  }
+}
+@media (hover: none) and (pointer: coarse) {
+  .activity__gallery-img img:active {
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+  }
 }
 .under__line {
   border: none;
@@ -125,7 +139,7 @@
 .gallery__modal-overlay {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(27, 27, 27, 0.6);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   z-index: 9991;
@@ -156,19 +170,13 @@
 }
 .gallery__toolbar button:hover {
   background-color: rgba(0, 0, 0, 0.1);
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 @media (max-width: 600px) {
   .gallery__toolbar {
     margin: 0 30px;
   }
   .gallery__toolbar button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transform: none;
     transition: none;
   }
@@ -242,14 +250,11 @@
   pointer-events: auto;
 }
 .gallery__modal-nav-buttons button {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   border: none;
-  padding: 15px;
-  cursor: pointer;
+  padding: 20px;
+  margin: 0 20px;
   pointer-events: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: background-color 0.2s ease;
 }
 .gallery__modal-nav-buttons button:hover {
@@ -268,7 +273,6 @@
     object-fit: cover;
   }
   .gallery__modal-nav-buttons {
-    position: absolute;
     width: 100%;
     justify-content: space-between;
     padding: 0 10px;
@@ -279,12 +283,12 @@
   .gallery__modal-nav-buttons button {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 10px;
+    margin: 0;
     transition: none;
   }
   .gallery__modal-nav-buttons button:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
-
   .gallery__modal-nav-buttons button:active {
     background-color: rgba(0, 0, 0, 0.8); 
   }
@@ -305,7 +309,6 @@
   z-index: 10003;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%,);
 }
 .prevBtn {
   left: 0;

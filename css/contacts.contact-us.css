@@ -54,6 +54,7 @@
                     .contact-us__item {
                          display: flex;
                          flex-direction: row;
+                         align-items: center;
                          padding: 7.5px 0;
                          .contact-us__icon-wrapper {
                               background-color: var(--alt-text-color);
@@ -229,7 +230,6 @@
                          }
                     }
                }
-
           }
           .contact-us__modal.active {
                display: flex;

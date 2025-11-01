@@ -110,9 +110,10 @@
   }
 }
 .experience__subtitle {
-  font-size: 1.1875rem;
+  font-size: 19px;
   font-weight: 400;
   font-stretch: 100%;
+  line-height: 28.5px;
   color: var(--text-color);
   margin-top: 1.56rem;
   margin-bottom: 32.5px;

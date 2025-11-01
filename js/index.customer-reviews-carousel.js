@@ -21,6 +21,8 @@ function renderCarousel() {
     }
 }
 
+
+
 function showNextSlide() {
     currentSlide = (currentSlide + 1) % customerReviews.length;
     renderCarousel();
@@ -35,9 +37,10 @@ renderCarousel();
 
 const nextBtn = document.querySelector('.carousel-control-next');
 
-nextBtn.addEventListener('click', showNextSlide)
+nextBtn.addEventListener('click', showNextSlide);
 
 const prevBtn = document.querySelector('.carousel-control-prev');
+
 prevBtn.addEventListener('click', showPrevSlide);
 
 window.addEventListener('resize', renderCarousel);
