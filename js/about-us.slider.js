@@ -21,16 +21,11 @@ function updateSliderPosition(animate = true) {
 
   if (window.innerWidth <= 600) {
     const container = sliderTrack.parentElement;
-
-    // активний слайд
     const activeSlide = allSlides[currentIndex];
     if (!activeSlide) return;
 
-    // кількість клонованих слайдів перед оригінальними
-    const clonesBefore = slides.length - 1; 
-
-    // компенсуємо клоновані слайди
-    const correctedOffsetLeft = activeSlide.offsetLeft - clonesBefore * (activeSlide.offsetWidth + 10); // 10 = gap
+    const clonesBefore = slides.length - 2; 
+    const correctedOffsetLeft = activeSlide.offsetLeft - clonesBefore * (activeSlide.offsetWidth + 10);
     const containerCenter = container.offsetWidth / 2;
     const slideCenter = correctedOffsetLeft + activeSlide.offsetWidth / 2;
 
@@ -44,7 +39,6 @@ function updateSliderPosition(animate = true) {
     sliderTrack.style.transform = `translateX(${offset}px)`;
   }
 }
-
 function moveNext() { 
   currentIndex++;
   updateSliderPosition(true);
