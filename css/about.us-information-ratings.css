@@ -1,43 +1,43 @@
- .about-us {
-   font-family: 'Inter', sans-serif;
-   display: grid;
-   grid-template-columns: 1fr;
-   align-items: center;
-   text-align: left;
-   padding-top: 120px;
-   position: relative;
-   .about-us__image-wrapper {
-     width: 100%;
-     height: 100%;
-     padding: 0 30px;
-   }
-   .about-us__image {
-     width: 100%;
-     height: 100%;
-     padding: 8px;
-     object-fit: cover;
-     display: block;
-     box-sizing: border-box;
-     background-color: var(--color-border);
-   }
-   .about-us__content {
-     display: flex;
-     flex-direction: column;
-     box-sizing: border-box;
-     position: relative;
-     padding: 0 30px;
-     text-align: left;
-   }
-   .about-us__background-text {
-     position: absolute;
-     top: 0;
-     left: 0;
-     transform: translate(10%, 0%);
-     color: rgba(245, 245, 240, 0.5);
-     letter-spacing: 2px;
-     font-family: 'Work Sans', sans-serif;
-     font-weight: 600;
-   }
+.about-us {
+  font-family: 'Inter', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: left;
+  padding-top: 120px;
+  position: relative;
+  .about-us__image-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+  }
+  .about-us__image {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    object-fit: cover;
+    display: block;
+    box-sizing: border-box;
+    background-color: var(--color-border);
+  }
+  .about-us__content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0 30px;
+    text-align: left;
+  }
+  .about-us__background-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10%, 0%);
+    color: rgba(245, 245, 240, 0.5);
+    letter-spacing: 2px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+  }
 
   .about-us__countdown {
     position: absolute;
@@ -66,10 +66,16 @@
     justify-content: center;
     align-items: baseline;
   }
-  .about-us__countdown .countdown-heading-letter { display: inline-block; margin: 0; }
-  .about-us__countdown .countdown-row { display: flex; gap: 12px; align-items: center; }
+  .about-us__countdown .countdown-heading-letter {
+    display: inline-block;
+    margin: 0;
+  }
+  .about-us__countdown .countdown-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
 
- 
   .about-us__countdown .countdown-item {
     color: var(--alt-text-color);
     padding: 8px 12px;
@@ -78,10 +84,9 @@
     flex-direction: column;
     align-items: center;
     min-width: 64px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
   }
 
-  
   .about-us__countdown .countdown-item:nth-child(odd) {
     background: var(--scroll-up-color);
   }
@@ -99,7 +104,7 @@
     font-size: 0.625rem;
     opacity: 0.95;
     margin-top: 4px;
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
   }
   @media (max-width: 767px) {
     .about-us__countdown {
@@ -107,154 +112,166 @@
       gap: 8px;
       padding: 4px 6px;
     }
-    .about-us__countdown .countdown-heading { font-size: clamp(0.9rem, 4vw, 1.05rem); gap: 3px; }
-    .about-us__countdown .countdown-heading-letter { margin: 0; }
-    .about-us__countdown .countdown-item { min-width: 52px; padding: 6px 8px; }
-    .about-us__countdown .countdown-value { font-size: 0.95rem; }
-    .about-us__countdown .countdown-label { font-size: 0.55rem; }
+    .about-us__countdown .countdown-heading {
+      font-size: clamp(0.9rem, 4vw, 1.05rem);
+      gap: 3px;
+    }
+    .about-us__countdown .countdown-heading-letter {
+      margin: 0;
+    }
+    .about-us__countdown .countdown-item {
+      min-width: 52px;
+      padding: 6px 8px;
+    }
+    .about-us__countdown .countdown-value {
+      font-size: 0.95rem;
+    }
+    .about-us__countdown .countdown-label {
+      font-size: 0.55rem;
+    }
   }
-   @media (min-width: 320px) {
-     .about-us__background-text {
-       margin-top: 20px;
-       font-size: 55px;
-       top: 0%;
-       left: 2%;
-     }
-   }
-   @media (min-width: 768px) {
-     .about-us__background-text {
-       font-size: 70px;
-       left: 4%;
-       transform: translate(5%, 0%);
-     }
-   }
-   @media (min-width: 1024px) {
-     .about-us__background-text {
-       top: -3%;
-       left: -3%;
-       transform: translate(10%, 0%);
-       font-size: 100px;
-     }
-   }
-   @media (min-width: 1440px) {
-     .about-us__background-text {
-       font-size: 120px;
-       top: -3%;
-     }
-   }
-   .about-us__icon-main {
-     margin-bottom: 15px;
-     margin-top: 30px;
-     position: relative;
-     z-index: 1;
-     display: block;
-     transform-origin: center bottom;
-     will-change: transform;
-     color: var(--scroll-up-color);
-   }
-   .about-us__title {
-     font-size: 2.125rem;
-     font-family: var(--alt-font);
-     font-weight: 600;
-     color: var(--title-text-color);
-     justify-content: space-around;
-     position: relative;
-     @media (min-width: 768px) {
-       font-size: 40px;
-     }
-   }
-   @media (min-width: 1024px) {
-     .about-us__title {
-       font-size: 46px;
-       position: relative;
-     }
-   }
-   .about-us__subtitle {
-     font-size: 1.1875rem;
-     color: var(--text-color);
-     margin-bottom: 16px;
-     font-weight: 500;
-   }
-   .about-us__description {
-     font-size: 1.0625rem;
-     color: var(--primary-text-color);
-     margin-bottom: 16px;
-   }
-   .about-us__feature {
-     font-size: 0.875rem;
-     color: var(--text-color);
-     margin-bottom: 16px;
-     display: flex;
-     align-items: flex-start;
-     gap: 8px;
-   }
-   .about-us__feature-icon {
-     fill: var(--accent-color);
-     flex-shrink: 0;
-     margin-top: 2px;
-   }
-   .about-us__text {
-     font-size: 1.0625rem;
-     color: var(--primary-text-color);
-     margin-bottom: 16px;
-   }
-   .about-us__title,
-   .about-us__subtitle,
-   .about-us__description,
-   .about-us__feature,
-   .about-us__text {
-     margin-bottom: 24px;
-   }
-   .about-us__nav {
-     font-size: 0.825rem;
-     background-color: var(--link-background-color);
-   }
-   .about-us__button {
-     display: inline-block;
-     background-color: var(--accent-color);
-     margin-bottom: 25px;
-     border: 2px solid var(--accent-color);
-     cursor: pointer;
-     padding: 15px 30px;
-     color: var(--alt-text-color);
-     font-weight: 700;
-     text-transform: uppercase;
-     text-decoration: none;
-     &:hover {
-       border: 2px solid;
-     }
-   }
- }
- @media (min-width: 768px) {
-   .about-us {
-     grid-template-columns: 5fr 5fr;
-     align-items: center;
-     max-width: 1200px;
-   }
-   .about-us__content {
-     padding: 30px;
-     width: 100%;
-   }
-   .about-us__image {
-     padding: 30px;
-   }
- }
- @media (min-width: 1024px) {
-   .about-us {
-     grid-template-columns: 5fr 5fr;
-     max-width: 1400px;
-   }
-   .about-us__title {
-     font-size: 2.5rem;
-   }
-   .about-us__subtitle {
-     font-size: 1.25rem;
-   }
-   .about-us__description,
-   .about-us__text {
-     font-size: 1.125rem;
-   }
- }
+  @media (min-width: 320px) {
+    .about-us__background-text {
+      margin-top: 20px;
+      font-size: 55px;
+      top: 0%;
+      left: 2%;
+    }
+  }
+  @media (min-width: 768px) {
+    .about-us__background-text {
+      font-size: 70px;
+      left: 4%;
+      transform: translate(5%, 0%);
+    }
+  }
+  @media (min-width: 1024px) {
+    .about-us__background-text {
+      top: -3%;
+      left: -3%;
+      transform: translate(10%, 0%);
+      font-size: 100px;
+    }
+  }
+  @media (min-width: 1440px) {
+    .about-us__background-text {
+      font-size: 120px;
+      top: -3%;
+    }
+  }
+  .about-us__icon-main {
+    margin-bottom: 15px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    transform-origin: center bottom;
+    will-change: transform;
+    color: var(--scroll-up-color);
+  }
+  .about-us__title {
+    font-size: 2.125rem;
+    font-family: var(--alt-font);
+    font-weight: 600;
+    color: var(--title-text-color);
+    justify-content: space-around;
+    position: relative;
+    @media (min-width: 768px) {
+      font-size: 40px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .about-us__title {
+      font-size: 46px;
+      position: relative;
+    }
+  }
+  .about-us__subtitle {
+    font-size: 1.1875rem;
+    color: var(--text-color);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  .about-us__description {
+    font-size: 1.0625rem;
+    color: var(--primary-text-color);
+    margin-bottom: 16px;
+  }
+  .about-us__feature {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .about-us__feature-icon {
+    fill: var(--accent-color);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .about-us__text {
+    font-size: 1.0625rem;
+    color: var(--primary-text-color);
+    margin-bottom: 16px;
+  }
+  .about-us__title,
+  .about-us__subtitle,
+  .about-us__description,
+  .about-us__feature,
+  .about-us__text {
+    margin-bottom: 24px;
+  }
+  .about-us__nav {
+    font-size: 0.825rem;
+    background-color: var(--link-background-color);
+  }
+  .about-us__button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    margin-bottom: 25px;
+    border: 2px solid var(--accent-color);
+    cursor: pointer;
+    padding: 15px 30px;
+    color: var(--alt-text-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      border: 2px solid;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .about-us {
+    grid-template-columns: 5fr 5fr;
+    align-items: center;
+    max-width: 1200px;
+  }
+  .about-us__content {
+    padding: 30px;
+    width: 100%;
+  }
+  .about-us__image {
+    padding: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .about-us {
+    grid-template-columns: 5fr 5fr;
+    max-width: 1400px;
+  }
+  .about-us__title {
+    font-size: 2.5rem;
+  }
+  .about-us__subtitle {
+    font-size: 1.25rem;
+  }
+  .about-us__description,
+  .about-us__text {
+    font-size: 1.125rem;
+  }
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
