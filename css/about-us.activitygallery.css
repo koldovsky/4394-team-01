@@ -8,6 +8,7 @@
   position: relative;
   margin: 0 auto;
   max-width: 1200px;
+  width: 100%;
 }
 @media (max-width: 600px) {
   .activity__gallery {
@@ -86,7 +87,7 @@
   grid-template-rows: repeat(2, auto);
   justify-content: center;
   gap: 30px;
-  margin-top: 45px;
+  margin: 45px 0;
 }
 @media (max-width: 600px) {
   .activity__gallery-title {
@@ -118,11 +119,15 @@
     transition: opacity 0.2s ease;
   }
 }
-.under__line {
+.activity__gallery-underline-container {
   border: none;
   height: 1px;
   background-color: rgba(128, 128, 128, 0.16);
-  margin-top: 65px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.under__line {
   width: 100%;
 }
 .modal {

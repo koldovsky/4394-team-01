@@ -29,7 +29,7 @@ function updateSliderPosition(animate = true) {
 
     sliderTrack.style.transform = `translateX(${offset}px)`;
   } else {
-    // Десктоп
+    // Деск
     const slideWidth = slide.offsetWidth;
     const gap = 30;
     const offset = -currentIndex * (slideWidth + gap);
@@ -63,11 +63,11 @@ function movePrev() {
       } 
     }, 500); 
   } else {
-    // Мобільна версія — робимо цикл через клоновані слайди
+    // Моб
     const totalSlides = slides.length;
     if (currentIndex < 0) {
       currentIndex = totalSlides - 1;
-      updateSliderPosition(false); // без анімації, щоб не було ривка
+      updateSliderPosition(false);
     }
   }
 }
@@ -76,7 +76,7 @@ nextBtn.addEventListener('click', moveNext);
 prevBtn.addEventListener('click', movePrev);
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth <= 600) currentIndex = 0; // початок для мобільного
+  if (window.innerWidth <= 600) currentIndex = 0;
   updateSliderPosition(false);
 });
 

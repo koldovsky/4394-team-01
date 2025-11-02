@@ -1,10 +1,11 @@
 .about-us__slider {
   position: relative;
   margin: 0 auto;
-  padding: 60px 30px 30px;
+  padding: 60px 30px;
   box-sizing: border-box;
   max-width: 1150px;
   z-index: 0;
+  height: 100%;
   overflow: hidden;
 }
 @media (max-width: 600px) {
@@ -22,7 +23,7 @@
   .about-us__slider-container {
     flex: 0 0 80% !important;
     box-sizing: border-box;
-    padding: 0 10px!important;
+    padding: 0 0 0 10px!important;
     transition: transform 0.5s ease;
   }
   .about-us__slider-buttons {
@@ -167,12 +168,5 @@
 
 .about-us__slider-buttons button.rightArrow {
   margin-right: -10px;
-}
-.under__line {
-  border: none;
-  height: 1px;
-  background-color: rgba(128, 128, 128, 0.16);
-  margin-top: 55px;
-  width: 100%;
 }
 
