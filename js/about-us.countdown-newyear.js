@@ -1,25 +1,24 @@
 function initCountdown() {
   const el = document.querySelector('.about-us__countdown');
-  if (!el) return; 
+  if (!el) return;
 
   console.log('countdown-newyear: init');
 
   function getNextNewYear() {
     const now = new Date();
     const year = now.getFullYear();
-    
+
     return new Date(year + 1, 0, 1, 0, 0, 0);
   }
 
   const target = getNextNewYear();
 
- 
   let heading = el.querySelector('.countdown-heading');
   if (!heading) {
     heading = document.createElement('div');
     heading.className = 'countdown-heading';
     const text = 'Time left until New Year';
-  
+
     let letterIndex = 0;
     for (let i = 0; i < text.length; i++) {
       const ch = text[i];
@@ -27,20 +26,21 @@ function initCountdown() {
       span.className = 'countdown-heading-letter';
       span.textContent = ch;
       if (ch !== ' ') {
-       
-        span.style.color = (letterIndex % 2 === 0) ? 'var(--accent-color)' : 'var(--scroll-up-color)';
+        span.style.color =
+          letterIndex % 2 === 0
+            ? 'var(--accent-color)'
+            : 'var(--scroll-up-color)';
         letterIndex++;
       }
       heading.appendChild(span);
     }
     el.insertBefore(heading, el.firstChild);
 
-  
     const items = Array.from(el.querySelectorAll('.countdown-item'));
     if (items.length) {
       const row = document.createElement('div');
       row.className = 'countdown-row';
-      items.forEach(i => row.appendChild(i));
+      items.forEach((i) => row.appendChild(i));
       el.appendChild(row);
     }
   }
@@ -52,9 +52,9 @@ function initCountdown() {
   let timer = null;
   function update() {
     const now = new Date();
-    let diff = Math.floor((target - now) / 1000); 
+    let diff = Math.floor((target - now) / 1000);
     if (diff <= 0) {
-      el.textContent = "Happy New Year!";
+      el.textContent = 'Happy New Year!';
       if (timer) clearInterval(timer);
       return;
     }
@@ -76,7 +76,6 @@ function initCountdown() {
     if (sEl) sEl.textContent = pad(seconds);
   }
 
-
   update();
   timer = setInterval(update, 1000);
 }
@@ -84,6 +83,5 @@ function initCountdown() {
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initCountdown);
 } else {
- 
   initCountdown();
 }
