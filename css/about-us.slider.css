@@ -9,16 +9,18 @@
 }
 @media (max-width: 600px) {
  .about-us__slider {
-    padding: 0 !important;
+    padding: 30px 0 !important;
     overflow: hidden;
   }
   .about-us__slider-track {
     display: flex;
     gap: 10px !important;
     justify-content: start;
+    box-sizing: border-box;
+    padding: 0 10%;
   }
   .about-us__slider-container {
-    flex: 0 0 85% !important;
+    flex: 0 0 80% !important;
     box-sizing: border-box;
     padding: 0 10px!important;
     transition: transform 0.5s ease;
@@ -38,8 +40,6 @@
   .about-us__slider-buttons button {
     pointer-events: auto;
     background-color: transparent;
-    /* width: 24px;
-    height: 24px; */
     display: flex;
     align-items: center;
     justify-content: center;
