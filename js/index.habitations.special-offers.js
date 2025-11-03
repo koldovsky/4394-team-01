@@ -1,126 +1,113 @@
 const offers = [
     {
-        id: 1,
-        tag: "Save $50",
-        name: "Starry Nights Package",
-        offersBtn: "Request"
+      id: 1,
+      tag: "Save $50",
+      name: "Starry Nights Package",
+      offersBtn: "Request",
+      listAdvantages: [
+        { 
+          img: 'img/habitations/special-offers-img.svg',
+          text: "Complimentary stargazing tour;" 
+        },
+        { 
+          img: 'img/habitations/special-offers-img.svg',
+          text: "Upgraded tent amenities;" 
+        },
+        { 
+          img: 'img/habitations/special-offers-img.svg', 
+          text: "Campfire exclusive access;"
+        },
+        { 
+          img: 'img/habitations/special-offers-img.svg', 
+          text: "Free souvenir Camp mug." 
+        }
+      ]
     },
     {
-        id: 2,
-        tag: "Free activities",
-        name: "Nature Explorer Deal",
-        offersBtn: "Request"
+      id: 2,
+      tag: "Free activities",
+      name: "Nature Explorer Deal",
+      offersBtn: "Request",        
+      listAdvantages: [
+        { 
+          img: 'img/habitations/special-offers-img.svg',
+          text: "2 complimentary activities;" 
+        },
+        { 
+          img: 'img/habitations/special-offers-img.svg',
+          text: "Morning yoga lessons;" 
+        },
+        { 
+          img: 'img/habitations/special-offers-img.svg', 
+          text: "Breakfast included;"
+        },
+        { 
+          img: 'img/habitations/special-offers-img.svg', 
+          text: "Free souvenir Camp mug." 
+        }
+      ]
     },
     {
-        id: 3,
-        tag: "Enjoy 15% off",
-        name: "Weekday Serenity",
-        offersBtn: "Request"
+      id: 3,
+      tag: "Enjoy 15% off",
+      name: "Weekday Serenity",
+      offersBtn: "Request",
+      listAdvantages: [
+        { 
+          img: 'img/habitations/special-offers-img.svg',
+          text: "Valid Friday to Sunday only;" 
+        },
+        { 
+          img: 'img/habitations/special-offers-img.svg',
+          text: "Tent Upgrade;" 
+        },
+        { 
+          img: 'img/habitations/special-offers-img.svg', 
+          text: "Campfire access;"
+        },
+        { 
+          img: 'img/habitations/special-offers-img.svg', 
+          text: "Breakfast included." 
+        }
+      ]
     }
 ]
 
 function renderOffers(offers) {
-    const offersHtml = [];
-    for(const offer of offers) {
-        const offerHtml = `
-        <li class="special-offers__item">
+  const offersHtml = [];
+
+  for (const offer of offers) {
+    const advantages = Array.isArray(offer.listAdvantages) ? offer.listAdvantages : [];
+
+    const advantagesHtml = advantages.map(adv => `
+      <li class="special-offers__item-advantage">
+        <img src="${adv.img}" alt="Offer image" class="special-offers__image" />
+        <p>${adv.text}</p>
+      </li>
+    `).join('');
+
+    const offerHtml = `
+      <li class="special-offers__item">
         <div class="special-offers__item-area">
           <p class="special-offers__tag">${offer.tag}</p>
           <h3 class="special-offers__name">${offer.name}</h3>
           <ul class="special-offers__list-advantages">
-            <li class="special-offers__item-advantage">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 100 100"
-                  enable-background="new 0 0 100 100"
-                  xml:space="preserve"
-                  height="100%"
-                >
-                  <polygon
-                    points="15.088,20.088 6.609,34.626 33.074,49.988 6.609,65.24 15.088,79.87 41.484,64.688 41.484,95.204 58.446,95.204   58.446,64.688 84.912,79.867 93.391,65.237 66.926,49.986 93.391,34.623 84.912,20.086 58.516,35.268 58.516,4.754 41.484,4.754   41.484,35.27 "
-                    fill="currentColor"
-                  ></polygon>
-                </svg>
-              </span>
-              <p>Complimentary stargazing tour;</p>
-            </li>
-            <li class="special-offers__item-advantage">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 100 100"
-                  enable-background="new 0 0 100 100"
-                  xml:space="preserve"
-                  height="100%"
-                >
-                  <polygon
-                    points="15.088,20.088 6.609,34.626 33.074,49.988 6.609,65.24 15.088,79.87 41.484,64.688 41.484,95.204 58.446,95.204   58.446,64.688 84.912,79.867 93.391,65.237 66.926,49.986 93.391,34.623 84.912,20.086 58.516,35.268 58.516,4.754 41.484,4.754   41.484,35.27 "
-                    fill="currentColor"
-                  ></polygon>
-                </svg>
-              </span>
-              <p>Upgraded tent amenities;</p>
-            </li>
-            <li class="special-offers__item-advantage">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 100 100"
-                  enable-background="new 0 0 100 100"
-                  xml:space="preserve"
-                  height="100%"
-                >
-                  <polygon
-                    points="15.088,20.088 6.609,34.626 33.074,49.988 6.609,65.24 15.088,79.87 41.484,64.688 41.484,95.204 58.446,95.204   58.446,64.688 84.912,79.867 93.391,65.237 66.926,49.986 93.391,34.623 84.912,20.086 58.516,35.268 58.516,4.754 41.484,4.754   41.484,35.27 "
-                    fill="currentColor"
-                  ></polygon>
-                </svg>
-              </span>
-              <p>Campfire exclusive access;</p>
-            </li>
-            <li class="special-offers__item-advantage">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  version="1.1"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 100 100"
-                  enable-background="new 0 0 100 100"
-                  xml:space="preserve"
-                  height="100%"
-                >
-                  <polygon
-                    points="15.088,20.088 6.609,34.626 33.074,49.988 6.609,65.24 15.088,79.87 41.484,64.688 41.484,95.204 58.446,95.204   58.446,64.688 84.912,79.867 93.391,65.237 66.926,49.986 93.391,34.623 84.912,20.086 58.516,35.268 58.516,4.754 41.484,4.754   41.484,35.27 "
-                    fill="currentColor"
-                  ></polygon>
-                </svg>
-              </span>
-              <p>Free souvenir Camp mug.</p>
-            </li>
+            ${advantagesHtml}
           </ul>
-          <a href="#" class="special-offers__btn">${offer.offersBtn}</a>
+          <button class="special-offers__btn">${offer.offersBtn}</button>
         </div>
       </li>
-        `;
-        offersHtml.push(offerHtml);
-    };
-    const offersList = document.querySelector('.special-offers__list');
+    `;
+
+    offersHtml.push(offerHtml);
+  }
+
+  const offersList = document.querySelector('.special-offers__list');
+  if (offersList) {
     offersList.innerHTML = offersHtml.join('');
-};
+  } else {
+    console.warn('Елемент .special-offers__list не знайдено у DOM');
+  }
+}
 
 renderOffers(offers);

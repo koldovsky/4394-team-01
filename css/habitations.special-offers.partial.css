@@ -32,6 +32,8 @@
                     color: rgb(234, 148, 73);
                     width: 50px;
                     margin: 0 0 20px 0;
+                    position: relative;
+                    z-index: 1;
                 }
                 .special-offers__title-block {
                     position: relative;
@@ -109,8 +111,20 @@
                     background: rgb(255, 255, 255);
                     padding: 31px;
                     width: 100%;
+
+                    @media (min-width: 768px) {
+                        min-height: 403px;
+                        padding: 24px;
+                    }
+
                     @media (min-width: 1024px) {
-                        min-height: 438px;
+                        min-height: 398px;
+                        padding: 24px 12px;
+                    }
+
+                    @media (min-width: 1200px) {
+                        min-height: 398px;
+                        padding: 40px;
                     }
 
                     .special-offers__tag {
@@ -132,18 +146,17 @@
                         border-bottom: 1px solid rgb(236, 236, 236);
                     }
                     .special-offers__list-advantages {
-                        padding-top: 15px;
+                        padding-top: 15px !important;
 
                         .special-offers__item-advantage {
                             display: flex;
                             align-items: flex-start;
                             margin-bottom: 16px;
                             
-                            span {
+                            .special-offers__image {
                                 display: inline;
                                 width: 20px;
                                 height: 17px;
-                                color: rgb(234, 148, 73);
                             }
 
                             p {
@@ -172,6 +185,7 @@
                         padding: 15px;
                         text-align: center;
                         display: block;
+                        border: none;
 
                         &:hover {
                             background: #ea9449;
