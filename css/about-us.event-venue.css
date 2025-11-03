@@ -1,0 +1,195 @@
+.venue {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 601px) and (max-width: 1023px) {
+  .venue__dancing-couple-img {
+    position: relative;
+    width: 100%;
+    height: 470px;
+    padding-bottom: 56.25%;
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+  .venue__dancing-couple-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transform: translate(-50%, -50%);
+  }
+  .venue__section-content {
+    padding-top: 60px;
+  }
+  .venue__text-block {
+    margin: 15px 0;
+  } 
+  .venue__right-part {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .venue__section-content {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 90px auto;
+    min-height: 500px;
+    padding-left: 30px !important;
+    padding-right: 0 !important;
+  }
+  .venue__dancing-couple-img {
+    flex: 1 1 calc(50% - 20px);
+    min-height: 500px;
+    padding: 0 !important;
+    margin-right: 20px;
+  }
+  .venue__dancing-couple-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .venue__text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+    .venue__right-part {
+    flex: 1 1 calc(100% / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 20px;
+    padding-right: 30px;
+  }
+  .venue__icon svg{
+    margin-top: 10px;
+  }
+  .under__line {
+    border: none;
+    height: 1px;
+    background-color: rgba(128,128,128,0.16);
+    margin: 0;
+    width: 100%;
+ }
+}
+.venue__underline-container:first-child {
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.venue__underline-container:first-child .under__line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128,128,128,0.16);
+  margin: 0;
+  border: none;
+}
+.venue__underline-container .under__line-accordeon {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128,128,128,0.16);
+  margin: 15px 0 0 0;
+  border: none;
+}
+.venue__underline-container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+}
+.venue__section-content {
+  padding: 0 30px 90px;
+}
+.venue__dancing-couple-img {
+  padding: 60px 0;
+}
+.venue__dancing-couple-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.venue__icon {
+  color: var(--scroll-up-color);
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+.venue__title {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  font-family: var(--alt-font);
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 40.8px;
+  text-align: left;
+  color: var(--title-text-color);
+  margin-top: 20px;
+}
+.venue__subtitle {
+  box-sizing: border-box;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 28.5px;
+  text-align: left;
+  width: auto;
+  margin-top: 25px;
+  color: var(--text-color);
+}
+.venue__text-block,
+.venue__accordeon-body {
+  font-size: 17px;
+  color: var(--primary-text-color);
+  font-weight: 300;
+  line-height: 25.5px;
+  text-align: left;
+}
+.venue__text-block {
+  margin: 25px 0;
+}
+.venue__accordeon-header {
+  all: unset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding-top: 20px;
+
+  font-family: var(--alt-font);
+  font-size: 22px;
+  color: var(--title-text-color);
+  font-weight: 600;
+  text-align: left;
+}
+.venue__accordeon-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin-top: 0;
+  transition: max-height 0.4s ease;
+}
+.venue__accordeon-header:focus {
+  outline: none;
+}
+.venue__accordeon-icon {
+  font-weight: 400;
+  font-size: 1.5rem;
+  transition: color 0.4s ease;
+  transform: none;
+}
+.venue__accordeon-header.active .venue__accordeon-icon {
+  transform: none;
+}
+.venue__accordeon-header.active + .venue__accordeon-body {
+  padding-top: 15px;
+  max-height: 500px;
+}

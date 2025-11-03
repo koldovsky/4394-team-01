@@ -4,10 +4,14 @@ function init() {
   import('./about-us.js');
   import('./index.customer-reviews-carousel.js');
   import('./index.habitations-main-countdown.js');
+  import('./index.camp-infrastructure-scroll-view.js');
+  import('./index.customer-reviews-scroll-view.js');
+  import('./index.campfire-scroll-view.js');
+  import('./modal-form.partial.js');
 }
 
 const totalPartials = document.querySelectorAll(
-  '[hx-trigger="load"], [data-hx-trigger="load"]',
+  '[hx-trigger="load"], [data-hx-trigger="load"]'
 ).length;
 let loadedPartialsCount = 0;
 
