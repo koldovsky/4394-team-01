@@ -23,7 +23,7 @@
   .about-us__slider-container {
     flex: 0 0 80% !important;
     box-sizing: border-box;
-    padding: 0 0 0 10px!important;
+    padding: 0 10px 0 10px!important;
     transition: transform 0.5s ease;
   }
   .about-us__slider-buttons {
@@ -56,11 +56,11 @@
   }
     .about-us__slider-buttons button.leftArrow {
     margin-left: 0;
-    padding-left: 15px;
+    padding-left: 25px;
   }
   .about-us__slider-buttons button.rightArrow {
     margin-right: 0;
-    padding-right: 15px;
+    padding-right: 25px;
   }
 }
 .about-us__slider-track {
