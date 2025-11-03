@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 601px) and (max-width: 1023px) {
   .venue__dancing-couple-img {
     position: relative;
     width: 100%;
@@ -44,7 +44,7 @@
     max-width: 1200px;
     margin: 90px auto;
     min-height: 500px;
-    padding-left: 0 !important;
+    padding-left: 30px !important;
     padding-right: 0 !important;
   }
   .venue__dancing-couple-img {
@@ -58,7 +58,6 @@
     height: 100%;
     object-fit: cover;
   }
-
   .venue__text-content {
     display: flex;
     flex-direction: column;
@@ -70,16 +69,17 @@
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 20px;
+    padding-right: 30px;
   }
   .venue__icon svg{
     margin-top: 10px;
   }
-.under__line {
-  border: none;
-  height: 1px;
-  background-color: rgba(128,128,128,0.16);
-  margin: 0;
-  width: 100%;
+  .under__line {
+    border: none;
+    height: 1px;
+    background-color: rgba(128,128,128,0.16);
+    margin: 0;
+    width: 100%;
  }
 }
 .venue__underline-container:first-child {

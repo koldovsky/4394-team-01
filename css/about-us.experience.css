@@ -9,7 +9,6 @@
   margin: 0 auto;
   overflow: hidden;
 }
-
 .experience__bg-image {
   position: absolute;
   top: 0;
@@ -20,13 +19,11 @@
   object-position: center;
   z-index: 0;
 }
-
-@media (max-width: 600px) {
+@media (max-width: 758px) {
   .experience {
     flex-direction: column;
     max-width: 100%;
   }
-
   .experience__bg-image {
     width: 100%;
     height: 100%;
@@ -34,17 +31,37 @@
     object-position: center;
   }
 }
-
 .experience__container-wrapper {
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  padding: 105px 30px 95px;
+  padding: 65px 30px 75px;
   width: 50%;
   box-sizing: border-box;
 }
-@media (max-width: 600px) {
+@media (max-width: 1024px) and (min-width: 759px) {
+  .experience__container-wrapper {
+    padding: 45px 30px 35px !important;
+  }
+  .experience__subtitle {
+    margin: 15px 0 !important;
+  }
+  .experience__list-img {
+    width: 75px !important;
+    height: 75px !important;
+  }
+  .experience__list-icon {
+    width: 50px !important;
+  }
+  .experience__list-item {
+    margin: 0px !important;
+  }
+  .experience__title {
+    font-size: 38px !important;
+  }
+}
+@media (max-width: 758px) {
   .experience__container-wrapper {
     width: 100%;
     padding: 5.62rem 1.87rem;
@@ -60,7 +77,7 @@
   z-index: 1;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 758px) {
   .experience__transparent-image {
     position: absolute;
     top: 5.62rem;
@@ -105,7 +122,7 @@
   margin-bottom: 0;
   z-index: 2;
 }
-@media (max-width: 600px) {
+@media (max-width: 758px) {
   .experience__title {
     font-size: 2.125rem;
   }
@@ -134,7 +151,7 @@
   margin-bottom: 8px;
   text-align: left;
 }
-@media (max-width: 600px) {
+@media (max-width: 758px) {
   .experience__list-heading {
     margin-bottom: 0;
     font-size: 1.375rem;
@@ -153,7 +170,7 @@
   margin-bottom: 16px;
   line-height: 25.5px;
 }
-@media (max-width: 600px) {
+@media (max-width: 758px) {
   .experience__list-text {
     margin-bottom: 0;
   }
@@ -165,7 +182,7 @@
   flex-wrap: wrap;
   margin: 8px;
 }
-@media (max-width: 600px) {
+@media (max-width: 758px) {
   .experience__list-content {
     justify-content: center;
     flex-direction: column;
@@ -186,7 +203,7 @@
   height: 100%;
   object-fit: cover;
 }
-@media (max-width: 600px) {
+@media (max-width: 758px) {
   .experience__img-cinema {
     position: relative;
     width: 100%;
@@ -231,7 +248,7 @@
   width: 3.75rem;
   position: absolute;
 }
-@media (max-width: 600px) {
+@media (max-width: 758px) {
   .experience__list-img {
     width: 4.37rem;
     height: 4.37rem;
