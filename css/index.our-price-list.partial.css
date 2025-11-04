@@ -1,9 +1,10 @@
+/* ===== CAMPFIRE SECTION ===== */
 .campfire-section {
   font-family: "Poppins", sans-serif;
   color: #333;
 }
 
-/* HERO блок */
+/* --- HERO --- */
 .campfire-section__hero {
   background-image: url("https://res2.weblium.site/res/65c6167b519095009f163b9e/65cded4cc5c522000f1d29d8_optimized.webp");
   background-size: cover;
@@ -49,9 +50,10 @@
   background: #8e8d47;
 }
 
-/* PRICES блок */
+/* --- PRICES --- */
 .campfire-section__prices {
-  padding: 60px 20px;
+  position: relative;
+  padding: 100px 20px;
   background: #fff;
 }
 
@@ -68,6 +70,7 @@
   flex-wrap: wrap;
 }
 
+/* LEFT IMAGE */
 .campfire-section__price-image {
   flex: 1;
 }
@@ -82,24 +85,57 @@
 
 .campfire-section__price-info {
   flex: 1;
+  position: relative;
+  z-index: 2;
 }
 
+.campfire-section__price-info::before {
+  content: "Pricing";
+  position: absolute;
+  top: -40px; /* вище */
+  left: -30px; /* трохи лівіше */
+  font-size: 5.5rem;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.05);
+  text-transform: uppercase;
+  z-index: 0;
+  pointer-events: none;
+  letter-spacing: 4px;
+  line-height: 1;
+}
+
+/* Заголовок і текст */
 .campfire-section__price-title {
   font-size: 1.8rem;
   margin-bottom: 10px;
   color: #333;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.campfire-section__price-icon {
+  font-size: 1.6rem;
+  color: #a1a04f;
 }
 
 .campfire-section__price-subtitle {
   margin-bottom: 20px;
   color: #666;
+  position: relative;
+  z-index: 2;
 }
 
+/* Price list */
 .campfire-section__price-table {
   list-style: none;
   padding: 0;
   margin: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .campfire-section__price-item {
@@ -118,7 +154,7 @@
   font-weight: 600;
 }
 
-/* --- АДАПТИВ --- */
+/* --- ADAPTIVE --- */
 @media (max-width: 992px) {
   .campfire-section__price-content {
     flex-direction: column;
@@ -129,8 +165,11 @@
     max-width: 90%;
   }
 
-  .campfire-section__price-info {
-    width: 100%;
+  .campfire-section__price-info::before {
+    font-size: 3.5rem;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .campfire-section__price-item {
@@ -148,5 +187,12 @@
   .campfire-section__btn {
     padding: 10px 22px;
     font-size: 0.9rem;
+  }
+
+  .campfire-section__price-info::before {
+    font-size: 2.5rem;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
