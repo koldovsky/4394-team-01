@@ -12,8 +12,8 @@ setInterval(() => {
 
     const left = countDownDuration - Date.now();
     if (left <= 0) {
-        countdownEl.textContent = "Час вийшов!";
-        localStorage.removeItem("countdownEnd");
+        countDownDuration = Date.now() + 24 * 60 * 60 *1000;
+        localStorage.setItem("countDownDuration", countDownDuration);
         return;
     }
     const h = Math.floor(left / (1000 * 60 * 60));
