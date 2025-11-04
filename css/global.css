@@ -101,3 +101,11 @@ body {
 .link {
   text-decoration: none;
 }
+
+/* Ensure anchor scrolling accounts for fixed header height for main index targets */
+/* Adjust IDs below if your section ids differ */
+#campInfrastructureView,
+#customerReviewsView {
+  /* Use the header height variable so the target appears below the fixed header */
+  scroll-margin-top: var(--header-height, 4rem);
+}

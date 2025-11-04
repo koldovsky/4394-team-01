@@ -1,6 +1,7 @@
 // Marjan Batkivskiy
 function init() {
   import('./global.header-burger.js');
+  import('./global-pages-onload-hash-scroll.js');
   import('./about-us.js');
   import('./index.customer-reviews-carousel.js');
   import('./index.habitations.special-offers.js');

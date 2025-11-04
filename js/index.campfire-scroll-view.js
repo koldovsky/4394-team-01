@@ -1,6 +1,6 @@
 function initScrollIntoCampfire() {
   const campfireButton = document.querySelector(
-    "#ourPriceListButton"
+    "#campfireButton"
   );
   const campfire = document.querySelector("#campfire");
 
