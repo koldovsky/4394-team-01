@@ -23,7 +23,7 @@
   .about-us__slider-container {
     flex: 0 0 80% !important;
     box-sizing: border-box;
-    padding: 0 15px 0 15px!important;
+    padding: 0 25px 0 30px!important;
     transition: transform 0.5s ease;
   }
   .about-us__slider-buttons {
@@ -44,10 +44,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 44px !important;
+    height: 44px !important;
   }
   .about-us__slider-buttons img {
-    width: 24px;
-    height: 24px;
+    width: 24px !important;
+    height: 24px !important;
   }
   .leftArrow,
   .rightArrow {
@@ -56,11 +58,28 @@
   }
     .about-us__slider-buttons button.leftArrow {
     margin-left: 0;
-    padding-left: 25px;
+    padding-left: 20px;
   }
   .about-us__slider-buttons button.rightArrow {
     margin-right: 0;
-    padding-right: 25px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 405px) and (max-width: 600px) {
+  .about-us__slider {
+    overflow: hidden;
+    padding: 30px 0 !important;
+  }
+
+  .about-us__slider-track {
+    gap: 0 !important;
+    padding: 0 !important;
+  }
+
+  .about-us__slider-container {
+    flex: 0 0 100% !important;
+    padding: 0 55px !important;
+    box-sizing: border-box;
   }
 }
 @media (min-width: 601px) and (max-width: 1023px) {
@@ -74,18 +93,17 @@
     .about-us__slider-container {
     flex: 0 0 50% !important;
     box-sizing: border-box;
-    padding: 0 21px 0 10px !important;
+    padding: 0 25px 0 10px !important;
     transition: transform 0.5s ease;
   }
   .about-us__slider-buttons button {
-    width: 44px !important;
     background-color: transparent !important;
   }
   .leftArrow {
-    padding-left: 10px;
+    padding-left: 15px;
   }
     .rightArrow {
-    padding-right: 10px;
+    padding-right: 15px;
   }
 }
 .about-us__slider-track {
