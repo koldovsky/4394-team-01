@@ -1,3 +1,4 @@
+/* Kostiantyn Kobel */
 // Wait for an element with given id to appear in DOM (subtree) up to timeout ms
 function waitForElementById(id, timeout = 3000) {
   return new Promise((resolve, reject) => {

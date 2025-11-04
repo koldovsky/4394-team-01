@@ -1,3 +1,4 @@
+/* Kostiantyn Kobel */
 function initScrollIntoCampfire() {
   const campfireButton = document.querySelector(
     "#campfireButton"

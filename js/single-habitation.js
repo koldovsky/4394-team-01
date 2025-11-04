@@ -1,3 +1,4 @@
+/* Kostiantyn Kobel */
 function init() {
   import('./global.header-burger.js');
 }

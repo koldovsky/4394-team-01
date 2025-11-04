@@ -1,3 +1,4 @@
+/* Kostiantyn Kobel */
 function initScrollIntoCustomerReviews() {
   const customerReviewsButton = document.querySelector(
     "#customerReviewsButton"
