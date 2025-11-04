@@ -6,7 +6,7 @@
 
 /* --- HERO --- */
 .campfire-section__hero {
-  background-image: url("https://res2.weblium.site/res/65c6167b519095009f163b9e/65cded4cc5c522000f1d29d8_optimized.webp");
+  background-image: url("https://res2.weblium.site/res/65c6167b519095000f9163be/65cded4cc5c522000f1d2d98_optimized.webp");
   background-size: cover;
   background-position: center;
   min-height: 70vh;
@@ -16,7 +16,11 @@
   text-align: center;
   color: #fff;
   position: relative;
+  background-position: 61.88% 38.49%;
+background-size: cover;
+background-repeat: no-repeat;
 }
+
 
 .campfire-section__hero::after {
   content: "";
@@ -83,12 +87,14 @@
   object-fit: cover;
 }
 
+/* RIGHT TEXT */
 .campfire-section__price-info {
   flex: 1;
   position: relative;
   z-index: 2;
 }
 
+/* Декоративний фон "Pricing" */
 .campfire-section__price-info::before {
   content: "Pricing";
   position: absolute;
@@ -196,3 +202,4 @@
     transform: translateX(-50%);
   }
 }
+
