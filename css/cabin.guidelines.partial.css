@@ -72,13 +72,6 @@ line{
   display: block;
 }
 
-@media (min-width: 992px){
-  .cabin__list{
-    columns: 2;
-    column-gap: 4rem;
-  }
-}
-
 .cabin__image{
   text-align: center;
   margin-top: 40px;
@@ -86,3 +79,16 @@ line{
   width: 75%;
   height: auto;
 }
+
+@media (min-width: 992px){
+  .cabin__list{
+    columns: 2;
+    column-gap: 4rem;
+  }
+  .cabin__image
+  {
+    size: auto;
+  }
+}
+
+
