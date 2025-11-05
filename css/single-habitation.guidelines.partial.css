@@ -1,9 +1,9 @@
 /*Made by Ostap Halushchak*/
 .single__habitation {
   .single__habitation-content {
-    max-width: var(--container-max);
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 0 var(--spacing-x) 60px var(--spacing-x);
+    padding: 0 20px 60px 20px;
     .single__habitation-guidelines {
       padding-top: 40px;
       padding-bottom: 12px;
@@ -13,7 +13,7 @@
       margin: 0;
     }
     line {
-      stroke: var(--color-line);
+      stroke: #9ca3af;
       stroke-width: 1;
       opacity: 0.35;
     }
@@ -22,7 +22,7 @@
       padding: 24px 0 0 0;
       margin: 0;
       counter-reset: gl;
-      color: var(--color-text);
+      color: #6b7280;
       display: block;
       @media (min-width: 992px) {
         columns: 2;
