@@ -13,15 +13,15 @@ And htmx to load partials
 
 ```js
 function init() {
-  import("...js");
+  import('...js');
 }
 
 const totalPartials = document.querySelectorAll(
-  '[hx-trigger="load"], [data-hx-trigger="load"]'
+  '[hx-trigger="load"], [data-hx-trigger="load"]',
 ).length;
 let loadedPartialsCount = 0;
 
-document.body.addEventListener("htmx:afterOnLoad", () => {
+document.body.addEventListener('htmx:afterOnLoad', () => {
   loadedPartialsCount++;
   if (loadedPartialsCount === totalPartials) init();
 });
@@ -33,18 +33,20 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 <a href="https://notareallink" data-proofer-ignore>Not checked.</a>
 ```
 
-##Name 
-  - Kostiantyn Kobel 
-  - Nazar Lesiv
-  - Kononenko Vladyslav
-  - Diana Bruskova
-  - Andrii Maidabura
-  - Kateryna Kysten
-  - Mariia Malooka
-  - Melnykov Oleksii
-  - Nataliia Tkhoriv
-  - Kandyba Mykhailo
-  - Moskalyuk Bogdan
-  - Marjan Batkivskiy
-  - Hustii Ivanna
-  - Ostap Halushchak
+##Name
+
+- Kostiantyn Kobel
+- Nazar Lesiv
+- Kononenko Vladyslav
+- Diana Bruskova
+- Andrii Maidabura
+- Kateryna Kysten
+- Mariia Malooka
+- Melnykov Oleksii
+- Nataliia Tkhoriv
+- Kandyba Mykhailo
+- Moskalyuk Bogdan
+- Marjan Batkivskiy
+- Hustii Ivanna
+- Ostap Halushchak
+- Albina Kravets

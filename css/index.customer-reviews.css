@@ -1,0 +1,147 @@
+/* Marjan Batkivskiy */
+.customer {
+  background-image: url('./../img/experience-nature/experiense_background_lining.jpg'),
+    linear-gradient(rgba(250, 249, 245, 0.93), rgba(250, 249, 245, 0.93));
+  background-blend-mode: lighten;
+  background-repeat: repeat;
+
+  .customer__baner--video {
+    min-width: 320px;
+  }
+  .customer-testimonials__carousel {
+    padding: 40px 10px 60px 10px;
+    position: relative;
+
+    .customer-reviews {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr;
+
+      @media (min-width: 640px) {
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+      }
+
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .customer-reviews__item {
+        height: auto;
+        text-align: center;
+        margin-left: 40px;
+        margin-right: 40px;
+
+        @media (min-width: 768px) {
+          position: relative;
+          max-width: 410px;
+          height: auto;
+          text-align: center;
+          padding: 0px 15px;
+          margin-left: auto;
+          margin-right: auto;
+          grid-row: 1/2;
+        }
+
+        @media (min-width: 1200px) {
+          max-width: 344px;
+          height: 292px;
+          padding-bottom: 60px;
+        }
+
+        .customer-reviews__stars {
+          fill: var(--accent-color);
+        }
+        .customer-reviews__text {
+          color: var(--primary-text-color);
+          padding: 20px 20px;
+
+          @media (min-width: 768px) {
+            margin-bottom: 20px;
+            line-height: 1.7rem;
+            font-weight: 500;
+          }
+        }
+        .customer-reviews__person {
+          color: var(--title-text-color);
+          font-weight: 600;
+          white-space: nowrap;
+
+          @media (min-width: 768px) {
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: var(--background-button-carousel);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+      opacity: 1;
+      cursor: pointer;
+
+      @media (min-width: 768px) {
+        width: 32px;
+        height: 32px;
+      }
+
+      @media (min-width: 1200px) {
+        border: none;
+        background-color: inherit;
+      }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        width: 12px;
+        height: 12px;
+        color: var(--arrow-button-carousel);
+
+        @media (min-width: 768px) {
+          width: 22px;
+          height: 22px;
+        }
+
+        @media (min-width: 1200px) {
+          width: 32px;
+          height: 32px;
+          color: var(--alt-arrow-button-carousel);
+        }
+
+        .carousel__icon {
+          transition: fill 0.3s ease;
+
+          &:hover {
+            color: var(--color-accent-hover);
+            transform: scale(1.1);
+          }
+
+          @media (max-width: 1199px) {
+            display: none;
+            border: none;
+          }
+        }
+      }
+    }
+
+    .carousel-control-prev {
+      left: 20px;
+    }
+
+    .carousel-control-next {
+      right: 20px;
+    }
+  }
+}

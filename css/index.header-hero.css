@@ -1,0 +1,153 @@
+/* Kostiantyn Kobel */
+.index__header_hero {
+  .header__hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px 0;
+    color: var(--alt-text-color);
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+      justify-content: flex-end;
+      padding: 40px 0;
+      margin-bottom: 50px;
+    }
+    @media (min-width: 1024px) {
+      padding: 64px 0 0;
+    }
+    .header__hero_scroll-up {
+      color: var(--scroll-up-color);
+    }
+    .header__hero-coords {
+      font-size: 0.9rem;
+      letter-spacing: 0.1rem;
+      margin-bottom: 16px;
+      @media (min-width: 768px) {
+        justify-content: right;
+      }
+      @media (min-width: 1024px) {
+        font-size: 1rem;
+        justify-content: right;
+      }
+    }
+    .header__hero-title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 32px;
+      text-align: center;
+      @media (min-width: 768px) {
+        font-size: 3rem;
+        text-align: right;
+      }
+      @media (min-width: 1024px) {
+        font-size: 3.5rem;
+        text-align: right;
+      }
+    }
+    .header__hero-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      @media (min-width: 370px) {
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+      .header__hero-link {
+        border: 2px solid var(--alt-text-color);
+        &:hover {
+          background-color: var(--alt-text-color);
+          color: var(--text-color);
+        }
+        @media (min-width: 768px) {
+          font-size: 0.9rem;
+          padding: 0 30px;
+        }
+      }
+    }
+    .header__hero-scroll {
+      display: flex;
+      justify-content: center;
+      opacity: 0.7;
+      margin-top: 24px;
+    }
+  }
+  .header__hero-footer {
+    .header__hero_price-lists {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      text-align: center;
+      color: var(--text-color);
+      font-size: 1.2rem;
+      padding: 0 16px 16px;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.4rem;
+        padding: 32px 64px;
+      }
+      .price__list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex: 1;
+        @media (min-width: 768px) {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          &:nth-child(2) {
+            flex-direction: column;
+            flex: 1.5;
+          }
+        }
+        .price__list-link {
+          color: var(--alt-text-color);
+          text-transform: uppercase;
+          text-decoration: underline;
+          font-size: 1rem;
+          @media (min-width: 320px) {
+            font-size: 0.8rem;
+          }
+          @media (min-width: 768px) {
+            font-size: 1rem;
+          }
+        }
+      }
+      .price__list_scroll-down {
+        color: var(--alt-text-color);
+      }
+      .item__articul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .price__list_quote-img {
+        color: var(--scroll-up-color);
+        font-size: 2rem;
+        padding: 16px 0 0;
+      }
+      .price__list-description {
+        font-size: 0.9rem;
+        color: var(--list-description);
+        margin-top: auto;
+      }
+    }
+  }
+}

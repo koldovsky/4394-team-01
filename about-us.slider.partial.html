@@ -1,0 +1,135 @@
+<!-- natalka_tkhoriv -->
+<section class="about-us__slider">
+  <div class="about-us__slider-track">
+    <div class="about-us__slider-container">
+      <p class="about-us__slider-year">2017</p>
+      <p class="about-us__slider-heading">Conception of the Idea</p>
+      <div class="about-us__slider-decorating-line"></div>
+      <p class="about-us__slider-text">
+        The concept of our glamping was born out of a desire to offer travelers
+        a unique and immersive outdoor experience.
+      </p>
+    </div>
+    <div class="about-us__slider-container">
+      <p class="about-us__slider-year">2018</p>
+      <p class="about-us__slider-heading">Site Selection</p>
+      <div class="about-us__slider-decorating-line"></div>
+      <p class="about-us__slider-text">
+        After careful consideration, a suitable location near the border with
+        Canada in Washington was selected for Glamping.
+      </p>
+    </div>
+    <div class="about-us__slider-container">
+      <p class="about-us__slider-year">2019</p>
+      <p class="about-us__slider-heading">Development</p>
+      <div class="about-us__slider-decorating-line"></div>
+      <p class="about-us__slider-text">
+        We began Construction works to develop all the necessary infrastructure
+        for our Hidden Heaven Glamping.
+      </p>
+    </div>
+    <div class="about-us__slider-container">
+      <p class="about-us__slider-year">2021</p>
+      <p class="about-us__slider-heading">Grand Opening</p>
+      <div class="about-us__slider-decorating-line"></div>
+      <p class="about-us__slider-text">
+        We officially opened our doors to guests, offering a unique glamping
+        experience amidst the beauty of Washington.
+      </p>
+    </div>
+    <div class="about-us__slider-container">
+      <p class="about-us__slider-year">2023</p>
+      <p class="about-us__slider-heading">Expansion</p>
+      <div class="about-us__slider-decorating-line"></div>
+      <p class="about-us__slider-text">
+        Plans are underway to add new accommodations, enhance existing
+        facilities, and introduce more activities.
+      </p>
+    </div>
+  </div>
+      <div class="about-us__slider-buttons">
+      <button id="leftArrow" class="leftArrow">
+        <img src="img/about-us/slider-icons/arrow-left.svg" alt="" />
+      </button>
+      <button id="rightArrow" class="rightArrow">
+        <img src="img/about-us/slider-icons/arrow-right.svg" alt="" />
+      </button>
+</section>
+<!-- const sliderTrack = document.querySelector('.about-us__slider-track');
+const slides = Array.from(document.querySelectorAll('.about-us__slider-container'));
+const prevBtn = document.getElementById('leftArrow');
+const nextBtn = document.getElementById('rightArrow');
+
+let currentIndex = slides.length;
+
+slides.slice(0, -1).forEach(slide => sliderTrack.appendChild(slide.cloneNode(true)));
+slides.slice(0, -1).forEach(slide => sliderTrack.insertBefore(slide.cloneNode(true), sliderTrack.firstChild));
+
+const allSlides = Array.from(document.querySelectorAll('.about-us__slider-container'));
+
+function getSlidesPerView() { return window.innerWidth <= 600 ? 1 : 3; }
+
+// function updateSliderPosition(animate = true) {
+//   const slide = allSlides[0];
+//   const style = window.getComputedStyle(slide);
+//   const gap = 30;
+//   const slideWidth = slide.offsetWidth;
+//   sliderTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
+//   const offset = -currentIndex * (slideWidth + gap);
+//   sliderTrack.style.transform = `translateX(${offset}px)`;
+// }
+function updateSliderPosition(animate = true) {
+  const slide = allSlides[0];
+  const gap = 30;
+  const slideWidth = slide.offsetWidth;
+
+  sliderTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
+
+  let offset = -currentIndex * (slideWidth + gap);
+
+  // Додаткове зміщення для центрування першого слайда на мобільних
+  if (window.innerWidth <= 600) {
+    const slidesPerView = 1;
+    const containerWidth = sliderTrack.parentElement.offsetWidth;
+    const totalSlideWidth = slideWidth * slidesPerView + gap * (slidesPerView - 1);
+    offset += (containerWidth - totalSlideWidth) / 2; // центрування
+  }
+
+  sliderTrack.style.transform = `translateX(${offset}px)`;
+}
+
+
+
+
+function moveNext() { 
+  currentIndex++;
+  updateSliderPosition(true);
+
+  const totalSlides = slides.length;
+  setTimeout(() => { 
+    if (currentIndex >= totalSlides * 2) { 
+      currentIndex = totalSlides;
+      updateSliderPosition(false);
+    } 
+  }, 500); 
+} 
+
+function movePrev() {
+  currentIndex--;
+  updateSliderPosition(true);
+
+  const totalSlides = slides.length;
+  setTimeout(() => {
+    if (currentIndex < totalSlides) {
+      currentIndex = totalSlides * 2 - 1;
+      updateSliderPosition(false);
+    } 
+  }, 500); 
+} 
+
+nextBtn.addEventListener('click', moveNext);
+prevBtn.addEventListener('click', movePrev);
+
+window.addEventListener('resize', () => updateSliderPosition(false));
+
+updateSliderPosition(false); -->

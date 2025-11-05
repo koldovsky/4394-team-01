@@ -1,0 +1,205 @@
+/* ===== CAMPFIRE SECTION ===== */
+.campfire-section {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* --- HERO --- */
+.campfire-section__hero {
+  background-image: url("https://res2.weblium.site/res/65c6167b519095000f9163be/65cded4cc5c522000f1d2d98_optimized.webp");
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  background-position: 61.88% 38.49%;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+.campfire-section__hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.campfire-section__hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.campfire-section__title {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.campfire-section__btn {
+  background: #a1a04f;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.campfire-section__btn:hover {
+  background: #8e8d47;
+}
+
+/* --- PRICES --- */
+.campfire-section__prices {
+  position: relative;
+  padding: 100px 20px;
+  background: #fff;
+}
+
+.campfire-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.campfire-section__price-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* LEFT IMAGE */
+.campfire-section__price-image {
+  flex: 1;
+}
+
+.campfire-section__price-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
+/* RIGHT TEXT */
+.campfire-section__price-info {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+/* Декоративний фон "Pricing" */
+.campfire-section__price-info::before {
+  content: "Pricing";
+  position: absolute;
+  top: -40px; /* вище */
+  left: -30px; /* трохи лівіше */
+  font-size: 5.5rem;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.05);
+  text-transform: uppercase;
+  z-index: 0;
+  pointer-events: none;
+  letter-spacing: 4px;
+  line-height: 1;
+}
+
+/* Заголовок і текст */
+.campfire-section__price-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.campfire-section__price-icon {
+  font-size: 1.6rem;
+  color: #a1a04f;
+}
+
+.campfire-section__price-subtitle {
+  margin-bottom: 20px;
+  color: #666;
+  position: relative;
+  z-index: 2;
+}
+
+/* Price list */
+.campfire-section__price-table {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.campfire-section__price-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.campfire-section__item-name {
+  font-weight: 500;
+}
+
+.campfire-section__item-price {
+  color: #a1a04f;
+  font-weight: 600;
+}
+
+/* --- ADAPTIVE --- */
+@media (max-width: 992px) {
+  .campfire-section__price-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .campfire-section__price-image img {
+    max-width: 90%;
+  }
+
+  .campfire-section__price-info::before {
+    font-size: 3.5rem;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .campfire-section__price-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .campfire-section__title {
+    font-size: 1.8rem;
+  }
+
+  .campfire-section__btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+
+  .campfire-section__price-info::before {
+    font-size: 2.5rem;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+

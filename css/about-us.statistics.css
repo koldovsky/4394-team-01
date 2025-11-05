@@ -1,0 +1,36 @@
+.decor-line {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+.about-us__stats {
+  padding-bottom: 105px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.about-us__stat {
+  margin: 25px 0;
+  padding: 0 32px;
+}
+.about-us__stat-value {
+  font-weight: 600;
+  font-family: var(--alt-font);
+  font-size: 3.875rem;
+  color: var(--scroll-up-color);
+}
+.about-us__stat-label {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--primary-text-color);
+}
+@media (min-width: 768px) {
+  .about-us__stats {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

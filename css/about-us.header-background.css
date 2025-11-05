@@ -1,0 +1,10 @@
+/* Kostiantyn Kobel */
+.about-us__header_background-container {
+  background-image: url('../img/header/about-us-header-background.jpg');
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60vh;
+}

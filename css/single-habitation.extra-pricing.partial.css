@@ -1,0 +1,108 @@
+/* Made by Ostap Halushchak */
+.single__habitation-extras {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  gap: 48px;
+  margin-inline: auto;
+  padding: 16px;
+
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 65px;
+  }
+
+  .extras-services,
+  .extras__seasonal-prices {
+    width: 100%;
+  }
+
+  .extras-title,
+  .seasonal__prices-title {
+    font-size: 2.3rem;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 24px;
+    color: #111827;
+    @media (min-width: 992px) {
+      font-size: 2.8rem;
+    }
+  }
+
+  svg {
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .extras-line,
+  .extras__seasonal-prices line {
+    stroke: #9ca3af;
+    stroke-width: 1;
+    opacity: 0.35;
+  }
+
+  .extra__pricing_item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+  }
+
+  .extra__pricing_item-name {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #7c782f;
+    font-weight: 700;
+  }
+
+  .extra__pricing_item-price {
+    color: #7c782f;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+
+  .extra__pricing_item-description {
+    margin-top: 12px;
+    margin-bottom: 28px;
+    font-size: 1.1rem;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+
+  /* === Seasonal Pricing Section === */
+  .extras__seasonal-prices {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .seasonal__pricing-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+  }
+
+  .seasonal__pricing_item-name {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #7c782f;
+    font-weight: 700;
+  }
+
+  .seasonal__pricing_item-price {
+    color: #7c782f;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+
+  .seasonal__pricing_item-description {
+    color: #6b7280;
+    margin-top: 12px;
+    margin-bottom: 28px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}

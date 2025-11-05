@@ -1,14 +1,14 @@
 /* Marjan Batkivskiy */
-@import "global.css";
-@import "global.header-nav.css";
-@import "index.header-hero.css";
-@import "index.experience-nature.css";
-@import "index.customer-rewiews.css";
-@import "index.about-camping.css";
-@import "discount-section.css";
-@import "habbits.time.css";
-@import "about_camp-infrastructure.css";
-@import "habitations-main.css";
-@import "about-us.experience.css";
-@import "global.footer.css";
-@import "cabin.partial.css";
+@import 'global.css';
+@import 'global.header-nav.css';
+@import 'index.header-hero.css';
+@import 'index.header-background.css';
+@import 'index.experience-nature.css';
+@import 'index.customer-reviews.css';
+@import 'index.about-camping.css';
+@import 'index.promo-discount.css';
+@import 'index.canvas-tents-cozy-cabins.css';
+@import 'index.camp-infrastructure.partial.css';
+@import 'index.our-price-list.partial.css';
+@import 'modal-form.css';
+@import 'global.footer.css';
