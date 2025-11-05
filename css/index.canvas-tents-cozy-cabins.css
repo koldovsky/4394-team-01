@@ -114,7 +114,6 @@
 
             @media(min-width: 1280px) {
                 max-width: 1130px;
-                /* height: 973.7px; */
             }
 
             .habitations__item {
@@ -182,11 +181,6 @@
 
             .habitations__features {
                 margin: 10px 0 10px 0;
-                /* text-align: center;
-            display: flex;
-            flex-direction: row;
-            align-items: left;
-            width: 100%; */
 
                 @media (min-width: 480px) {
                     flex-direction: row;
@@ -195,7 +189,6 @@
                 .habitations__feature {
                     padding: 0 12px;
                     display: flex;
-                    /* justify-content: space-between; */
                     flex-direction: row;
 
                     .habitations__feature-text {
@@ -215,12 +208,15 @@
 
             .countdown-timer__label {
                 color: var(--title-text-color);
-              @media (min-width: 320px){
-              font-size: 1.5rem;
-            }
-              @media(min-width: 720px){
-                font-size: 2.5rem;
-             }
+
+                @media (min-width: 320px) {
+                    font-size: 1.5rem;
+                }
+
+                @media(min-width: 720px) {
+                    font-size: 2.5rem;
+                }
+
                 text-align: center;
             }
 
@@ -235,16 +231,14 @@
                 word-break: break-all;
 
                 .countdown__part {
-
+                    font-size: ;
                     padding: 10px 20px;
                     background-color: var(--background-countown-color);
                     color: var(--title-text-color);
-                    @media (min-width: 320px){
-              font-size: 1.5rem;
-            }
-              @media (min-width: 720px){
-                font-size: 2.5rem;
-             }
+                    font-size: 1.2rem;
+                    @media (min-width: 600px) {
+                        font-size: 2.5rem;
+                    }
                 }
 
                 .countdown__separator {
@@ -252,12 +246,14 @@
                     align-items: center;
                     justify-content: center;
                     padding: 10px 20px;
-                    @media (min-width: 320px){
-              font-size: 1.5rem;
-            }
-              @media(min-width: 720px){
-                font-size: 2.5rem;
-             }
+
+                    @media (min-width: 320px) {
+                        font-size: 1.5rem;
+                    }
+
+                    @media(min-width: 720px) {
+                        font-size: 2.5rem;
+                    }
                 }
             }
 
